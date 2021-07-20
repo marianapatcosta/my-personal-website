@@ -1,17 +1,41 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `My Portfolio`,
+    description: `Personal portfolio that compiles some personal projects of software development.`,
+    author: `@marianapatcosta`,
+    authorName: `Mariana Costa`,
+    authorRole: `Software Developer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/site-content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `public/exports`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -100,
+        duration: 500,
       },
     },
     `gatsby-transformer-sharp`,
@@ -25,12 +49,38 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/icons/logo.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`cardo`],
+        display: 'swap',
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-pdf',
+      options: {
+        paths: ['/resume/'],
+        styleTagOptions: {
+          content:
+            'header{ display:none !important; } footer{ display:none !important; }',
+          format: 'A4',
+          printBackground: true,
+          preferCSSPageSize: true,
+        },
+      },
+    },
+    {
+      // only added to exclude styles.js files in pages folder, to aavoid build error
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: ['**/styles.js', '**/styles.jsx'],
+      },
+    },
   ],
 }

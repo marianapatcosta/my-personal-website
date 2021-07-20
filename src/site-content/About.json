@@ -1,0 +1,88 @@
+[
+  {
+    "aboutMe": "I am Mariana Costa, a Software Developer from Portugal. I graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer. At some point in time, I figured out that I had to change the direction of my professional career and decided learn something completely new:  how to program. Since then, I’ve been developing my programming skills both at work and in my free time. I am particularly interested in Frontend Developement and focused in learning more and more about Web and Mobile development and JavaScript and related frameworks/libraries. My goal as a developer is to expand skills to create beautiful projects that also provide a good user experience and are somehow useful. I developed this portfolio to show some of the projects I created.",
+    "profileImage": "my-photo.png",
+    "skills": [
+      {
+        "label": "Web development",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "HTML5",
+        "icon": "Html"
+      },
+      {
+        "label": "CSS3",
+        "icon": "Css"
+      },
+      {
+        "label": "NodeJS",
+        "icon": "Node"
+      }
+    ],
+    "onRadar": [
+      {
+        "label": "mobile development",
+        "icon": "Mobile"
+      },
+      {
+        "label": "Flutter",
+        "icon": "Flutter"
+      },
+      {
+        "label": "UX/UI",
+        "icon": "UxUi"
+      },
+      {
+        "label": "e-commerce",
+        "icon": "ECommerce"
+      },
+      {
+        "label": "svg animations",
+        "icon": "Svg"
+      },
+      {
+        "label": "performance",
+        "icon": "Performance"
+      }
+    ],
+    "otherInterests": [
+      {
+        "label": "healthcare",
+        "icon": "Healthcare"
+      },
+      {
+        "label": "crafts",
+        "icon": "Crafts"
+      },
+      {
+        "label": "walking",
+        "icon": "Walking"
+      },
+      {
+        "label": "exercise",
+        "icon": "Exercise"
+      },
+      {
+        "label": "tv series",
+        "icon": "Tv"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "label": "About Me",
+    "icon": "Info",
+    "url": "/#about"
+  },
+  {
+    "label": "Portfolio",
+    "icon": "Portfolio",
+    "url": "/#portfolio"
+  },
+  {
+    "label": "Contacts",
+    "icon": "Contacts",
+    "url": "/#contacts"
+  }
+]

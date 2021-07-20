@@ -1,26 +1,44 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gmy-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My portfolio as Software Developers",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mariana Costa",
   "dependencies": {
-    "gatsby": "^3.0.1",
+    "babel-plugin-styled-components": "^1.12.0",
+    "emailjs-com": "^2.6.4",
+    "false": "^0.0.4",
+    "gatsby": "^3.9.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
+    "gatsby-plugin-page-creator": "^3.9.0",
+    "gatsby-plugin-pdf": "^0.0.1",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-plugin-styled-components": "^4.1.0",
     "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-json": "^3.1.0",
     "gatsby-transformer-sharp": "^3.0.0",
+    "i": "^0.3.6",
+    "npm": "^7.7.4",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.15.5",
+    "react-particles-js": "^3.5.3",
+    "react-scrollspy": "^3.4.3",
+    "sharp": "^0.28.3",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "@babel/core": "^7.14.6",
+    "prettier": "2.2.1",
+    "tsparticles": "^1.30.4"
   },
   "keywords": [
     "gatsby"
@@ -28,7 +46,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

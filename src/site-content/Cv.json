@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Mariana Costa",
+    "role": "Software Developer",
+    "intro": "Mariana Costa works as Software Developer since 2019. She is particularly enthusiastic about Frontend Developement, always seeking to improve her knowledge about JavaScript and related frameworks/libraries (React, Vue, Angular). She also developed Backend tasks, with Node.js, Java and Python. Previously, she graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
+    "profileImage": "my-photo.png",
+    "gitAvatarUrl": "https://github.com/marianapatcosta.png",
+    "contacts": [
+      {
+        "label": "Email",
+        "icon": "Email",
+        "contact": "marianapatcosta@gmail.com",
+        "url": "mailto:marianapatcosta@gmail.com"
+      },
+      {
+        "label": "Mobile",
+        "icon": "Mobile",
+        "contact": "(redacted)"
+      },
+      {
+        "label": "Skype",
+        "icon": "Skype",
+        "contact": "marianapatc"
+      },
+      {
+        "label": "Linkedin",
+        "icon": "Linkedin",
+        "contact": "marianapatcosta",
+        "url": "https://www.linkedin.com/in/marianapatcosta"
+      },
+      {
+        "label": "Portfolio",
+        "icon": "PortfolioSmall",
+        "contact": "this",
+        "url": "https://www.linkedin.com/in/marianapatcosta"
+      },
+      {
+        "label": "GitHub",
+        "icon": "GitHub",
+        "contact": "marianapatcosta",
+        "url": "https://github.com/marianapatcosta"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Software Developer",
+        "company": "Amyris – Catholic University of Portugal",
+        "timePeriod": "Jul 2020 - Present",
+        "description": "Development of applications to automate and improve routine tasks of Amyris's Scientists.",
+        "responsabilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Development of mockups; Participation on task planning;",
+        "technologies": "React; Redux; Figma; Integration of REST APIs; Enzyme; Jest; Python."
+      },
+      {
+        "role": "Junior FullStack Developer",
+        "company": "Celfocus",
+        "timePeriod": "Jan 2019 – Jun 2020",
+        "description": "Development of Self-Care Portal for Vodafone Germany and a portal to handle DNS and IP blockage requests for Vodafone Portugal.",
+        "responsabilities": "Frontend and Backend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation and mockups; Collaboration with QA and UX/UI teams; Participation on task planning;",
+        "technologies": "Vue; Angular; TypeScript; Node.js; Express.js; Java 8; Jasmine; Karma; Jest;"
+      },
+      {
+        "role": "Medical Writer",
+        "company": "Blueclinical",
+        "timePeriod": "Jul 2015 – Sep 2018",
+        "description": "Writing of clinical trials-related documentation. Compliance with legal and regulatory requirements, internal SOPs and ICH-GCPs."
+      },
+      {
+        "role": "PhD Research Fellow",
+        "company": "Faculty of Pharmacy University of Porto ",
+        "timePeriod": "Jan 2011 - Dec 2014",
+        "description": "Planning of lab experiments and time management; Data interpretation and analysis; Publications in international peer reviewed journals."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Associate Reactive Developer",
+        "institution": "OutSystems Developer School",
+        "timePeriod": "2020"
+      },
+      {
+        "degree": "<Code Cadet>",
+        "institution": "<Academia de Código_> ",
+        "timePeriod": "2018",
+        "description": "A 14-Week Intensive && Immersive Java && JavaScript FullStack Coding Bootcamp."
+      },
+      {
+        "degree": "PhD in Pharmaceutical Sciences",
+        "institution": "Faculty of Pharmacy University of Porto ",
+        "timePeriod": "2011 - 2014"
+      },
+      {
+        "degree": "PharmD, MSc, Pharmaceutical Sciences",
+        "institution": "Faculty of Pharmacy University of Porto ",
+        "timePeriod": "2004 - 2009"
+      }
+    ],
+    "skills": [
+      {
+        "label": "Web development",
+        "icon": "Web",
+        "level": 4.5
+      },
+      {
+        "label": "Mobile development",
+        "icon": "Mobile",
+        "level": 3
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript",
+        "level": 4.5
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript",
+        "level": 4
+      },
+      {
+        "label": "React",
+        "icon": "React",
+        "level": 4.5
+      },
+      {
+        "label": "Gatsby",
+        "icon": "Gatsby",
+        "level": 3.5
+      },
+      {
+        "label": "Next.js",
+        "icon": "NextJs",
+        "level": 3.5
+      },
+      {
+        "label": "Redux",
+        "icon": "Redux",
+        "level": 4
+      },
+      {
+        "label": "React Native",
+        "icon": "React",
+        "level": 3.5
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue",
+        "level": 4
+      },
+      {
+        "label": "HTML5",
+        "icon": "Html",
+        "level": 4.5
+      },
+      {
+        "label": "CSS3",
+        "icon": "Css",
+        "level": 4.5
+      },
+      {
+        "label": "Git",
+        "icon": "Git",
+        "level": 4
+      },
+      {
+        "label": "Agile Methodology",
+        "icon": "Agile",
+        "level": 4
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents",
+        "level": 4.5
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node",
+        "level": 4
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express",
+        "level": 4
+      },
+      {
+        "label": "Angular",
+        "icon": "Angular",
+        "level": 3
+      },
+      {
+        "label": "Electron",
+        "icon": "Electron",
+        "level": 2.5
+      },
+      {
+        "label": "Jest",
+        "icon": "Jest",
+        "level": 2.5
+      },
+      {
+        "label": "Figma",
+        "icon": "Figma",
+        "level": 2.5
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest",
+        "level": 3.5
+      },
+      {
+        "label": "GraphQL",
+        "icon": "GraphQl",
+        "level": 3
+      },
+      {
+        "label": "Java",
+        "icon": "Java",
+        "level": 3
+      },
+      {
+        "label": "Python",
+        "icon": "Python",
+        "level": 2.5
+      },
+      {
+        "label": "SQL",
+        "icon": "Sql",
+        "level": 2.5
+      },
+      {
+        "label": "MongoDB",
+        "icon": "MongoDb",
+        "level": 2.5
+      },
+      {
+        "label": "Docker",
+        "icon": "Docker",
+        "level": 2
+      },
+      {
+        "label": "OutSystems",
+        "icon": "Outsystems",
+        "level": 2
+      }
+    ],
+    "otherInfo": {
+      "languages": [
+        {
+          "name": "Portuguese",
+          "level": "native"
+        },
+        {
+          "name": "English",
+          "level": "excellent"
+        },
+        {
+          "name": "Spanish",
+          "level": "intermediate"
+        },
+        {
+          "name": "German",
+          "level": "elementary"
+        },
+        {
+          "name": "French",
+          "level": "elementary"
+        }
+      ]
+    }
+  }
+]

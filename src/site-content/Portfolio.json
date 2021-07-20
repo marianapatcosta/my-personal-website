@@ -1,0 +1,651 @@
+[
+  {
+    "title": "Weatherison",
+    "description": "Web app developed to get and easily compare the weather forecast from 6 different weather APIs, for any location for the next 5 days.",
+    "images": ["weatherisonA.png", "weatherisonB.png", "weatherisonC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest"
+      },
+      {
+        "label": "OpenAPI Specification",
+        "icon": "Swagger"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/weatherison"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://weatherison.web.app"
+      }
+    ]
+  },
+  {
+    "title": "Weatherison Mobile",
+    "description": "Mobile version of Weatherison, a web app developed to get and easily compare the weather forecast from 6 different weather APIs, for any location for the next 5 days.",
+    "images": ["weatherison-mobileA.png", "weatherison-mobileB.png"],
+    "stack": [
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React Native",
+        "icon": "React"
+      },
+      {
+        "label": "Expo",
+        "icon": "Expo"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/weatherison-mobile"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://expo.io/@marianapatc/weatherison"
+      }
+    ]
+  },
+  {
+    "title": "Solinca Notification App",
+    "description": "Web app developed to allow the members of Solinca's health clubs to configure her/his favourite classes and get an email or WhatsApp notification when a spot is available and can booked.",
+    "images": ["solincaA.png", "solincaB.png", "solincaC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "MongoDB",
+        "icon": "MongoDb"
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest"
+      },
+      {
+        "label": "OpenAPI Specification",
+        "icon": "Swagger"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/solinca-notification-portal-fe"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://solinca-notification-portal.web.app"
+      }
+    ]
+  },
+  {
+    "title": "My First Design System",
+    "description": "Simple Design System composed of several widely-used, customized atomic components, such as Button, Carousel, Checkbox, Dropdown MultiselectionInput, Stepper, Tabs or Toast.",
+    "images": ["componentsA.png", "componentsB.png", "componentsC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Storybook",
+        "icon": "Storybook"
+      },
+      {
+        "label": "React Testing Library",
+        "icon": "ReactTestingLibrary"
+      },
+      {
+        "label": "Jest",
+        "icon": "Jest"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/my-first-design-system"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://6067056cb7d3a2002163b262-rodxdkhaoc.chromatic.com/"
+      }
+    ]
+  },
+  {
+    "title": "Veggie Foodie",
+    "description": "Cross-platform mobile app for registers photos and information about user's favourite veggie meals, recipes and products/ingredients in device storage. Uses devices's geolocation and camara and infinite scroll.",
+    "images": [
+      "veggie-foodieA.png",
+      "veggie-foodieB.png",
+      "veggie-foodieC.png"
+    ],
+    "stack": [
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "Ionic",
+        "icon": "Ionic"
+      },
+      {
+        "label": "Capacitor",
+        "icon": "Capacitor"
+      },
+      {
+        "label": "SQLite",
+        "icon": "Sqlite"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/veggie-foodie"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "title": "GamePlay",
+    "description": "Mobile app developed during Next Level Week to schedule games in Discord servers that uses data from user's Discord account. The appointments can be also be edited and deleted and shared to other users.",
+    "images": ["gameplayA.png", "gameplayB.png"],
+    "stack": [
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React Native",
+        "icon": "React"
+      },
+      {
+        "label": "OAuth2",
+        "icon": "OAuth2"
+      },
+      {
+        "label": "Expo",
+        "icon": "Expo"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/gameplay"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "expo.io/@marianapatc/gameplay-nlw"
+      }
+    ]
+  },
+  {
+    "title": "TodOrganizer",
+    "description": "Simple ToDo portal / desktop app developed to create, retrieve, update and delete ToDos, upload .csv and export data and manage todos' state in a draggable ToDo board.",
+    "images": ["todoA.png", "todoB.png", "todoC.png", "todoD.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "Desktop",
+        "icon": "Desktop"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Electron",
+        "icon": "Electron"
+      },
+      {
+        "label": "Python",
+        "icon": "Python"
+      },
+      {
+        "label": "Django",
+        "icon": "Django"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/todorganizer"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://todorganizer.herokuapp.com/"
+      }
+    ]
+  },
+  {
+    "title": "Grammar Police Games",
+    "description": "Web app that integrates versions of the 3 well-known games Flappy Bird, Space Invaders and Memory game, emphasizing common grammar mistakes.",
+    "images": [
+      "grammar-policeA.png",
+      "grammar-policeB.png",
+      "grammar-policeC.png",
+      "grammar-policeD.png"
+    ],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "Figma",
+        "icon": "Figma"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/grammar-police-games"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/grammar-police-games"
+      }
+    ]
+  },
+  {
+    "title": "Memory Game - Bday Edition",
+    "description": "Customizable Memory Game that plays birthday-related animations and song after winning. The user personalizes the game and can play it online or download it as a desktop app that can be sent to the Bday person.",
+    "images": ["todoA.png", "todoB.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "Desktop",
+        "icon": "Desktop"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Electron",
+        "icon": "Electron"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/customizable-memory-game"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/customizable-memory-game"
+      }
+    ]
+  },
+  {
+    "title": "My Paint App",
+    "description": "Simple web/desktop application that mimics some functionalities of Paint application. Allows to draw, undo, redo and save lines, shapes and text. Some shapes can be edited, dragged, duplicated and rotated.",
+    "images": ["paintA.png", "paintB.png", "paintC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "Desktop",
+        "icon": "Desktop"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "Canvas API",
+        "icon": "Canvas"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "Electron",
+        "icon": "Electron"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/my-paint-app"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/my-paint-app"
+      }
+    ]
+  },
+  {
+    "title": "MC Chat Room",
+    "description": "Simple real-time multi-user chat that allows the creation of different chat rooms and send text, emojis, image, audio and video messages.",
+    "images": ["chatA.png", "chatB.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "SocketIO",
+        "icon": "SocketIo"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "Mustache",
+        "icon": "Mustache"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/mc-chat-room"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://mc-chat-room.herokuapp.com/"
+      }
+    ]
+  },
+  {
+    "title": "My Portfolio",
+    "description": "This project. My Portfolio compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded in pdf format.",
+    "images": ["chatA.png", "chatB.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "Gatsby",
+        "icon": "Gatsby"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "GraphQL",
+        "icon": "GraphQl"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "EmailJS",
+        "icon": "EmailJS"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/my-portfolio"
+      },
+      {
+        "label": "this",
+        "icon": "Link",
+        "url": "https://mc-chat-room.herokuapp.com/"
+      }
+    ]
+  }
+]

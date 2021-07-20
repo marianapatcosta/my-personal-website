@@ -1,0 +1,9 @@
+.active span {
+  color: #a18dbb;
+  font-weight: 700;
+}
+
+.active img {
+  filter: invert(62%) sepia(25%) saturate(390%) hue-rotate(224deg)
+    brightness(90%) contrast(92%);
+}
