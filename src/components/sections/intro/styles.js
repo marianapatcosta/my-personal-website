@@ -228,5 +228,5 @@ export const StyledParticles = styled(Particles)`
   left: 0;
   top: -5rem;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 5rem);
 `
