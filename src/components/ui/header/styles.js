@@ -21,7 +21,9 @@ export const StyledHeader = styled.header`
   ${({ isOnTop, theme }) =>
     isOnTop &&
     `background-color: ${theme.colors.highlight};
-    box-shadow: none; color: ${theme.colors.primary};`}
+    box-shadow: none;
+    z-index: 0;
+    color: ${theme.colors.primary};`}
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xm}) {
     padding: 0 2rem;

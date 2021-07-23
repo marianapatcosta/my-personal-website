@@ -67,28 +67,46 @@ export const StyledIntro = styled(StyledSection)`
     ${({ theme }) => theme.colors.highlightDark};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 15rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    height: calc(100vh - 10rem);
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     height: calc(100vh - 15rem);
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+    height: calc(100vh - 20rem);
   }
 `
 
 export const StyledIntroContent = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   user-select: none;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  align-items: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    flex-direction: revert;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+  }
 `
 
-export const StyledText = styled.div``
+export const StyledText = styled.div`
+  min-width: 30rem;
+`
 
 export const StyledHello = styled.span`
   display: flex;
   font-size: 180%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  height: 3rem;
 `
 
 export const StyledHand = styled.span`
@@ -134,10 +152,12 @@ export const StyledSubtitle = styled(StyledTitle)`
 export const StyledPhotoWrapper = styled.div`
   width: 17.6rem;
   height: 18.75rem;
+  margin-top: 5rem;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 17.6rem;
     height: 18.75rem;
+    margin-top: revert;
   }
 `
 
@@ -206,7 +226,7 @@ export const StyledShare = styled.button`
 export const StyledParticles = styled(Particles)`
   position: absolute;
   left: 0;
-  top: 0;
+  top: -5rem;
   width: 100%;
   height: 100%;
 `

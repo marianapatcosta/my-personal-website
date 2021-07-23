@@ -124,14 +124,13 @@ export const StyledButton = styled.button`
   width: 3rem;
   height: 3rem;
   right: 0.5rem;
-  bottom: -1rem;
   z-index: 1;
-  margin: 0 0.2rem 0.03rem;
   cursor: pointer;
 
   div {
     box-sizing: content-box;
-    border: 0.0625rem solid ${({ theme }) => theme.colors.highlight};
+    border: 0.0625rem solid ${({ theme, isAutomaticView }) =>
+      isAutomaticView ? theme.colors.green : theme.colors.highlight};;
     background-color: ${({ theme, isAutomaticView }) =>
       isAutomaticView ? theme.colors.green : theme.colors.highlight};
     height: 0.5rem;
@@ -141,7 +140,7 @@ export const StyledButton = styled.button`
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out 0s;
+    transition: all 0.8s ease-in-out, transform 0.8s ease-in-out 0s;
   }
 `
 
