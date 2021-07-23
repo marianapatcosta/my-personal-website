@@ -26,9 +26,8 @@ export const StyledImage = styled(GatsbyImage)`
   height: 100%;
   width: 100%;
   display: block;
-  transition: all 0.8s ease-in-out;
   position: absolute;
-  transform: translate(-25rem, 0);
+  right: 120%;
   box-shadow: 0 0.025rem 0.3rem -0.15rem ${({ theme }) => theme.colors.shadow};
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -37,15 +36,15 @@ export const StyledImage = styled(GatsbyImage)`
   -o-border-radius: 0.5rem;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.8s ease-in-out;
 
   ${({ $isSelected }) =>
     $isSelected &&
     `
     transform: translate(0, 0);
+    right: 0;
     opacity: 1;
     visibility: visible;
-    transition: all 0.8s ease-in-out;
-
     ;`};
 
   ${({ $isZoomedIn }) =>

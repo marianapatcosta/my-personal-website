@@ -1,6 +1,6 @@
 # My Portfolio
 
-My Portfolio compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded in pdf. It was developed using Gatsby and Styled Components.
+My Portfolio compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded as pdf file. It was developed using Gatsby and Styled Components.
 
 ## Available Scripts
 

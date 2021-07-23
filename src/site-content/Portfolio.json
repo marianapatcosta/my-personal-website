@@ -447,7 +447,7 @@
   {
     "title": "Memory Game - Bday Edition",
     "description": "Customizable Memory Game that plays birthday-related animations and song after winning. The user personalizes the game and can play it online or download it as a desktop app that can be sent to the Bday person.",
-    "images": ["todoA.png", "todoB.png"],
+    "images": ["memory-gameA.png", "memory-gameB.png", "memory-gameC.png", "memory-gameD.png"],
     "stack": [
       {
         "label": "Web",
@@ -491,7 +491,7 @@
       {
         "label": "visit",
         "icon": "Link",
-        "url": "https://marianapatcosta.github.io/customizable-memory-game"
+        "url": ""
       }
     ]
   },
@@ -592,7 +592,7 @@
   {
     "title": "My Portfolio",
     "description": "This project. My Portfolio compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded in pdf format.",
-    "images": ["chatA.png", "chatB.png"],
+    "images": ["my-portfolioA.png", "my-portfolioB.png", "my-portfolioC.png", "my-portfolioD.png"],
     "stack": [
       {
         "label": "Web",
