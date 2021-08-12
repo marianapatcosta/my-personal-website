@@ -7,6 +7,7 @@ import Header from './header'
 import Input from './input'
 import Layout from './layout'
 import Link from './link'
+import PortfolioItem from './portfolio-item'
 import SEO from './seo'
 import SlideImage from './slide-image'
 import Textarea from './textarea'
@@ -24,6 +25,7 @@ export {
   Input,
   Layout,
   Link,
+  PortfolioItem,
   SEO,
   SlideImage,
   Tag,
