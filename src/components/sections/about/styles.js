@@ -29,10 +29,9 @@ export const StyledSectionMain = styled.div`
 `
 
 export const StyledAboutMe = styled.div`
-  margin-bottom: 2rem;
-
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     flex: 1;
+    margin-bottom: 2rem;
   }
 `
 
@@ -101,7 +100,7 @@ export const StyledInterestsContent = styled.p`
     margin: 0.5rem 0.75rem 0.5rem 0;
 
     span {
-      line-height: 1.4rem;
+      line-height: 1.6rem;
       white-space: nowrap;
     }
   }
@@ -109,5 +108,10 @@ export const StyledInterestsContent = styled.p`
 
 export const StyledButton = styled(Button)`
   margin-left: auto;
+  margin-top: 2rem;
   font-size: 110%;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin-top: 3rem;
+  }
 `

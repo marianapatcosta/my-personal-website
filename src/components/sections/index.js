@@ -1,6 +1,6 @@
 import About from './about'
 import Contacts from './contacts'
 import Intro from './intro'
-import Portfolio from './portfolio'
+import PortfolioSection from './portfolio-section'
 
-export { About, Contacts, Intro, Portfolio }
+export { About, Contacts, Intro, PortfolioSection }
