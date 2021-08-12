@@ -111,7 +111,7 @@
   },
   {
     "title": "Solinca Notification App",
-    "description": "Web app developed to allow the members of Solinca's health clubs to configure her/his favourite classes and get an email or WhatsApp notification when a spot is available and can booked.",
+    "description": "Web app developed to allow the members of Solinca's health clubs to configure her/his favourite classes and get an email or WhatsApp notification when a spot is available and can be booked.",
     "images": ["solincaA.png", "solincaB.png", "solincaC.png"],
     "stack": [
       {
@@ -151,6 +151,10 @@
         "icon": "Express"
       },
       {
+        "label": "JWT Authentication",
+        "icon": "Authentication"
+      },
+      {
         "label": "MongoDB",
         "icon": "MongoDb"
       },
@@ -173,6 +177,82 @@
         "label": "visit",
         "icon": "Link",
         "url": "https://solinca-notification-portal.web.app"
+      }
+    ]
+  },
+  {
+    "title": "Notify me - Solinca",
+    "description": "Mobile version of Solinca Notification Portal to allow the members of Solinca's health clubs to configure her/his favourite classes and get a push notification when a spot is available and can be booked.",
+    "images": [
+      "notify-me-solincaA.png",
+      "notify-me-solincaB.png",
+      "notify-me-solincaC.png",
+      "notify-me-solincaD.png"
+    ],
+    "stack": [
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React Native",
+        "icon": "React"
+      },
+      {
+        "label": "Expo",
+        "icon": "Expo"
+      },
+      {
+        "label": "React Hook Form",
+        "icon": "ReactHookForm"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Push Notifications",
+        "icon": "PushNotifications"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "JWT Authentication",
+        "icon": "Authentication"
+      },
+      {
+        "label": "MongoDB",
+        "icon": "MongoDb"
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/gameplay"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "expo.io/@marianapatc/gameplay-nlw"
       }
     ]
   },
@@ -300,12 +380,12 @@
         "icon": "React"
       },
       {
-        "label": "OAuth2",
-        "icon": "OAuth2"
-      },
-      {
         "label": "Expo",
         "icon": "Expo"
+      },
+      {
+        "label": "OAuth2",
+        "icon": "OAuth2"
       },
       {
         "label": "Dark Theme",
@@ -377,6 +457,10 @@
       {
         "label": "Django",
         "icon": "Django"
+      },
+      {
+        "label": "Token Authentication",
+        "icon": "Authentication"
       }
     ],
     "links": [
@@ -447,7 +531,12 @@
   {
     "title": "Memory Game - Bday Edition",
     "description": "Customizable Memory Game that plays birthday-related animations and song after winning. The user personalizes the game and can play it online or download it as a desktop app that can be sent to the Bday person.",
-    "images": ["memory-gameA.png", "memory-gameB.png", "memory-gameC.png", "memory-gameD.png"],
+    "images": [
+      "memory-gameA.png",
+      "memory-gameB.png",
+      "memory-gameC.png",
+      "memory-gameD.png"
+    ],
     "stack": [
       {
         "label": "Web",
@@ -592,7 +681,12 @@
   {
     "title": "My Portfolio",
     "description": "This project. My Portfolio compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded in pdf format.",
-    "images": ["my-portfolioA.png", "my-portfolioB.png", "my-portfolioC.png", "my-portfolioD.png"],
+    "images": [
+      "my-portfolioA.png",
+      "my-portfolioB.png",
+      "my-portfolioC.png",
+      "my-portfolioD.png"
+    ],
     "stack": [
       {
         "label": "Web",
@@ -609,6 +703,10 @@
       {
         "label": "React",
         "icon": "React"
+      },
+      {
+        "label": "React Hook Form",
+        "icon": "ReactHookForm"
       },
       {
         "label": "GraphQL",

@@ -2,6 +2,7 @@ import Accessibility from './accessibility.svg'
 import Agile from './agile.svg'
 import Angular from './angular.svg'
 import Alert from './alert.svg'
+import Authentication from './authentication.svg'
 import Border from './border.svg'
 import Border2 from './border2.svg'
 import Canvas from './canvas-api.svg'
@@ -18,6 +19,7 @@ import Cv from './cv.svg'
 import CyberSecurity from './cyber-security.svg'
 import DarkTheme from './dark-theme.svg'
 import Desktop from './desktop.svg'
+import Dev from './dev.svg'
 import Django from './django.svg'
 import Docker from './docker.svg'
 import Download from './download.svg'
@@ -66,9 +68,12 @@ import Outsystems from './outsystems.svg'
 import Performance from './performance.svg'
 import Portfolio from './portfolio.svg'
 import PortfolioSmall from './portfolio-small.svg'
+import PushNotifications from './push-notifications.svg'
+import Plus from './plus.svg'
 import Python from './python.svg'
 import Radar from './radar.svg'
 import React from './react.svg'
+import ReactHookForm from './react-hook-form.svg'
 import ReactTestingLibrary from './react-testing-library.svg'
 import Redux from './redux.svg'
 import Responsive from './responsive-design.svg'
@@ -89,6 +94,7 @@ import Svg from './svg.svg'
 import Swagger from './swagger.svg'
 import Tick from './tick.svg'
 import Tv from './tv.svg'
+import Twitter from './twitter.svg'
 import TypeScript from './typescript.svg'
 import UxUi from './ux-ui.svg'
 import Vegetarianism from './vegetarianism.svg'
@@ -102,6 +108,7 @@ export {
   Agile,
   Angular,
   Alert,
+  Authentication,
   Border,
   Border2,
   Canvas,
@@ -118,6 +125,7 @@ export {
   CyberSecurity,
   DarkTheme,
   Desktop,
+  Dev,
   Django,
   Docker,
   Download,
@@ -164,11 +172,14 @@ export {
   OAuth2,
   Outsystems,
   Performance,
+  Plus,
   Portfolio,
   PortfolioSmall,
+  PushNotifications,
   Python,
   Radar,
   React,
+  ReactHookForm,
   ReactTestingLibrary,
   Redux,
   Responsive,
@@ -189,6 +200,7 @@ export {
   Swagger,
   Tick,
   Tv,
+  Twitter,
   TypeScript,
   UxUi,
   Vegetarianism,
