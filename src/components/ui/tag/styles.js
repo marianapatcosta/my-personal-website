@@ -6,7 +6,7 @@ export const StyledTag = styled.button`
   min-width: 5rem;
   height: 1.8rem;
   padding: 0.2rem 1rem;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.font};
   line-height: 1.1rem;
   border-radius: 1.4rem;

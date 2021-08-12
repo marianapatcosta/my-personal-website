@@ -67,7 +67,7 @@ module.exports = {
         paths: ['/resume/'],
         styleTagOptions: {
           content:
-            'header{ display:none !important; } footer{ display:none !important; }',
+            'header { display:none !important; } footer { display:none !important; }',
           format: 'A4',
           printBackground: true,
           preferCSSPageSize: true,
