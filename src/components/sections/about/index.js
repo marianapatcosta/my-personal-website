@@ -1,6 +1,6 @@
 import React from 'react'
-import { getImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
+import { getImage } from 'gatsby-plugin-image'
 import { navigate } from 'gatsby'
 import { StyledSectionTitle } from '../../../themes/global-style'
 import * as Icons from '../../../icons'
