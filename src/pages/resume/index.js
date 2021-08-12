@@ -5,7 +5,9 @@ import { getImage } from 'gatsby-plugin-image'
 import { Layout, SEO as Seo } from '../../components'
 import * as Icons from '../../icons'
 import {
-  StyledModalDownloadIcon,
+  StyledResume,
+  StyledResumeTitle,
+  StyledDownloadIcon,
   StyledCv,
   StyledThinColumn,
   StyledThickColumn,
@@ -130,84 +132,87 @@ const Cv = () => {
   return (
     <Layout>
       <Seo title='Resume' />
-      <StyledCv>
-        <StyledModalDownloadIcon
-          aria-label='download my CV resume in pdf'
-          download
-          href={resume?.publicURL}
-        >
-          <img src={Icons.Download} alt='download icon' /> Download
-        </StyledModalDownloadIcon>
-        <StyledThinColumn>
-          <StyledProfile>
-            {/* Fallback image using github avatar for printing purposes; this solution is a workaround
+      <StyledResume id='about'>
+        <StyledResumeTitle>Resume</StyledResumeTitle>
+        <StyledCv>
+          <StyledDownloadIcon
+            aria-label='download my CV resume in pdf'
+            download
+            href={resume?.publicURL}
+          >
+            <img src={Icons.Download} alt='download icon' /> Download
+          </StyledDownloadIcon>
+          <StyledThinColumn>
+            <StyledProfile>
+              {/* Fallback image using github avatar for printing purposes; this solution is a workaround
              to overcome the fact that puppeteer (used by gatsby-plugin-pdf) do not load local images for security reasons */}
-            <StyledImagePrint src={gitAvatarUrl} />
-            <StyledImage
-              imgStyle={{ borderRadius: '50%' }}
-              image={profilePhoto}
-              alt='profile photo'
-            />
-            <StyledName>{name}</StyledName>
-            <StyledRole>{role}</StyledRole>
-          </StyledProfile>
-          <StyledSection>
-            <address>
-              {contacts.map(contact => (
-                <ContactItem
-                  key={`contact-${contact.label}`}
-                  contactInfo={contact}
+              <StyledImagePrint src={gitAvatarUrl} />
+              <StyledImage
+                imgStyle={{ borderRadius: '50%' }}
+                image={profilePhoto}
+                alt='profile photo'
+              />
+              <StyledName>{name}</StyledName>
+              <StyledRole>{role}</StyledRole>
+            </StyledProfile>
+            <StyledSection>
+              <address>
+                {contacts.map(contact => (
+                  <ContactItem
+                    key={`contact-${contact.label}`}
+                    contactInfo={contact}
+                  />
+                ))}
+              </address>
+            </StyledSection>
+            <StyledSection>
+              <StyledTitle>Profile</StyledTitle>
+              <StyledProfileText>{intro}</StyledProfileText>
+            </StyledSection>
+            <StyledSection>
+              <StyledBorder src={Icons.Border} alt='border' />
+              <StyledTitle>Education</StyledTitle>
+              {education.map(item => (
+                <EducationItem
+                  key={`skill-${item.degree}`}
+                  educationInfo={item}
                 />
               ))}
-            </address>
-          </StyledSection>
-          <StyledSection>
-            <StyledTitle>Profile</StyledTitle>
-            <StyledProfileText>{intro}</StyledProfileText>
-          </StyledSection>
-          <StyledSection>
-            <StyledBorder src={Icons.Border} alt='border' />
-            <StyledTitle>Education</StyledTitle>
-            {education.map(item => (
-              <EducationItem
-                key={`skill-${item.degree}`}
-                educationInfo={item}
-              />
-            ))}
-          </StyledSection>
-        </StyledThinColumn>
-        <StyledThickColumn>
-          <StyledSection>
-            <StyledTitle>Experience</StyledTitle>
-            <StyledBorder2 src={Icons.Border2} alt='border' />
-            {experience.map(item => (
-              <ExperienceItem
-                key={`experience-${item.company}`}
-                experienceInfo={item}
-              />
-            ))}
-          </StyledSection>
-          <StyledSection style={{ marginBottom: '0.5rem' }}>
-            <StyledTitle>Main Technical Skills</StyledTitle>
-            <StyledGrid>
-              {skills.map(skill => (
-                <Skill key={`skill-${skill.label}`} skill={skill} />
+            </StyledSection>
+          </StyledThinColumn>
+          <StyledThickColumn>
+            <StyledSection>
+              <StyledTitle>Experience</StyledTitle>
+              <StyledBorder2 src={Icons.Border2} alt='border' />
+              {experience.map(item => (
+                <ExperienceItem
+                  key={`experience-${item.company}`}
+                  experienceInfo={item}
+                />
               ))}
-            </StyledGrid>
-          </StyledSection>
-          <StyledSection>
-            <StyledTitle>Languages</StyledTitle>
-            <StyledGrid style={{ gridRowGap: 0 }}>
-              {otherInfo.languages.map(({ name, level }) => (
-                <StyledText key={`language-${name}`}>
-                  <b>{name}</b>
-                  {!!level && ` | ${level}`}
-                </StyledText>
-              ))}
-            </StyledGrid>
-          </StyledSection>
-        </StyledThickColumn>
-      </StyledCv>
+            </StyledSection>
+            <StyledSection style={{ marginBottom: '0.5rem' }}>
+              <StyledTitle>Main Technical Skills</StyledTitle>
+              <StyledGrid>
+                {skills.map(skill => (
+                  <Skill key={`skill-${skill.label}`} skill={skill} />
+                ))}
+              </StyledGrid>
+            </StyledSection>
+            <StyledSection>
+              <StyledTitle>Languages</StyledTitle>
+              <StyledGrid style={{ gridRowGap: 0 }}>
+                {otherInfo.languages.map(({ name, level }) => (
+                  <StyledText key={`language-${name}`}>
+                    <b>{name}</b>
+                    {!!level && ` | ${level}`}
+                  </StyledText>
+                ))}
+              </StyledGrid>
+            </StyledSection>
+          </StyledThickColumn>
+        </StyledCv>
+      </StyledResume>
     </Layout>
   )
 }

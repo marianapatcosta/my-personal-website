@@ -1,7 +1,30 @@
 import styled from 'styled-components'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import { StyledSectionTitle } from '../../themes/global-style'
 
-export const StyledModalDownloadIcon = styled.a`
+export const StyledResume = styled.div`
+  @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
+    margin: 5rem 0;
+  }
+
+  @media print {
+    margin: 0;
+  }
+`
+
+export const StyledResumeTitle = styled(StyledSectionTitle)`
+  display: none;
+
+  @media print {
+    display: none;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
+    display: block;
+  }
+`
+
+export const StyledDownloadIcon = styled.a`
   position: absolute;
   top: 1rem;
   right: 2rem;
@@ -33,22 +56,17 @@ export const StyledCv = styled.div`
   margin: 0 auto 2rem;
   position: relative;
 
-  &:hover > ${StyledModalDownloadIcon} {
+  &:hover > ${StyledDownloadIcon} {
     visibility: visible;
     opacity: 1;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
     flex-direction: row;
-    margin: 4rem auto;
     width: 209.55mm;
     height: 298.45mm;
     padding: 5mm;
     box-shadow: 0.2rem 0.2rem 0.4rem ${({ theme }) => theme.colors.shadow};
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin: 5rem auto;
   }
 
   @media print {

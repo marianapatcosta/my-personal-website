@@ -5,7 +5,7 @@ import {
   Contacts,
   Intro,
   Layout,
-  Portfolio,
+  PortfolioSection,
   SEO as Seo,
 } from '../components'
 
@@ -22,7 +22,7 @@ const IndexPage = ({ data: pageData }) => (
       aboutInfo={pageData.allAboutJson?.edges[0].node}
       pageImages={pageData.allFile?.edges}
     />
-    <Portfolio
+    <PortfolioSection
       portfolioInfo={pageData.allPortfolioJson?.edges}
       pageImages={pageData.allFile?.edges}
     />
