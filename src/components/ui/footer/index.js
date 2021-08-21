@@ -8,7 +8,7 @@ const Footer = ({ authorName }) => {
   return (
     <StyledFooter>
       <img src={Wave} alt='wave svg at the footer' />
-      {`©${new Date().getFullYear()} - Designed and Developed by ${authorName}`}
+      <p>{`©${new Date().getFullYear()} - Designed and Developed by ${authorName}`}</p>
     </StyledFooter>
   )
 }

@@ -1,6 +1,6 @@
 import common from './common.js'
 
-const darkTheme = {
+export const dark = {
   ...common,
   colors: {
     ...common.colors,
@@ -19,5 +19,3 @@ const darkTheme = {
       'invert(12%) sepia(15%) saturate(424%) hue-rotate(169deg) brightness(97%) contrast(94%)',
   },
 }
-
-export default darkTheme

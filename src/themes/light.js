@@ -1,6 +1,6 @@
 import common from './common.js'
 
-const lightTheme = {
+export const light = {
   ...common,
   colors: {
     ...common.colors,
@@ -19,5 +19,3 @@ const lightTheme = {
       'invert(100%) sepia(0%) saturate(7500%) hue-rotate(99deg) brightness(101%) contrast(101%)',
   },
 }
-
-export default lightTheme
