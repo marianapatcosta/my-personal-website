@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import PropTypes from 'prop-types'
 import { Dropdown, PortfolioItem, Layout, SEO as Seo } from '../../components'
+import { getItemImages } from '../../utils'
 import {
   StyledPortfolio,
   StyledPortfolioTitle,
@@ -34,13 +34,6 @@ const DEFAULT_TAG = 'All'
 const Portfolio = () => {
   const portfolioData = useStaticQuery(graphql`
     query PortfolioPageQuery {
-      site {
-        siteMetadata {
-          title
-          authorName
-          authorRole
-        }
-      }
       allPortfolioJson {
         edges {
           node {
@@ -62,7 +55,7 @@ const Portfolio = () => {
       images: allFile(
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          relativeDirectory: { eq: "" }
+          relativeDirectory: { eq: "portfolio" }
         }
       ) {
         edges {
@@ -83,11 +76,6 @@ const Portfolio = () => {
   const [filteredPortfolioInfo, setFilteredPortfolioInfo] = useState(
     portfolioInfo
   )
-
-  const getItemImages = images =>
-    pageImages
-      .filter(image => images.includes(image.node.base))
-      .sort((imageA, imageB) => (imageA.node.base < imageB.node.base ? -1 : 1))
 
   const handleTagClick = clickedTag => {
     if (clickedTag === DEFAULT_TAG) {
@@ -134,7 +122,6 @@ const Portfolio = () => {
             onOptionClick={handleTagClick}
           />
         </StyledDropdownWrapper>
-
         <StyledTags>
           {[DEFAULT_TAG, ...mainTechnologies].map(technology => (
             <StyledTag
@@ -152,28 +139,18 @@ const Portfolio = () => {
               <PortfolioItem
                 key={`portfolio-item-${itemInfo.title}`}
                 itemInfo={itemInfo}
-                itemImages={getItemImages(itemInfo.images)}
+                itemImages={getItemImages(itemInfo.images, pageImages)}
               />
             ))}
           </StyledItems>
         ) : (
           <StyledNoItems>
-            No items to display. Please change the selected filters.
+            No projects to display. Please change the selected filters.
           </StyledNoItems>
         )}
       </StyledPortfolio>
     </Layout>
   )
-}
-
-Portfolio.propTypes = {
-  portfolioInfo: PropTypes.arrayOf(PropTypes.object),
-  pageImages: PropTypes.arrayOf(PropTypes.object),
-}
-
-Portfolio.defaultProps = {
-  portfolioInfo: [],
-  pageImages: [],
 }
 
 export default Portfolio
