@@ -1,18 +1,15 @@
 import styled from 'styled-components'
 import Tag from '../../components/ui/tag'
-import { StyledSectionTitle } from '../../themes/global-style'
+import { StyledPage, StyledSectionTitle } from '../../themes/global-style'
 
-export const StyledPortfolio = styled.div`
-  margin: 3rem 0;
+export const StyledPortfolio = styled(StyledPage)`
   min-height: calc(100vh - 14rem);
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    margin: 4rem 0;
     min-height: calc(100vh - 17rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin: 5rem 0;
     min-height: calc(100vh - 19rem);
   }
 `

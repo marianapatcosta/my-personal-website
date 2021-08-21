@@ -7,6 +7,7 @@ import {
   Layout,
   PortfolioSection,
   SEO as Seo,
+  Writing,
 } from '../components'
 
 const IndexPage = ({ data: pageData }) => (
@@ -16,15 +17,19 @@ const IndexPage = ({ data: pageData }) => (
       authorName={pageData.site.siteMetadata?.authorName}
       authorRole={pageData.site.siteMetadata?.authorRole}
       contactsInfo={pageData.allContactsJson?.edges}
-      pageImages={pageData.allFile?.edges}
+      pageImages={pageData.generalImages?.edges}
     />
     <About
       aboutInfo={pageData.allAboutJson?.edges[0].node}
-      pageImages={pageData.allFile?.edges}
+      pageImages={pageData.generalImages?.edges}
     />
     <PortfolioSection
       portfolioInfo={pageData.allPortfolioJson?.edges}
-      pageImages={pageData.allFile?.edges}
+      pageImages={pageData.portfolioImages?.edges}
+    />
+    <Writing
+      writingInfo={pageData.allMarkdownRemark?.edges}
+      pageImages={pageData.articlesImages?.edges}
     />
     <Contacts contactsInfo={pageData.allContactsJson?.edges} />
   </Layout>
@@ -88,7 +93,7 @@ export const query = graphql`
         }
       }
     }
-    allFile(
+    generalImages: allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(jpeg)/" }
         relativeDirectory: { eq: "" }
@@ -99,6 +104,65 @@ export const query = graphql`
           base
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
+    }
+    portfolioImages: allFile(
+      filter: {
+        extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+        relativeDirectory: { eq: "portfolio" }
+      }
+    ) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
+    }
+    articlesImages: allFile(
+      filter: {
+        extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+        relativeDirectory: { eq: "articles" }
+      }
+    ) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          html
+          excerpt(pruneLength: 200)
+          headings {
+            depth
+            value
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            image
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+              }
+            }
+            tags
+          }
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }
