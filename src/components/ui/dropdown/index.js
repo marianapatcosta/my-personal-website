@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { ChevronThinner } from '../../../icons'
 import { Checkbox } from '../'
-import { KEYBOARD_KEY } from '../../constants'
+import { KEYBOARD_KEY } from '../../../constants'
 import {
   StyledDropdown,
   StyledDropdownHeader,

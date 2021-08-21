@@ -1,6 +1,6 @@
 import React, { useEffect, useState, createContext, useContext } from 'react'
 import { ThemeProvider } from 'styled-components'
-import themes from '../themes'
+import { themes } from '../themes'
 
 const THEMES = {
   DARK: 'dark',

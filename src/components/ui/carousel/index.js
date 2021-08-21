@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { getImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 import { Chevron } from '../../../icons'
-import { ORIENTATION } from '../../constants'
+import { ORIENTATION } from '../../../constants'
 import { SlideImage } from '../..'
 import {
   StyledCarousel,

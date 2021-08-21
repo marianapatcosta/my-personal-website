@@ -5,7 +5,7 @@ import { useTheme } from 'styled-components'
 import useTypeWriter from '../../../hooks/useTypewriter'
 import { Toast } from '../..'
 import * as Icons from '../../../icons'
-import { PARTICLES_PRESETS, TOAST_TYPES } from '../../constants'
+import { PARTICLES_PRESETS, TOAST_TYPES } from '../../../constants'
 import {
   StyledIntro,
   StyledIntroContent,

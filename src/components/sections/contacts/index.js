@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { StyledSectionTitle } from '../../../themes/global-style'
 import { Input, Textarea, Toast } from '../..'
 import * as Icons from '../../../icons'
-import { TOAST_TYPES } from '../../constants'
+import { TOAST_TYPES } from '../../../constants'
 import {
   StyledContacts,
   StyledContactsContent,

@@ -4,14 +4,10 @@ import { navigate } from 'gatsby'
 import { PortfolioItem } from '../..'
 import * as Icons from '../../../icons'
 import { StyledSectionTitle } from '../../../themes/global-style'
+import { getItemImages } from '../../../utils'
 import { StyledPortfolio, StyledItems, StyledButton } from './styles'
 
 const PortfolioSection = ({ portfolioInfo, pageImages }) => {
-  const getItemImages = images =>
-    pageImages
-      .filter(image => images.includes(image.node.base))
-      .sort((imageA, imageB) => (imageA.node.base < imageB.node.base ? -1 : 1))
-
   const [itemsToDisplay, setItemsToDisplay] = useState([])
 
   useEffect(() => {
@@ -31,7 +27,7 @@ const PortfolioSection = ({ portfolioInfo, pageImages }) => {
           <PortfolioItem
             key={`portfolio-item-${itemInfo.title}`}
             itemInfo={itemInfo}
-            itemImages={getItemImages(itemInfo.images)}
+            itemImages={getItemImages(itemInfo.images, pageImages)}
           />
         ))}
       </StyledItems>

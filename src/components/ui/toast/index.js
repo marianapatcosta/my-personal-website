@@ -8,7 +8,7 @@ import {
   StyledToastIcon,
   StyledToastClose,
 } from './StyledToast'
-import { TOAST_TYPES } from '../../constants'
+import { TOAST_TYPES } from '../../../constants'
 
 const toastIcons = {
   alert: Alert,

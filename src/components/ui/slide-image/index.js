@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { StyledImageOverlay, StyledImage } from './styles'
-import { isEventValid } from '../../utils'
+import { isEventValid } from '../../../utils'
 
 const SlideImage = ({ isSelected, ...otherProps }) => {
   const [isZoomedIn, setIsZoomedIn] = useState(false)

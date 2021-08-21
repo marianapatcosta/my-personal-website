@@ -5,6 +5,9 @@ import { StyledSection } from '../../../themes/global-style'
 
 export const StyledContacts = styled(StyledSection)`
   position: relative;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  box-shadow: inset 0 -0.5rem 0.7rem -0.5rem
+    ${({ theme }) => theme.colors.sectionShadow};
 `
 
 export const StyledContactsContent = styled.div`
