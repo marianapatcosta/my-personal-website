@@ -14,13 +14,11 @@ import {
   StyledNavBarLinkWrapper,
   StyledNavBarLinkIcon,
   StyledNavBarLink,
-  StyledLampIconWrapper,
-  StyledLampIcon,
-  StyledLampIconFilled,
   StyledMenuIcon,
+  StyledToggleThemeButton,
 } from './styles'
 
-const Header = ({ isDarkTheme, toggleThemeMode }) => {
+const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
   const [isOnTop, setIsOnTop] = useState(false)
 
@@ -56,22 +54,7 @@ const Header = ({ isDarkTheme, toggleThemeMode }) => {
           <StyledNavBar>
             <NavBar isOnTop={isOnTop} />
           </StyledNavBar>
-          <StyledLampIconWrapper
-            aria-label='click to toggle dark mode'
-            onClick={toggleThemeMode}
-            isDarkTheme={isDarkTheme}
-          >
-            <StyledLampIcon
-              src={Icons.Lamp}
-              alt='lamp'
-              isDarkTheme={isDarkTheme}
-            />
-            <StyledLampIconFilled
-              src={Icons.LampFilled}
-              alt='lamp dark theme'
-              isDarkTheme={isDarkTheme}
-            />
-          </StyledLampIconWrapper>
+          <StyledToggleThemeButton />
           <StyledMenuIcon
             aria-label='click to open the navigation menu'
             isMenuOpened={isMenuOpened}
@@ -139,14 +122,8 @@ NavBar.defaultProps = {
   isOnTop: false,
 }
 
-Header.propTypes = {
-  isDarkTheme: PropTypes.bool,
-  toggleThemeMode: PropTypes.func,
-}
+Header.propTypes = {}
 
-Header.defaultProps = {
-  isDarkTheme: false,
-  toggleThemeMode: () => null,
-}
+Header.defaultProps = {}
 
 export default Header

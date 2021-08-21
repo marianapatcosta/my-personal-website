@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 2rem;
 
         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-            font-size: 1.1rem;;
+          font-size: 1.1rem;;
         }
     }
 
@@ -33,16 +33,24 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     * :focus {
-        outline: 0.125rem solid ${({ theme }) => theme.colors.highlight};
+      outline: 0.125rem solid ${({ theme }) => theme.colors.highlight};
     }
 
     * :focus:not(:focus-visible) {
-        outline: none;
+      outline: none;
     }
 
     * ::selection {
       background: ${({ theme }) => theme.colors.highlight};
       color: ${({ theme }) => theme.colors.primary};
+    }
+
+    .deckgo-highlight-code-carbon {
+      margin: 1rem 0 0.3rem;
+      font-size: 90%;
+
+      --deckgo-highlight-code-carbon-toolbar-display: none;
+
     }
 
 `
@@ -52,6 +60,30 @@ export const StyledSection = styled.section`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     padding: 3rem 2rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 5rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding: 7rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+    padding: 8rem;
+  }
+`
+
+export const StyledPage = styled.section`
+  padding: 3rem 1rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    padding: 3rem 2rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 4rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
