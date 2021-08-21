@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `My Portfolio`,
-    description: `Personal portfolio that compiles some personal projects of software development.`,
+    title: `Mariana Costa`,
+    description: `Personal site that compiles some personal projects and articles of software development.`,
     author: `@marianapatcosta`,
     authorName: `Mariana Costa`,
     authorRole: `Software Developer`,
@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
@@ -32,10 +32,34 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-anchor-links',
+      resolve: `gatsby-transformer-remark`,
       options: {
-        offset: -100,
-        duration: 500,
+        plugins: [
+          `gatsby-remark-reading-time`,
+          'gatsby-remark-external-links',
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: 'carbon',
+              theme: 'vscode',
+              lineNumbers: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              wrapperStyle: 'margin: 0.5rem 0',
+            },
+          },
+          {
+            resolve: 'gatsby-plugin-anchor-links',
+            options: {
+              offset: -100,
+              duration: 500,
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -75,7 +99,7 @@ module.exports = {
       },
     },
     {
-      // only added to exclude styles.js files in pages folder, to aavoid build error
+      // only added to exclude styles.js files in pages folder, to avoid build error
       resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/pages`,

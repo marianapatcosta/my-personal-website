@@ -50,6 +50,7 @@ export const StyledLabel = styled.label`
 export const StyledInputIcon = styled.img`
   position: absolute;
   height: 1.1rem;
+  width: 1.1rem;
   top: 0;
   bottom: 0;
   margin: auto 0;
