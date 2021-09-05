@@ -1,7 +1,7 @@
 {
-  "name": "gmy-portfolio",
+  "name": "my-personal-website",
   "private": true,
-  "description": "My portfolio as Software Developers",
+  "description": "My personal website as Software Developer",
   "version": "0.1.0",
   "author": "Mariana Costa",
   "dependencies": {
@@ -62,12 +62,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
