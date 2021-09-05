@@ -1,71 +1,12 @@
 [
   {
-    "title": "Weatherison",
-    "description": "Web app developed to get and easily compare the weather forecast from 6 different weather APIs, for any location for the next 5 days.",
-    "images": ["weatherisonA.png", "weatherisonB.png", "weatherisonC.png"],
-    "stack": [
-      {
-        "label": "Web",
-        "icon": "Web"
-      },
-      {
-        "label": "TypeScript",
-        "icon": "TypeScript"
-      },
-      {
-        "label": "Vue",
-        "icon": "Vue"
-      },
-      {
-        "label": "SCSS",
-        "icon": "Scss"
-      },
-      {
-        "label": "Internationalization",
-        "icon": "I18n"
-      },
-      {
-        "label": "Adaptative/responsive design",
-        "icon": "Responsive"
-      },
-      {
-        "label": "A11y accessibility",
-        "icon": "Accessibility"
-      },
-      {
-        "label": "Node.js",
-        "icon": "Node"
-      },
-      {
-        "label": "Express.js",
-        "icon": "Express"
-      },
-      {
-        "label": "REST API",
-        "icon": "Rest"
-      },
-      {
-        "label": "OpenAPI Specification",
-        "icon": "Swagger"
-      }
+    "title": "Veggie Foodie",
+    "description": "Cross-platform mobile app to register photos and information about user's favourite veggie meals, recipes and products/ingredients in device storage. Uses devices's geolocation and camera and infinite scroll.",
+    "images": [
+      "veggie-foodieA.png",
+      "veggie-foodieB.png",
+      "veggie-foodieC.png"
     ],
-    "links": [
-      {
-        "label": "code",
-        "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/weatherison"
-      },
-      {
-        "label": "visit",
-        "icon": "Link",
-        "url": "https://weatherison.web.app"
-      }
-    ]
-  },
-  {
-    "title": "Weatherison Mobile",
-    "description": "Mobile version of Weatherison, a web app developed to get and easily compare the weather forecast from 6 different weather APIs, for any location for the next 5 days.",
-    "images": ["weatherison-mobileA.png", "weatherison-mobileB.png"],
     "stack": [
       {
         "label": "Mobile",
@@ -76,16 +17,20 @@
         "icon": "JavaScript"
       },
       {
-        "label": "React Native",
-        "icon": "React"
+        "label": "Vue",
+        "icon": "Vue"
       },
       {
-        "label": "Expo",
-        "icon": "Expo"
+        "label": "Ionic",
+        "icon": "Ionic"
       },
       {
-        "label": "Styled Components",
-        "icon": "StyledComponents"
+        "label": "Capacitor",
+        "icon": "Capacitor"
+      },
+      {
+        "label": "SQLite",
+        "icon": "Sqlite"
       },
       {
         "label": "Dark Theme",
@@ -100,12 +45,12 @@
       {
         "label": "code",
         "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/weatherison-mobile"
+        "url": "https://github.com/marianapatcosta/veggie-foodie"
       },
       {
         "label": "visit",
         "icon": "Link",
-        "url": "https://expo.io/@marianapatc/weatherison"
+        "url": ""
       }
     ]
   },
@@ -308,13 +253,124 @@
     ]
   },
   {
-    "title": "Veggie Foodie",
-    "description": "Cross-platform mobile app for registers photos and information about user's favourite veggie meals, recipes and products/ingredients in device storage. Uses devices's geolocation and camara and infinite scroll.",
+    "title": "Grammar Police Games",
+    "description": "Web app that integrates versions of the 3 well-known games Flappy Bird, Space Invaders and Memory game, emphasizing common grammar mistakes.",
     "images": [
-      "veggie-foodieA.png",
-      "veggie-foodieB.png",
-      "veggie-foodieC.png"
+      "grammar-policeA.png",
+      "grammar-policeB.png",
+      "grammar-policeC.png",
+      "grammar-policeD.png"
     ],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "Figma",
+        "icon": "Figma"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/grammar-police-games"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/grammar-police-games"
+      }
+    ]
+  },
+  {
+    "title": "Weatherison",
+    "description": "Web app developed to get and easily compare the weather forecast from 6 different weather APIs, for any location for the next 5 days.",
+    "images": ["weatherisonA.png", "weatherisonB.png", "weatherisonC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest"
+      },
+      {
+        "label": "OpenAPI Specification",
+        "icon": "Swagger"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/weatherison"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://weatherison.web.app"
+      }
+    ]
+  },
+  {
+    "title": "Weatherison Mobile",
+    "description": "Mobile version of Weatherison, a web app developed to get and easily compare the weather forecast from 6 different weather APIs, for any location for the next 5 days.",
+    "images": ["weatherison-mobileA.png", "weatherison-mobileB.png"],
     "stack": [
       {
         "label": "Mobile",
@@ -325,57 +381,6 @@
         "icon": "JavaScript"
       },
       {
-        "label": "Vue",
-        "icon": "Vue"
-      },
-      {
-        "label": "Ionic",
-        "icon": "Ionic"
-      },
-      {
-        "label": "Capacitor",
-        "icon": "Capacitor"
-      },
-      {
-        "label": "SQLite",
-        "icon": "Sqlite"
-      },
-      {
-        "label": "Dark Theme",
-        "icon": "DarkTheme"
-      },
-      {
-        "label": "Internationalization",
-        "icon": "I18n"
-      }
-    ],
-    "links": [
-      {
-        "label": "code",
-        "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/veggie-foodie"
-      },
-      {
-        "label": "visit",
-        "icon": "Link",
-        "url": ""
-      }
-    ]
-  },
-  {
-    "title": "GamePlay",
-    "description": "Mobile app developed during Next Level Week to schedule games in Discord servers that uses data from user's Discord account. The appointments can be also be edited and deleted and shared to other users.",
-    "images": ["gameplayA.png", "gameplayB.png"],
-    "stack": [
-      {
-        "label": "Mobile",
-        "icon": "Mobile"
-      },
-      {
-        "label": "TypeScript",
-        "icon": "TypeScript"
-      },
-      {
         "label": "React Native",
         "icon": "React"
       },
@@ -384,8 +389,8 @@
         "icon": "Expo"
       },
       {
-        "label": "OAuth2",
-        "icon": "OAuth2"
+        "label": "Styled Components",
+        "icon": "StyledComponents"
       },
       {
         "label": "Dark Theme",
@@ -400,12 +405,87 @@
       {
         "label": "code",
         "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/gameplay"
+        "url": "https://github.com/marianapatcosta/weatherison-mobile"
       },
       {
         "label": "visit",
         "icon": "Link",
-        "url": "expo.io/@marianapatc/gameplay-nlw"
+        "url": "https://expo.io/@marianapatc/weatherison"
+      }
+    ]
+  },
+  {
+    "title": "Veggie Foodie Info Page",
+    "description": "Web page developed to provide information about functionalities and privacy policy of Veggie Foodie mobile app.",
+    "images": [
+      "veggie-foodie-pageA.png",
+      "veggie-foodie-pageB.png",
+      "veggie-foodie-pageC.png"
+    ],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "Gatsby",
+        "icon": "Gatsby"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "React Hook Form",
+        "icon": "ReactHookForm"
+      },
+      {
+        "label": "GraphQL",
+        "icon": "GraphQl"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "EmailJS",
+        "icon": "EmailJS"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Google Analytics",
+        "icon": "GoogleAnalytics"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/veggie-foodie-info-page"
+      },
+      {
+        "label": "this",
+        "icon": "Link",
+        "url": "https://veggie-foodie.netlify.app"
       }
     ]
   },
@@ -477,59 +557,7 @@
     ]
   },
   {
-    "title": "Grammar Police Games",
-    "description": "Web app that integrates versions of the 3 well-known games Flappy Bird, Space Invaders and Memory game, emphasizing common grammar mistakes.",
-    "images": [
-      "grammar-policeA.png",
-      "grammar-policeB.png",
-      "grammar-policeC.png",
-      "grammar-policeD.png"
-    ],
-    "stack": [
-      {
-        "label": "Web",
-        "icon": "Web"
-      },
-      {
-        "label": "JavaScript",
-        "icon": "JavaScript"
-      },
-      {
-        "label": "React",
-        "icon": "React"
-      },
-      {
-        "label": "Styled Components",
-        "icon": "StyledComponents"
-      },
-      {
-        "label": "Figma",
-        "icon": "Figma"
-      },
-      {
-        "label": "Adaptative/responsive design",
-        "icon": "Responsive"
-      },
-      {
-        "label": "Internationalization",
-        "icon": "I18n"
-      }
-    ],
-    "links": [
-      {
-        "label": "code",
-        "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/grammar-police-games"
-      },
-      {
-        "label": "visit",
-        "icon": "Link",
-        "url": "https://marianapatcosta.github.io/grammar-police-games"
-      }
-    ]
-  },
-  {
-    "title": "Memory Game - Bday Edition",
+    "title": "Memory Game - Bday Edition (WIP)",
     "description": "Customizable Memory Game that plays birthday-related animations and song after winning. The user personalizes the game and can play it online or download it as a desktop app that can be sent to the Bday person.",
     "images": [
       "memory-gameA.png",
@@ -580,7 +608,7 @@
       {
         "label": "visit",
         "icon": "Link",
-        "url": ""
+        "url": "https://customizable-memory-game.web.app"
       }
     ]
   },
@@ -679,13 +707,60 @@
     ]
   },
   {
-    "title": "My Portfolio",
-    "description": "This project. My Portfolio compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded in pdf format.",
+    "title": "GamePlay",
+    "description": "Mobile app developed during Next Level Week to schedule games in Discord servers that uses data from user's Discord account. The appointments can be also be edited and deleted and shared to other users.",
+    "images": ["gameplayA.png", "gameplayB.png"],
+    "stack": [
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React Native",
+        "icon": "React"
+      },
+      {
+        "label": "Expo",
+        "icon": "Expo"
+      },
+      {
+        "label": "OAuth2",
+        "icon": "OAuth2"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/gameplay"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "expo.io/@marianapatc/gameplay-nlw"
+      }
+    ]
+  },
+  {
+    "title": "My Personal Website",
+    "description": "This project. Compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded in pdf format.",
     "images": [
-      "my-portfolioA.png",
-      "my-portfolioB.png",
-      "my-portfolioC.png",
-      "my-portfolioD.png"
+      "my-websiteA.png",
+      "my-websiteB.png",
+      "my-websiteC.png",
+      "my-websiteD.png"
     ],
     "stack": [
       {
@@ -731,6 +806,10 @@
       {
         "label": "Dark Theme",
         "icon": "DarkTheme"
+      },
+      {
+        "label": "Google Analytics",
+        "icon": "GoogleAnalytics"
       }
     ],
     "links": [

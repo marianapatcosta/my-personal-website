@@ -126,3 +126,7 @@ export const PARTICLES_PRESETS = {
   bubbles,
   snow,
 }
+
+export const NUMBER_OF_ITEMS_SMALL_SCREEN = 4
+
+export const NUMBER_OF_ITEMS_BIG_SCREEN = 6

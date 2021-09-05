@@ -17,7 +17,7 @@ const IndexPage = ({ data: pageData }) => (
       authorName={pageData.site.siteMetadata?.authorName}
       authorRole={pageData.site.siteMetadata?.authorRole}
       contactsInfo={pageData.allContactsJson?.edges}
-      pageImages={pageData.generalImages?.edges}
+      introImages={pageData.introImages?.edges}
     />
     <About
       aboutInfo={pageData.allAboutJson?.edges[0].node}
@@ -108,6 +108,21 @@ export const query = graphql`
         }
       }
     }
+    introImages: allFile(
+      filter: {
+        extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+        relativeDirectory: { eq: "intro" }
+      }
+    ) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: NONE)
+          }
+        }
+      }
+    }
     portfolioImages: allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(jpeg)/" }
@@ -134,35 +149,6 @@ export const query = graphql`
           base
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-          }
-        }
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          html
-          excerpt(pruneLength: 200)
-          headings {
-            depth
-            value
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            image
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-              }
-            }
-            tags
-          }
-          fields {
-            readingTime {
-              text
-            }
           }
         }
       }

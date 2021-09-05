@@ -10,13 +10,12 @@ export const StyledHeader = styled.header`
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: column;
   background-color: ${({ theme }) => theme.colors.primary};
   box-shadow: 0 0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
   z-index: 10;
+  flex-direction: column;
   padding: 0 1rem;
   box-sizing: border-box;
-  transition: all 0.5s ease-in-out;
   user-select: none;
 
   ${({ isOnTop, theme }) =>
@@ -24,23 +23,40 @@ export const StyledHeader = styled.header`
     `background-color: ${theme.colors.highlight};
     box-shadow: none;
     z-index: 0;
-    color: ${theme.colors.primary};`}
+    color: ${theme.colors.primary};
+  `}
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.xm}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     padding: 0 2rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding: 0.5rem 3rem;
   }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 0.5rem 5rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding: 0.5rem 12rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+    padding: 0.5rem 12rem;
+  }
 `
 
 export const StyledHeaderWrapper = styled.div`
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    height: 5rem;
+  }
 `
 
 export const StyledHeaderTitle = styled.img`

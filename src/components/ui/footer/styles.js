@@ -10,14 +10,13 @@ export const StyledFooter = styled.footer`
   color: ${({ theme }) => theme.colors.primary};
   box-sizing: border-box;
   position: relative;
-  margin-top: 1rem;
   font-size: 85%;
 
   img {
     filter: ${({ theme }) => theme.colors.icon};
     width: 100%;
     position: absolute;
-    top: -2rem;
+    top: -1rem;
   }
 
   p {
@@ -26,10 +25,6 @@ export const StyledFooter = styled.footer`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     height: 3.5rem;
-
-    img {
-      top: -2.4rem;
-    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {

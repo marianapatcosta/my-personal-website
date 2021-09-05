@@ -148,7 +148,7 @@ const Cv = () => {
              to overcome the fact that puppeteer (used by gatsby-plugin-pdf) do not load local images for security reasons */}
               <StyledImagePrint src={gitAvatarUrl} />
               <StyledImage
-                imgStyle={{ borderRadius: '50%' }}
+                imgStyle={{ borderRadius: '50%', height: '101%' }}
                 image={profilePhoto}
                 alt='profile photo'
               />

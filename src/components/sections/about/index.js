@@ -33,7 +33,7 @@ const About = ({
       <StyledSectionMain>
         <StyledAboutMe>
           <StyledAboutPhoto
-            imgStyle={{ borderRadius: '50%' }}
+            imgStyle={{ borderRadius: '50%', height: '101%' }}
             image={profilePhoto}
             alt='profile photo'
           />

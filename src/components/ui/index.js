@@ -2,6 +2,7 @@ import ArticleItem from './article-item'
 import Button from './button'
 import Carousel from './carousel'
 import Checkbox from './checkbox'
+import CookieBar from './cookie-bar'
 import Dropdown from './dropdown'
 import Footer from './footer'
 import Header from './header'
@@ -22,6 +23,7 @@ export {
   Button,
   Carousel,
   Checkbox,
+  CookieBar,
   Dropdown,
   Footer,
   Header,

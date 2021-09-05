@@ -36,6 +36,7 @@ import Flutter from './flutter.svg'
 import Gatsby from './gatsby.svg'
 import Git from './git.svg'
 import GitHub from './github.svg'
+import GoogleAnalytics from './google-analytics.svg'
 import GraphQl from './graphql.svg'
 import HamburgerMenu from './hamburger-menu.svg'
 import Healthcare from './healthcare.svg'
@@ -60,7 +61,6 @@ import MachineLearning from './machine-learning.svg'
 import Mobile from './mobile.svg'
 import MongoDb from './mongodb.svg'
 import Mustache from './mustache.svg'
-import Name from './name.svg'
 import NextJs from './nextjs.svg'
 import Node from './nodejs.svg'
 import OAuth2 from './oauth2.svg'
@@ -88,20 +88,22 @@ import Sqlite from './sqlite.svg'
 import SocketIo from './socketio.svg'
 import Storybook from './storybook.svg'
 import StyledComponents from './styled-components.svg'
-import Subject from './subject.svg'
 import Success from './success.svg'
 import Svg from './svg.svg'
 import Swagger from './swagger.svg'
+import Target from './target.svg'
 import Tick from './tick.svg'
 import Tv from './tv.svg'
 import Twitter from './twitter.svg'
 import TypeScript from './typescript.svg'
+import User from './user.svg'
 import UxUi from './ux-ui.svg'
 import Vegetarianism from './vegetarianism.svg'
+import Vue from './vue.svg'
 import Walking from './walking.svg'
 import Warning from './warning.svg'
-import Vue from './vue.svg'
 import Web from './web.svg'
+import Writing from './writing.svg'
 
 export {
   Accessibility,
@@ -142,6 +144,7 @@ export {
   Gatsby,
   Git,
   GitHub,
+  GoogleAnalytics,
   GraphQl,
   HamburgerMenu,
   Healthcare,
@@ -166,7 +169,6 @@ export {
   Logo,
   Mobile,
   Mustache,
-  Name,
   NextJs,
   Node,
   OAuth2,
@@ -194,18 +196,20 @@ export {
   Sqlite,
   Storybook,
   StyledComponents,
-  Subject,
   Success,
   Svg,
   Swagger,
+  Target,
   Tick,
   Tv,
   Twitter,
   TypeScript,
+  User,
   UxUi,
   Vegetarianism,
   Vue,
   Walking,
   Warning,
   Web,
+  Writing,
 }

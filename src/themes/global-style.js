@@ -62,16 +62,20 @@ export const StyledSection = styled.section`
     padding: 3rem 2rem;
   }
 
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 3rem 3rem;
+  }
+
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 5rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    padding: 7rem;
+    padding: 7rem 12rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    padding: 8rem;
+    padding: 8rem 12rem;
   }
 `
 
@@ -91,11 +95,11 @@ export const StyledPage = styled.section`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    padding: 7rem;
+    padding: 7rem 12rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    padding: 8rem;
+    padding: 8rem 12rem;
   }
 `
 
@@ -103,10 +107,11 @@ export const StyledSectionTitle = styled.h2`
   font-size: 200%;
   color: ${({ theme }) => theme.colors.highlight};
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 `

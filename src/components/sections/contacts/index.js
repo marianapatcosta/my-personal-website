@@ -55,10 +55,10 @@ const ContactForm = ({ setToastInfo }) => {
       }
       const emailjs = await import('emailjs-com')
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.GATSBY_SERVICE_ID,
+        process.env.GATSBY_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
+        process.env.GATSBY_USER_ID
       )
       setToastInfo({
         message:
@@ -68,7 +68,7 @@ const ContactForm = ({ setToastInfo }) => {
       reset()
     } catch (error) {
       setToastInfo({
-        message: 'Your email could not be sent. Please try again.',
+        message: 'Your message could not be sent. Please try again.',
         type: TOAST_TYPES.ALERT,
       })
     }
@@ -83,15 +83,15 @@ const ContactForm = ({ setToastInfo }) => {
             id='name'
             name='name'
             ref={register({
-              required: { value: true, message: 'Please enter your name' },
+              required: { value: true, message: 'Please enter your name.' },
               maxLength: {
                 value: 30,
-                message: 'Name is limited to 30 characters',
+                message: 'Name is limited to 30 characters.',
               },
             })}
             placeholder='Name'
             errorText={errors.name?.message}
-            icon={Icons.Name}
+            icon={Icons.User}
             setValue={setValue}
           />
         </StyledFormItem>
@@ -100,10 +100,10 @@ const ContactForm = ({ setToastInfo }) => {
             id='email'
             name='email'
             ref={register({
-              required: { value: true, message: 'Please enter your email' },
+              required: { value: true, message: 'Please enter your email.' },
               pattern: {
                 value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                message: 'Please enter a valid email',
+                message: 'Please enter a valid email.',
               },
             })}
             placeholder='Email'
@@ -117,15 +117,15 @@ const ContactForm = ({ setToastInfo }) => {
           id='subject'
           name='subject'
           ref={register({
-            required: { value: true, message: 'Please enter a subject' },
+            required: { value: true, message: 'Please enter a subject.' },
             maxLength: {
               value: 75,
-              message: 'Subject is limited to 75 characters',
+              message: 'Subject is limited to 75 characters.',
             },
           })}
           placeholder='Subject'
           errorText={errors.subject?.message}
-          icon={Icons.Subject}
+          icon={Icons.Target}
         />
       </StyledFormItem>
       <StyledFormItem>
@@ -133,7 +133,7 @@ const ContactForm = ({ setToastInfo }) => {
           id='message'
           name='message'
           ref={register({
-            required: { value: true, message: 'Please enter a message' },
+            required: { value: true, message: 'Please enter a message.' },
           })}
           placeholder='Message'
           errorText={errors.message?.message}

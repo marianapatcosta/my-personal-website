@@ -10,6 +10,11 @@
     "url": "/#portfolio"
   },
   {
+    "label": "Writing",
+    "icon": "Writing",
+    "url": "/#writing"
+  },
+  {
     "label": "Contacts",
     "icon": "Contacts",
     "url": "/#contacts"
