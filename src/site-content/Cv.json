@@ -29,10 +29,10 @@
         "url": "https://www.linkedin.com/in/marianapatcosta"
       },
       {
-        "label": "Portfolio",
+        "label": "Personal Website",
         "icon": "PortfolioSmall",
-        "contact": "this",
-        "url": "https://www.linkedin.com/in/marianapatcosta"
+        "contact": "https://mariana-costa.web.app",
+        "url": "https://mariana-costa.web.app"
       },
       {
         "label": "GitHub",

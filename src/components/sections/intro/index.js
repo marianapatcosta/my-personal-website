@@ -57,7 +57,7 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
     const shareData = {
       title: "Check it out Mariana Costa's Personal Website!",
       text: "This is Mariana Costa's Personal Website",
-      url: 'https://localhost:8000',
+      url: 'https://mariana-costa.web.app',
     }
 
     try {
