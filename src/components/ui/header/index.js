@@ -10,6 +10,7 @@ import {
   StyledNavBar,
   StyledNavBarMobile,
   StyledScrollSpy,
+  StyledScrollSpyItem,
   StyledHeaderRightSide,
   StyledNavBarLinkWrapper,
   StyledNavBarLinkIcon,
@@ -100,7 +101,7 @@ const NavBar = ({ isOnTop }) => (
         currentClassName='active'
       >
         {data.allNavLinksJson.edges.map(({ node: { label, icon, url } }) => (
-          <li key={`navlink-${label}`}>
+          <StyledScrollSpyItem key={`navlink-${label}`}>
             <StyledNavBarLinkWrapper
               to={url}
               href={`/${url}`}
@@ -110,7 +111,7 @@ const NavBar = ({ isOnTop }) => (
               <StyledNavBarLinkIcon src={Icons[icon]} alt={icon} />
               <StyledNavBarLink>{label}</StyledNavBarLink>
             </StyledNavBarLinkWrapper>
-          </li>
+          </StyledScrollSpyItem>
         ))}
       </StyledScrollSpy>
     )}

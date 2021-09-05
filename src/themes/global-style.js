@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-
     // to preserve box-shadow on print in webkit browsers
     html {
         -webkit-print-color-adjust: exact;
@@ -9,21 +8,26 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html, body {
-        width: 100vw;
+        width: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     body {
         background-color: ${({ theme }) => theme.colors.primary};
         color: ${({ theme }) => theme.colors.font};
         font-family: ${({ theme }) => theme.fonts.primary};
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 2rem;
 
         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-          font-size: 1.1rem;;
+          font-size: 0.95rem;;
+        }
+
+         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+          font-size: 1.0rem;;
         }
     }
 
@@ -111,7 +115,6 @@ export const StyledSectionTitle = styled.h2`
   text-align: center;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    margin-bottom: 4rem;
     margin-bottom: 3rem;
   }
 `

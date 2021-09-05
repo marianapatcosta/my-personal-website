@@ -14,7 +14,7 @@ export const StyledHeader = styled.header`
   box-shadow: 0 0.063rem 0.5rem ${({ theme }) => theme.colors.shadow};
   z-index: 10;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   box-sizing: border-box;
   user-select: none;
 
@@ -27,7 +27,7 @@ export const StyledHeader = styled.header`
   `}
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -49,13 +49,11 @@ export const StyledHeader = styled.header`
 
 export const StyledHeaderWrapper = styled.div`
   width: 100%;
-  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    height: 5rem;
   }
 `
 
@@ -89,6 +87,14 @@ export const StyledScrollSpy = styled(Scrollspy)`
   }
 `
 
+export const StyledScrollSpyItem = styled.li`
+  margin-bottom: 1rem;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+`
+
 export const StyledNavBar = styled.nav`
   display: none;
 
@@ -102,7 +108,7 @@ export const StyledNavBarMobile = styled.nav`
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 
-  ${({ isMenuOpened }) => isMenuOpened && `height: 8.5rem;`}
+  ${({ isMenuOpened }) => isMenuOpened && `height: 8.5rem; padding-top: 1rem;`}
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
@@ -133,7 +139,6 @@ export const StyledNavBarLinkWrapper = styled(AnchorLink)`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 1rem;
 
   &:hover ${StyledNavBarLink} {
     color: ${({ theme }) => theme.colors.highlight};

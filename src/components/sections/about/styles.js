@@ -51,7 +51,7 @@ export const StyledAboutText = styled.p`
 export const StyledAboutPhoto = styled(GatsbyImage)`
   flex: 0.5;
   margin: 0.5rem 1.5rem;
-  width: 10rem;
+  width: 8.5rem;
   border-radius: 0.625rem;
   box-shadow: 0 0.1rem 0.4rem 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -59,7 +59,7 @@ export const StyledAboutPhoto = styled(GatsbyImage)`
   shape-outside: circle(50%);
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    width: 12rem;
+    width: 10rem;
   }
 `
 

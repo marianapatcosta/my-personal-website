@@ -26,7 +26,7 @@ export const StyledResumeTitle = styled(StyledSectionTitle)`
 
 export const StyledDownloadIcon = styled.a`
   position: absolute;
-  top: 2rem;
+  top: 3.5rem;
   right: 1rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.highlight};

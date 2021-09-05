@@ -108,7 +108,7 @@ const snow = theme => ({
     modes: {
       bubble: {
         distance: 250,
-        duration: 2,
+        duration: 4,
         size: 20,
       },
       repulse: {
