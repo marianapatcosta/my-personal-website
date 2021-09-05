@@ -49,50 +49,50 @@ const waving = keyframes`
 
 export const StyledIntro = styled(StyledSection)`
   position: relative;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 7rem);
   background-color: ${({ theme }) => theme.colors.highlight};
   box-shadow: inset 0 -1rem 0.7rem -1rem
     ${({ theme }) => theme.colors.highlightDark};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 9rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    height: calc(100vh - 16rem);
+    height: calc(100vh - 15rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 19rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    height: calc(100vh - 22rem);
+    height: calc(100vh - 20rem);
   }
 `
 
 export const StyledIntroContentWrapper = styled.div`
-  height: calc(100% - 4rem);
+  height: calc(100% - 3rem);
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: calc(100% - 5rem);
+    height: calc(100% - 4rem);
     margin-bottom: 4rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    height: calc(100% - 12rem);
+    height: calc(100% - 9rem);
     margin-bottom: 8rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    height: calc(100% - 8rem);
+    height: calc(100% - 7rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    height: calc(100% - 6rem);
+    height: calc(100% - 5rem);
   }
 `
 
@@ -209,12 +209,12 @@ export const StyledLink = styled.a`
   margin: 0 0.5rem;
   img {
     filter: ${({ theme }) => theme.colors.icon};
-    width: 1.25rem;
+    width: 1rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     img {
-      width: 1.5rem;
+      width: 1.25rem;
     }
   }
 `
@@ -225,7 +225,7 @@ export const StyledShare = styled.button`
   margin: 0 0.5rem;
   img {
     filter: ${({ theme }) => theme.colors.icon};
-    width: 1.25rem;
+    width: 1rem;
   }
 
   :hover {
@@ -234,7 +234,7 @@ export const StyledShare = styled.button`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     img {
-      width: 1.5rem;
+      width: 1.25rem;
     }
   }
 `
