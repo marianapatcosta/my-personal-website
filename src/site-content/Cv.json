@@ -2,7 +2,7 @@
   {
     "name": "Mariana Costa",
     "role": "Software Developer",
-    "intro": "Mariana Costa works as Software Developer since 2019. She is particularly enthusiastic about Frontend Developement, always seeking to improve her knowledge about JavaScript and related frameworks/libraries (React, Vue, Angular). She also developed Backend tasks, with Node.js, Java and Python. Previously, she graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
+    "intro": "Mariana Costa works as Software Developer since 2019. Particularly enthusiastic about Frontend Developement and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
     "profileImage": "my-photo.png",
     "gitAvatarUrl": "https://github.com/marianapatcosta.png",
     "contacts": [
@@ -25,7 +25,7 @@
       {
         "label": "Linkedin",
         "icon": "Linkedin",
-        "contact": "marianapatcosta",
+        "contact": "linkedin.com/in/marianapatcosta",
         "url": "https://www.linkedin.com/in/marianapatcosta"
       },
       {
@@ -37,7 +37,7 @@
       {
         "label": "GitHub",
         "icon": "GitHub",
-        "contact": "marianapatcosta",
+        "contact": "github.com/marianapatcosta",
         "url": "https://github.com/marianapatcosta"
       }
     ],
@@ -121,26 +121,6 @@
         "level": 4.5
       },
       {
-        "label": "Gatsby",
-        "icon": "Gatsby",
-        "level": 3.5
-      },
-      {
-        "label": "Next.js",
-        "icon": "NextJs",
-        "level": 3.5
-      },
-      {
-        "label": "Redux",
-        "icon": "Redux",
-        "level": 4
-      },
-      {
-        "label": "React Native",
-        "icon": "React",
-        "level": 3.5
-      },
-      {
         "label": "Vue",
         "icon": "Vue",
         "level": 4
@@ -156,6 +136,11 @@
         "level": 4.5
       },
       {
+        "label": "Redux",
+        "icon": "Redux",
+        "level": 4
+      },
+      {
         "label": "Git",
         "icon": "Git",
         "level": 4
@@ -169,6 +154,26 @@
         "label": "Styled Components",
         "icon": "StyledComponents",
         "level": 4.5
+      },
+      {
+        "label": "React Native",
+        "icon": "React",
+        "level": 3.5
+      },
+      {
+        "label": "Gatsby",
+        "icon": "Gatsby",
+        "level": 3.5
+      },
+      {
+        "label": "Next.js",
+        "icon": "NextJs",
+        "level": 3.5
+      },
+      {
+        "label": "Ionic",
+        "icon": "Ionic",
+        "level": 3.5
       },
       {
         "label": "Node.js",
@@ -198,16 +203,11 @@
       {
         "label": "Figma",
         "icon": "Figma",
-        "level": 2.5
+        "level": 3
       },
       {
         "label": "REST API",
         "icon": "Rest",
-        "level": 3.5
-      },
-      {
-        "label": "GraphQL",
-        "icon": "GraphQl",
         "level": 3
       },
       {
@@ -226,6 +226,11 @@
         "level": 2.5
       },
       {
+        "label": "GraphQL",
+        "icon": "GraphQl",
+        "level": 2
+      },
+      {
         "label": "MongoDB",
         "icon": "MongoDb",
         "level": 2.5
@@ -233,12 +238,12 @@
       {
         "label": "Docker",
         "icon": "Docker",
-        "level": 2
+        "level": 1.5
       },
       {
         "label": "OutSystems",
         "icon": "Outsystems",
-        "level": 2
+        "level": 1.5
       }
     ],
     "otherInfo": {

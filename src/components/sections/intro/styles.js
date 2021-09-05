@@ -1,16 +1,10 @@
 import { GatsbyImage } from 'gatsby-plugin-image'
 import styled, { keyframes } from 'styled-components'
 import Particles from 'react-particles-js'
-
 import { StyledSection } from '../../../themes/global-style'
 
 const BLINKING_ANIMATION_DURATION = 0.3
 const TYPING_ANIMATION_DURATION_PER_CHARACTER = 0.15
-
-const getTypingDuration = stringLength =>
-  !!stringLength
-    ? `${TYPING_ANIMATION_DURATION_PER_CHARACTER * stringLength}s`
-    : '5s'
 
 const getBlinkingIterationCount = stringLength =>
   !!stringLength
@@ -21,12 +15,6 @@ const getBlinkingIterationCount = stringLength =>
 
 const getTypingDelay = delay =>
   !!delay ? `${TYPING_ANIMATION_DURATION_PER_CHARACTER * delay + 1}s` : '5s'
-
-const typing = keyframes`
-  from { width: 0;  }
-  1% { opacity: 1; }
-  to { width: 100%; opacity: 1; }
-`
 
 const blinking = ({ theme }) => keyframes`
   50% { border-color: ${theme.colors.font} };
@@ -61,25 +49,50 @@ const waving = keyframes`
 
 export const StyledIntro = styled(StyledSection)`
   position: relative;
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 8rem);
   background-color: ${({ theme }) => theme.colors.highlight};
   box-shadow: inset 0 -1rem 0.7rem -1rem
     ${({ theme }) => theme.colors.highlightDark};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: calc(100vh - 15rem);
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     height: calc(100vh - 10rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 16rem);
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    height: calc(100vh - 20rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 22rem);
+  }
+`
+
+export const StyledIntroContentWrapper = styled.div`
+  height: calc(100% - 4rem);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    height: calc(100% - 5rem);
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    height: calc(100% - 12rem);
+    margin-bottom: 8rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    height: calc(100% - 8rem);
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    height: calc(100% - 6rem);
   }
 `
 
@@ -87,26 +100,38 @@ export const StyledIntroContent = styled.div`
   display: flex;
   flex-direction: column;
   user-select: none;
-  padding-top: 3rem;
-  align-items: center;
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     flex-direction: revert;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 5rem;
+    height: auto;
   }
 `
 
 export const StyledText = styled.div`
-  min-width: 30rem;
+  margin: 0 auto;
+  width: 20rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding-top: 1rem;
+    width: auto;
+    margin: revert;
+  }
 `
 
 export const StyledHello = styled.span`
   display: flex;
-  font-size: 180%;
-  margin-bottom: 2rem;
-  height: 3rem;
+  font-size: 140%;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 180%;
+    margin-bottom: 3rem;
+  }
 `
 
 export const StyledHand = styled.span`
@@ -116,78 +141,69 @@ export const StyledHand = styled.span`
 `
 
 export const StyledTitle = styled.h2`
+  width: fit-content;
   text-transform: uppercase;
-  font-size: 250%;
+  font-size: 180%;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.125rem solid ${({ theme }) => theme.colors.transparent};
   color: ${({ theme }) => theme.colors.font};
-  margin: 0 auto 1.5rem;
-  line-height: 3rem;
+  line-height: 2rem;
   letter-spacing: 0.05rem;
-  text-align: right;
-  animation: /* ${typing} ${({ stringLength }) =>
-    getTypingDuration(stringLength)}
-      steps(
-        ${({ stringLength }) => (!!stringLength ? stringLength - 1 : 15)},
-        end
-      )
-      forwards, */ ${blinking} 0.75s 0.005s step-end
+  animation: ${blinking} 0.75s 0.005s step-end
     ${({ stringLength }) => getBlinkingIterationCount(stringLength)};
+  margin-bottom: 0.5rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 200%;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    font-size: 250%;
+    line-height: 3rem;
+  }
 `
 
 export const StyledSubtitle = styled(StyledTitle)`
-  font-size: 180%;
-  animation: /* ${typing} ${({ stringLength }) =>
-    getTypingDuration(stringLength)}
-      ${({ delay }) => getTypingDelay(delay)}
-      steps(
-        ${({ stringLength }) => (!!stringLength ? stringLength - 1 : 15)},
-        end
-      )
-      forwards, */ ${blinking} 0.75s ${({ delay }) => getTypingDelay(delay)}
-    step-end ${({ stringLength }) => getBlinkingIterationCount(stringLength)};
+  font-size: 140%;
+  animation: ${blinking} 0.75s ${({ delay }) => getTypingDelay(delay)} step-end
+    ${({ stringLength }) => getBlinkingIterationCount(stringLength)};
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    font-size: 180%;
+  }
 `
 
 export const StyledPhotoWrapper = styled.div`
-  width: 17.6rem;
-  height: 18.75rem;
-  margin-top: 5rem;
+  height: 15rem;
+  align-self: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    height: 16.5rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    height: 18.5rem;
+    margin-top: revert;
+    margin-left: auto;
+    align-self: revert;
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    width: 17.6rem;
-    height: 18.75rem;
-    margin-top: revert;
+    height: 20rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    height: 22rem;
   }
 `
 
 export const StyledPhoto = styled(GatsbyImage)`
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-  }
+  height: 100%;
 `
 
-export const StyledLinks = styled.div`
-  position: absolute;
-  bottom: 3rem;
-  left: 2rem;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    bottom: 5rem;
-    left: 4rem;
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    left: 5rem;
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    left: 7rem;
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    left: 8rem;
-  }
-`
+export const StyledLinks = styled.div``
 
 export const StyledLink = styled.a`
   margin: 0 0.5rem;

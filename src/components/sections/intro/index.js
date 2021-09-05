@@ -8,6 +8,7 @@ import * as Icons from '../../../icons'
 import { PARTICLES_PRESETS, TOAST_TYPES } from '../../../constants'
 import {
   StyledIntro,
+  StyledIntroContentWrapper,
   StyledIntroContent,
   StyledText,
   StyledHello,
@@ -22,11 +23,11 @@ import {
   StyledParticles,
 } from './styles'
 
-const Intro = ({ authorName, authorRole, contactsInfo, pageImages }) => {
+const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
   const contacts = contactsInfo.filter(({ node }) => node.label !== 'Email')
-  const photos = pageImages
-    .filter(image => image.node.base.includes('intro'))
-    .sort((photoA, photoB) => (photoA.node.base < photoB.node.base ? -1 : 1))
+  const photos = introImages.sort((photoA, photoB) =>
+    photoA.node.base < photoB.node.base ? -1 : 1
+  )
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0)
   const [toastInfo, setToastInfo] = useState({
     message: '',
@@ -49,14 +50,14 @@ const Intro = ({ authorName, authorRole, contactsInfo, pageImages }) => {
     )
 
     return () => clearTimeout(timer)
-  }, [selectedPhotoIndex, photos?.length])
+  }, [selectedPhotoIndex, photos])
 
   const handleShareClick = async () => {
     if (typeof navigator !== 'undefined' && !navigator.share) return
     const shareData = {
-      title: 'Check it out!',
-      text: "This is Mariana Costa's Portifolio",
-      url: 'https://http://localhost:8000',
+      title: "Check it out Mariana Costa's Personal Website!",
+      text: "This is Mariana Costa's Personal Website",
+      url: 'https://localhost:8000',
     }
 
     try {
@@ -73,32 +74,36 @@ const Intro = ({ authorName, authorRole, contactsInfo, pageImages }) => {
   return (
     <StyledIntro id='intro'>
       <StyledParticles params={PARTICLES_PRESETS.bubbles(theme)} />
-      <StyledIntroContent>
-        <StyledText>
-          <StyledHello>
-            Hello World!
-            <StyledHand>
-              <span role='img' aria-label='waving-hand'>
-                👋
-              </span>
-            </StyledHand>
-          </StyledHello>
-          <StyledTitle stringLength={authorName.length}>{name}</StyledTitle>
-          <StyledSubtitle
-            delay={authorName.length}
-            stringLength={authorRole.length}
-          >
-            {role}
-          </StyledSubtitle>
-        </StyledText>
-        <StyledPhotoWrapper>
-          <StyledPhoto
-            imgStyle={{ objectFit: 'fill' }}
-            image={getImage(photos[selectedPhotoIndex].node)}
-            alt='selected intro image'
-          />
-        </StyledPhotoWrapper>
-      </StyledIntroContent>
+      <StyledIntroContentWrapper>
+        <StyledIntroContent>
+          <StyledText>
+            <StyledHello>
+              Hello World!
+              <StyledHand>
+                <span role='img' aria-label='waving-hand'>
+                  👋
+                </span>
+              </StyledHand>
+            </StyledHello>
+            <StyledTitle stringLength={authorName.length}>{name}</StyledTitle>
+            <StyledSubtitle
+              delay={authorName.length + 3}
+              stringLength={authorRole.length}
+            >
+              {role}
+            </StyledSubtitle>
+          </StyledText>
+          <StyledPhotoWrapper>
+            <StyledPhoto
+              imgStyle={{
+                objectFit: 'contain',
+              }}
+              image={getImage(photos[selectedPhotoIndex].node)}
+              alt='selected intro image'
+            />
+          </StyledPhotoWrapper>
+        </StyledIntroContent>
+      </StyledIntroContentWrapper>
       <StyledLinks>
         {contacts.map(({ node }) => (
           <StyledLink

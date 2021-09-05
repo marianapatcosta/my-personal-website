@@ -20,15 +20,18 @@ import {
 
 const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
-  const [isOnTop, setIsOnTop] = useState(false)
+  const [isOnTop, setIsOnTop] = useState(true)
 
   useEffect(() => {
+    setIsOnTop(
+      !!window && window.location.pathname === '/' && window.pageYOffset < 10
+    )
     const handleScroll = () => setIsOnTop(window.pageYOffset < 10)
 
     if (!!window && window.location.pathname === '/') {
-      setIsOnTop(true)
       window.addEventListener('scroll', handleScroll)
     }
+
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 

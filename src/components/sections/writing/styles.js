@@ -27,3 +27,14 @@ export const StyledButton = styled(Button)`
   margin: 4rem auto 0;
   font-size: 110%;
 `
+
+export const StyledNoItems = styled.p`
+  font-size: 110%;
+  font-style: italic;
+  margin: 3rem 0;
+  text-align: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin: 4rem 0;
+  }
+`

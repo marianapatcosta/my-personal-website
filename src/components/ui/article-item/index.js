@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { getImage } from 'gatsby-plugin-image'
+import { getImage, StaticImage } from 'gatsby-plugin-image'
 import { formatDate } from '../../../utils'
 import {
   StyledItem,
@@ -15,7 +15,7 @@ import {
 const ArticleItem = ({ itemInfo, itemImage }) => {
   const {
     excerpt,
-    frontmatter: { title, date, slug, tags },
+    frontmatter: { title, date, slug, tags, featuredImage },
     fields: { readingTime },
   } = itemInfo
 
@@ -31,6 +31,7 @@ const ArticleItem = ({ itemInfo, itemImage }) => {
         image={getImage(itemImage.node)}
         alt={`${title} article cover image`}
       />
+      {/* // not working <StaticImage src={featuredImage} /> */}
       <StyledTags>
         {tags?.map(tag => (
           <span key={`tag-${tag}`}>{tag}</span>

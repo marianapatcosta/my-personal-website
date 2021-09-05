@@ -52,14 +52,14 @@ module.exports = {
               wrapperStyle: 'margin: 0.5rem 0',
             },
           },
-          {
-            resolve: 'gatsby-plugin-anchor-links',
-            options: {
-              offset: -100,
-              duration: 500,
-            },
-          },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -100,
+        duration: 500,
       },
     },
     `gatsby-transformer-sharp`,
@@ -96,6 +96,18 @@ module.exports = {
           printBackground: true,
           preferCSSPageSize: true,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'G-RMGEYTMRL4',
+          cookieName: 'gatsby-gdpr-google-analytics',
+          anonymize: true,
+          allowAdFeatures: false,
+        },
+        environments: ['production', 'development'],
       },
     },
     {

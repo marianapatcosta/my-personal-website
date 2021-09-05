@@ -26,8 +26,8 @@ export const StyledResumeTitle = styled(StyledSectionTitle)`
 
 export const StyledDownloadIcon = styled.a`
   position: absolute;
-  top: 1rem;
-  right: 2rem;
+  top: 2rem;
+  right: 1rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.highlight};
   user-select: none;
@@ -45,6 +45,7 @@ export const StyledDownloadIcon = styled.a`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
     top: revert;
+    right: 2rem;
   }
 `
 

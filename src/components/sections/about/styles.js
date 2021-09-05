@@ -41,6 +41,11 @@ export const StyledSkills = styled.div`
 
 export const StyledAboutText = styled.p`
   text-align: justify;
+  margin-bottom: 2rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin-bottom: revert;
+  }
 `
 
 export const StyledAboutPhoto = styled(GatsbyImage)`
@@ -60,6 +65,10 @@ export const StyledAboutPhoto = styled(GatsbyImage)`
 
 export const StyledInterests = styled.div`
   margin-bottom: 1.5rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin-bottom: 3rem;
+  }
 `
 
 export const StyledInterestsTitle = styled.div`

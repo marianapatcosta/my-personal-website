@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Header, Footer } from '..'
+import { CookieBar, Header, Footer } from '..'
 import { GlobalStyle } from '../../../themes/global-style'
 import { StyledMain } from './styles.js'
 import { ThemeContextProvider } from '../../../hooks/theme'
@@ -24,6 +24,7 @@ const Layout = ({ children }) => {
         <Header />
         <StyledMain>{children}</StyledMain>
         <Footer authorName={data.site.siteMetadata?.authorName} />
+        <CookieBar />
       </ThemeContextProvider>
     </>
   )

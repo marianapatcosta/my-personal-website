@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { PortfolioItem } from '../..'
 import * as Icons from '../../../icons'
+import {
+  NUMBER_OF_ITEMS_BIG_SCREEN,
+  NUMBER_OF_ITEMS_SMALL_SCREEN,
+} from '../../../constants'
 import { StyledSectionTitle } from '../../../themes/global-style'
 import { getItemImages } from '../../../utils'
 import { StyledPortfolio, StyledItems, StyledButton } from './styles'
@@ -13,7 +17,14 @@ const PortfolioSection = ({ portfolioInfo, pageImages }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const isBigScreen = window.matchMedia('(min-width: 1600px)').matches
-      setItemsToDisplay(portfolioInfo.slice(0, isBigScreen ? 6 : 4))
+      setItemsToDisplay(
+        portfolioInfo.slice(
+          0,
+          isBigScreen
+            ? NUMBER_OF_ITEMS_BIG_SCREEN
+            : NUMBER_OF_ITEMS_SMALL_SCREEN
+        )
+      )
     }
   }, [portfolioInfo])
 
@@ -31,7 +42,13 @@ const PortfolioSection = ({ portfolioInfo, pageImages }) => {
           />
         ))}
       </StyledItems>
-      <StyledButton label='more' icon={Icons.Plus} onClick={handleMoreClick} />
+      {portfolioInfo.length > itemsToDisplay.length && (
+        <StyledButton
+          label='more'
+          icon={Icons.Plus}
+          onClick={handleMoreClick}
+        />
+      )}
     </StyledPortfolio>
   )
 }

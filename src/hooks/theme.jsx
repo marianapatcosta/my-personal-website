@@ -10,21 +10,27 @@ const THEMES = {
 const ThemeContext = createContext({})
 
 const ThemeContextProvider = ({ children }) => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false)
+  const [isDarkTheme, setIsDarkTheme] = useState()
 
   const getStoredTheme = async () => {
     const isStoredThemeDark = localStorage.getItem('darkTheme')
-    !!isStoredThemeDark && setIsDarkTheme(JSON.parse(isStoredThemeDark))
+    if (isStoredThemeDark) {
+      return setIsDarkTheme(JSON.parse(isStoredThemeDark))
+    }
+    setIsDarkTheme(false)
+    localStorage.setItem('darkTheme', JSON.stringify(false))
   }
 
-  const toggleTheme = () => setIsDarkTheme(prevIsDarkTheme => !prevIsDarkTheme)
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme)
+    localStorage.setItem('darkTheme', JSON.stringify(!isDarkTheme))
+  }
+
   useEffect(() => {
     getStoredTheme()
   }, [])
 
-  useEffect(() => {
-    localStorage.setItem('darkTheme', isDarkTheme)
-  }, [isDarkTheme])
+  useEffect(() => {}, [isDarkTheme])
 
   return (
     <ThemeContext.Provider value={{ toggleTheme, isDarkTheme }}>
