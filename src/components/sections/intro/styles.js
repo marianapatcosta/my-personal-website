@@ -72,7 +72,7 @@ export const StyledIntro = styled(StyledSection)`
 `
 
 export const StyledIntroContentWrapper = styled.div`
-  height: calc(100% - 5.5rem);
+  height: calc(100% - 6.5rem);
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
