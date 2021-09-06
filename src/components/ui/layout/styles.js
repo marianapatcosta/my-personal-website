@@ -5,7 +5,7 @@ export const StyledMain = styled.main`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding-top: 5rem;
-  }om 
+  }
 
   @media print {
     padding-top: 0;
