@@ -12,7 +12,7 @@ import {
   StyledDropdownWrapper,
 } from './styles'
 
-const mainTechnologies = [
+const tags = [
   'Web',
   'Mobile',
   'JavaScript',
@@ -117,26 +117,25 @@ const Writing = () => {
       <Seo title='Writing' />
       <StyledWriting id='writing'>
         <StyledWritingTitle>Writing</StyledWritingTitle>
-        <StyledDropdownWrapper>
+        {/*    <StyledDropdownWrapper>
           <Dropdown
             selectedOptions={selectedTags}
             placeholder='Filter by...'
-            options={[DEFAULT_TAG, ...mainTechnologies]}
+            options={[DEFAULT_TAG, ...tags]}
             onOptionClick={handleTagClick}
           />
         </StyledDropdownWrapper>
-
         <StyledTags>
-          {[DEFAULT_TAG, ...mainTechnologies].map(technology => (
+          {[DEFAULT_TAG, ...tags].map(technology => (
             <StyledTag
               key={`technology-filter-${technology}`}
               label={technology}
               isActive={selectedTags.includes(technology)}
-              aria-label={`click to filter artiles using ${technology}`}
+              aria-label={`click to filter articles using ${technology}`}
               onClick={() => handleTagClick(technology)}
             />
           ))}
-        </StyledTags>
+        </StyledTags> */}
         {!!filteredWritingInfo?.length ? (
           <StyledItems>
             {filteredWritingInfo.map(({ node }) => (

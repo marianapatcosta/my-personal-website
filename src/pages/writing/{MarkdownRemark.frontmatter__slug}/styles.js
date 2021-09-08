@@ -4,7 +4,7 @@ import { StyledSectionTitle } from '../../../themes/global-style'
 export const StyledArticle = styled.article`
   min-height: calc(100vh - 14rem);
   padding: 3rem 1rem;
-  max-width: 42.5rem;
+  max-width: 45rem;
   margin: 0 auto 5rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
@@ -30,12 +30,21 @@ export const StyledArticle = styled.article`
 `
 
 export const StyledHeader = styled.header`
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin-bottom: 2rem;
+  }
 `
 
 export const StyledArticleTitle = styled(StyledSectionTitle)`
   text-align: start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
 `
 
 export const StyledInfo = styled.div`
@@ -61,9 +70,24 @@ export const StyledTags = styled.p`
       margin-right: 0;
     }
   }
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin: 1rem 0 0.5rem;
+  }
 `
 
 export const StyledH2 = styled.h2`
+  margin: 1rem 0 0.3rem;
+`
+
+export const StyledH3 = styled.h3`
+  margin: 1rem 0 0.3rem;
+`
+
+export const StyledH4 = styled.h4`
+  margin: 1rem 0 0.3rem;
+`
+
+export const StyledH5 = styled.h5`
   margin: 1rem 0 0.3rem;
 `
 
@@ -74,7 +98,7 @@ export const StyledUnorderedList = styled.ul`
 export const StyledListItem = styled.li`
   list-style-type: '∗';
   padding-inline-start: 0.3rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 
   ::marker {
     color: ${({ theme }) => theme.colors.highlight};

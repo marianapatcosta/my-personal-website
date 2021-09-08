@@ -29,7 +29,7 @@ export const StyledItemTitle = styled.h3`
   font-size: 140%;
   color: ${({ theme }) => theme.colors.highlight};
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  line-height: 1.8rem;
 `
 
 export const StyledInfo = styled.div`
@@ -55,16 +55,16 @@ export const StyledImage = styled(GatsbyImage)`
 
 export const StyledTags = styled.p`
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+
   span {
     background-color: ${({ theme }) => theme.colors.secondary};
     padding: 0.2rem 0.5rem;
     font-size: 90%;
-    margin: 0 0.3rem;
+    margin: 0 0.3rem 0.6rem 0;
     border-radius: 0.3rem;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    white-space: nowrap;
 
     &:last-child {
       margin-right: 0;
