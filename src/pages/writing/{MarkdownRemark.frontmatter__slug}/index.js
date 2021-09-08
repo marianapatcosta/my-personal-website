@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import RehypeReact from 'rehype-react'
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
 import { Layout, SEO as Seo } from '../../../components'
-import RehypeReact from 'rehype-react'
 import { formatDate } from '../../../utils'
 import {
   StyledArticle,
@@ -11,6 +11,9 @@ import {
   StyledInfo,
   StyledTags,
   StyledH2,
+  StyledH3,
+  StyledH4,
+  StyledH5,
   StyledUnorderedList,
   StyledListItem,
   StyledLink,
@@ -23,6 +26,9 @@ const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
     h2: StyledH2,
+    h3: StyledH3,
+    h4: StyledH4,
+    h5: StyledH5,
     ul: StyledUnorderedList,
     li: StyledListItem,
     a: StyledLink,

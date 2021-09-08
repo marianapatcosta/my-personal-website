@@ -108,7 +108,7 @@ export const StyledPage = styled.section`
 `
 
 export const StyledSectionTitle = styled.h2`
-  font-size: 200%;
+  font-size: 180%;
   color: ${({ theme }) => theme.colors.highlight};
   font-weight: 400;
   margin-bottom: 2rem;
@@ -116,5 +116,6 @@ export const StyledSectionTitle = styled.h2`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     margin-bottom: 3rem;
+    font-size: 200%;
   }
 `

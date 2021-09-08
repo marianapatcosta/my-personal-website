@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { getImage, StaticImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 import { formatDate } from '../../../utils'
 import {
   StyledItem,
@@ -15,7 +15,7 @@ import {
 const ArticleItem = ({ itemInfo, itemImage }) => {
   const {
     excerpt,
-    frontmatter: { title, date, slug, tags, featuredImage },
+    frontmatter: { title, date, slug, tags },
     fields: { readingTime },
   } = itemInfo
 

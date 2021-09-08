@@ -13,7 +13,6 @@ import {
   StyledWriting,
   StyledItems,
   StyledButton,
-  StyledNoItems,
 } from './styles'
 
 const Writing = ({ writingInfo, pageImages }) => {
@@ -38,7 +37,6 @@ const Writing = ({ writingInfo, pageImages }) => {
   return (
     <StyledWriting id='writing'>
       <StyledSectionTitle>Writing</StyledSectionTitle>
-      <StyledNoItems>No articles to display.</StyledNoItems>
       <StyledItems>
         {itemsToDisplay.map(({ node }) => (
           <ArticleItem

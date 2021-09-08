@@ -93,6 +93,35 @@ export const query = graphql`
         }
       }
     }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          html
+          headings {
+            depth
+            value
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            image
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+              }
+            }
+            tags
+          }
+          fields {
+            readingTime {
+              text
+            }
+          }
+        }
+      }
+    }
     generalImages: allFile(
       filter: {
         extension: { regex: "/(jpg)|(png)|(jpeg)/" }
