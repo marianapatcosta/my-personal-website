@@ -9,17 +9,13 @@ export const StyledWriting = styled(StyledSection)`
 
 export const StyledItems = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(21rem, max-content));
+  grid-template-columns: repeat(auto-fill, minmax(19rem, max-content));
   gap: 1.5rem;
   justify-content: center;
   justify-items: center;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    grid-template-columns: repeat(auto-fill, minmax(24rem, max-content));
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    grid-template-columns: repeat(auto-fill, minmax(27rem, max-content));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, max-content));
   }
 `
 

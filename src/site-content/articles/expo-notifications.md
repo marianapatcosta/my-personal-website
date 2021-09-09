@@ -1,10 +1,11 @@
 ---
 title: 'You have got a notification - Basics of Expo-notifications'
-date: '2021-09-07'
+date: '2021-09-08'
 slug: '/expo-notifications'
 featuredImage: ../../images/a1-expo-notifications-featured-image.png
 image: a1-expo-notifications-featured-image.png
 tags:
+  - JavaScript
   - Push Notifications
   - Expo-notifications
   - React Native

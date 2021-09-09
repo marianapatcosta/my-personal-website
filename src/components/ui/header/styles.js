@@ -39,11 +39,11 @@ export const StyledHeader = styled.header`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    padding: 0.5rem 12rem;
+    padding: 0.5rem 10rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    padding: 0.5rem 12rem;
+    padding: 0.5rem 10rem;
   }
 `
 

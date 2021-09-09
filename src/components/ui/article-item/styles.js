@@ -3,7 +3,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
 export const StyledItem = styled.div`
-  width: 20rem;
+  width: 18rem;
   box-shadow: 0 0.125rem 0.5rem ${({ theme }) => theme.colors.shadow};
   border-radius: 0.375rem;
   padding: 1rem;
@@ -11,17 +11,11 @@ export const StyledItem = styled.div`
   min-height: 18rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    width: 22rem;
+    width: 18rem;
     min-height: 20rem;
     padding: 1.5rem;
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    width: 25rem;
-    min-height: 22rem;
   }
 `
 
@@ -39,11 +33,11 @@ export const StyledInfo = styled.div`
 `
 
 export const StyledItemSummary = styled.p`
-  line-height: 1.3rem;
+  line-height: 1.15rem;
   margin-bottom: 1rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    line-height: 1.5rem;
+    line-height: 1.3rem;
   }
 `
 
@@ -60,9 +54,9 @@ export const StyledTags = styled.p`
 
   span {
     background-color: ${({ theme }) => theme.colors.secondary};
-    padding: 0.2rem 0.5rem;
-    font-size: 90%;
-    margin: 0 0.3rem 0.6rem 0;
+    padding: 0 0.25rem;
+    font-size: 80%;
+    margin: 0 0.3rem 0.3rem 0;
     border-radius: 0.3rem;
     white-space: nowrap;
 
