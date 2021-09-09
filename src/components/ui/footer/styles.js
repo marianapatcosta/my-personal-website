@@ -17,6 +17,7 @@ export const StyledFooter = styled.footer`
     width: 100%;
     position: absolute;
     top: -1rem;
+    user-select: none;
   }
 
   p {

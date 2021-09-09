@@ -75,11 +75,11 @@ export const StyledSection = styled.section`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    padding: 7rem 12rem;
+    padding: 7rem 10rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-    padding: 8rem 12rem;
+    padding: 8rem 10rem;
   }
 `
 

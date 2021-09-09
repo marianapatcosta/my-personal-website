@@ -64,13 +64,7 @@ export const StyledCarouselContent = styled.div`
 
   ${({ isVertical }) => isVertical && `width: 20rem; height: 25rem`};
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    height: 13.64rem;
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    height: 15.5rem;
-  }
+ 
 `
 
 export const StyledIndicatorBar = styled.span`

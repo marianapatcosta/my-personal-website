@@ -64,10 +64,10 @@ export const StyledAboutPhoto = styled(GatsbyImage)`
 `
 
 export const StyledInterests = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 `
 

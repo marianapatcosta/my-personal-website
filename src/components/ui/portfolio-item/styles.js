@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Tooltip from '../tooltip'
 
 export const StyledItem = styled.div`
-  width: 20rem;
+  width: 18rem;
   box-shadow: 0 0.125rem 0.5rem ${({ theme }) => theme.colors.shadow};
   border-radius: 0.375rem;
   padding: 1rem;
@@ -13,15 +13,10 @@ export const StyledItem = styled.div`
   justify-content: space-around;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    width: 22rem;
     min-height: 30rem;
     padding: 1.5rem;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    width: 25rem;
-    min-height: 32rem;
-  }
 `
 
 export const StyledItemTitle = styled.h3`
@@ -32,11 +27,11 @@ export const StyledItemTitle = styled.h3`
 `
 
 export const StyledItemDescription = styled.p`
-  line-height: 1.3rem;
+  line-height: 1.15rem;
   margin-bottom: 1rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    line-height: 1.5rem;
+    line-height: 1.3rem;
   }
 `
 
@@ -52,7 +47,7 @@ export const StyledStack = styled.p`
   column-gap: 0.3rem;
 
   img {
-    height: 1.4rem;
+    height: 1.2rem;
     filter: ${({ theme }) => theme.colors.icon};
     user-select: none;
   }
