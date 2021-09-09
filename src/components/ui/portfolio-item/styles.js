@@ -16,7 +16,6 @@ export const StyledItem = styled.div`
     min-height: 30rem;
     padding: 1.5rem;
   }
-
 `
 
 export const StyledItemTitle = styled.h3`

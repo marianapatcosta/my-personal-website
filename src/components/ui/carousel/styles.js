@@ -63,8 +63,6 @@ export const StyledCarouselContent = styled.div`
   -o-border-radius: 0.5rem;
 
   ${({ isVertical }) => isVertical && `width: 20rem; height: 25rem`};
-
- 
 `
 
 export const StyledIndicatorBar = styled.span`

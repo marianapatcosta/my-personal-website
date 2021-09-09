@@ -11,7 +11,7 @@ export const StyledLink = styled.a`
   height: 1.4rem;
   padding: 0.2rem 0.7rem;
   color: ${({ theme }) => theme.colors.primary};
-  line-height: 1.1rem;
+  line-height: 1.5rem;
   border-radius: 1.4rem;
   position: relative;
   overflow: hidden;
