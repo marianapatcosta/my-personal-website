@@ -1,6 +1,11 @@
 # My Personal Website
 
-My Poersonal Webite compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded as pdf file. It was developed using Gatsby and Styled Components.
+My Personal Website compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded as pdf file. It was developed using Gatsby and Styled Components.
+
+The following environnement variable must be configured:
+- GATSBY_SERVICE_ID
+- GATSBY_TEMPLATE_ID
+- GATSBY_USER_ID
 
 ## Available Scripts
 
