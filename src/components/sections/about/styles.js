@@ -119,8 +119,4 @@ export const StyledButton = styled(Button)`
   margin-left: auto;
   margin-top: 2rem;
   font-size: 110%;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin-top: 3rem;
-  }
 `

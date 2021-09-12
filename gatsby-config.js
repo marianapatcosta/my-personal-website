@@ -25,13 +25,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `public/exports`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -41,7 +34,7 @@ module.exports = {
             resolve: `gatsby-remark-highlight-code`,
             options: {
               terminal: 'carbon',
-              theme: 'vscode'
+              theme: 'vscode',
             },
           },
           {
@@ -88,6 +81,7 @@ module.exports = {
       resolve: 'gatsby-plugin-pdf',
       options: {
         paths: ['/resume/'],
+        outputPath: '/public/exports',
         styleTagOptions: {
           content:
             'header { display:none !important; } footer { display:none !important; }',
