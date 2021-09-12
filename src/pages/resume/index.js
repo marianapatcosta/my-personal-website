@@ -103,10 +103,6 @@ const Cv = () => {
           }
         }
       }
-      resume: file(name: { eq: "resume" }) {
-        publicURL
-        name
-      }
     }
   `)
 
@@ -124,7 +120,6 @@ const Cv = () => {
   } = cvData?.allCvJson?.edges[0].node
 
   const pageImages = cvData.images?.edges
-  const resume = cvData.resume
   const profilePhoto = getImage(
     pageImages.find(image => image.node.base === profileImage)?.node
   )
@@ -138,7 +133,7 @@ const Cv = () => {
           <StyledDownloadIcon
             aria-label='download my CV resume in pdf'
             download
-            href={resume?.publicURL}
+            href={"/exports/resume.pdf"}
           >
             <img src={Icons.Download} alt='download icon' /> Download
           </StyledDownloadIcon>
