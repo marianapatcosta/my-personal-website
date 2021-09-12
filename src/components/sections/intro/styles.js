@@ -8,7 +8,7 @@ const TYPING_ANIMATION_DURATION_PER_CHARACTER = 0.15
 
 let vh
 
-if (window) {
+if (typeof window !== 'undefined') {
   vh = window.innerHeight * 0.01
 }
 document.documentElement.style.setProperty('--vh', `${vh}px`)
