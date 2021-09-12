@@ -6,6 +6,9 @@ import { StyledSection } from '../../../themes/global-style'
 const BLINKING_ANIMATION_DURATION = 0.3
 const TYPING_ANIMATION_DURATION_PER_CHARACTER = 0.15
 
+const vh = window.innerHeight * 0.01
+document.documentElement.style.setProperty('--vh', `${vh}px`)
+
 const getBlinkingIterationCount = stringLength =>
   !!stringLength
     ? (TYPING_ANIMATION_DURATION_PER_CHARACTER * stringLength) /
@@ -56,18 +59,22 @@ export const StyledIntro = styled(StyledSection)`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     height: calc(100vh - 9rem);
+    height: calc((var(--vh, 1vh) * 100) - 9rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     height: calc(100vh - 15rem);
+    height: calc((var(--vh, 1vh) * 100) - 15rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     height: calc(100vh - 19rem);
+    height: calc((var(--vh, 1vh) * 100) - 19rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
     height: calc(100vh - 20rem);
+    height: calc((var(--vh, 1vh) * 100) - 20rem);
   }
 `
 
