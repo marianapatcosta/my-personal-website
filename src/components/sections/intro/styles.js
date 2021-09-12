@@ -6,7 +6,11 @@ import { StyledSection } from '../../../themes/global-style'
 const BLINKING_ANIMATION_DURATION = 0.3
 const TYPING_ANIMATION_DURATION_PER_CHARACTER = 0.15
 
-const vh = window && window.innerHeight * 0.01
+let vh
+
+if (window) {
+  vh = window.innerHeight * 0.01
+}
 document.documentElement.style.setProperty('--vh', `${vh}px`)
 
 const getBlinkingIterationCount = stringLength =>
