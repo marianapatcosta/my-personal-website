@@ -1,5 +1,5 @@
 ---
-title: 'Basics and pitfalls of Expo-notifications'
+title: 'Basics and caveats of Expo-notifications'
 date: '2021-09-08'
 slug: '/expo-notifications'
 featuredImage: ../../images/a1-expo-notifications-featured-image.png
@@ -11,9 +11,9 @@ tags:
   - React Native
 ---
 
-Push notifications are currently an widely used functionality in mobile applications. They provide an easy way to establish communication with the users. I've recently started a journey to learn mobile development with React Native and developed an application that needed push notifications. In this post, I'll overview the basic implementation of push notifications using _Expo-notification package_, as well as some caveats that I had to overcome during the development.
+Push notifications are currently a widely used functionality in mobile applications. They provide an easy way to establish communication with the users. I've recently started a journey to learn mobile development with React Native and developed an application with push notifications using _Expo-notification package_. In this post, I'll overview the basic implementation of push notifications using this package, as well as some caveats that I had to overcome during the development.
 
-Expo is a software development kit (SDK) that wraps a React Native application, simplifies the development environment setup and provides several utilities On eof this utilities is the Expo-notification package, which makes easier the implementation of push notifications. This package provides push notification tokens, and the ability to display, schedule, receive, interact and respond to notifications. Expo-notification package allows the implementation of 2 types of notification:
+Expo is a software development kit (SDK) that wraps a React Native application, simplifies the development environment setup and provides several utilities. One of this utilities is the Expo-notifications, which makes easier the implementation of push notifications. This package provides push notification tokens, and the ability to display, schedule, receive, interact and respond to notifications. Expo-notifications allows the implementation of 2 types of notification:
 
 - **local notifications**: notifications triggered by the app installed in a device and exclusively displayed in that device, they are never sent to other devices. This notification type is useful for remind notifications, for example.
 
@@ -52,6 +52,7 @@ const registerForPushNotificationsAsync = async () => {
   }
 }
 ```
+
 <br/>
 Note that the code checks/asks for notifications permissions. This step is required for ios devices.
 <br/><br/>
@@ -64,7 +65,7 @@ There are 3 ways to send push notifications with expo:
 
 This tool is very useful for testing purposes. To use it, go to [Expo's push notifications tool](https://expo.dev/notifications), add the Expo push token from your app, fulfil the message fields and send the notification.
 
-#### Sending a POST request to ```https://exp.host/--/api/v2/push/send```
+#### Sending a POST request to `https://exp.host/--/api/v2/push/send`
 
 This POST request takes message content in request body. It can be sent from the app or from a server, using the fetch API or axios, for example.
 
@@ -84,6 +85,7 @@ fetch('https://exp.host/--/api/v2/push/send', {
   }),
 })
 ```
+
 <br/>
 
 #### From a backend server
@@ -111,7 +113,7 @@ const sendPushNotification = async expoPushToken => {
   const tickets = []
 
   try {
-    (async () => {
+    ;(async () => {
       for (const chunk of chunks) {
         try {
           const ticketChunk = await expo.sendPushNotificationsAsync(chunk)
@@ -126,6 +128,7 @@ const sendPushNotification = async expoPushToken => {
   }
 }
 ```
+
 <br/>
 
 ### Manage received notifications
@@ -187,6 +190,7 @@ useEffect(() => {
   }
 }, [])
 ```
+
 <br/>
 
 #### Manage user interaction with the notification
@@ -224,9 +228,10 @@ const Home = () => {
   }, [lastNotificationResponse])
 }
 ```
+
 <br/>
 
-I tested both approaches but used the second one because **lastNotificationResponse** returns the last notification the user interacted with. This overcomes the fact that addNotificationResponseReceivedListener in useEffect hook is called too late when app is launching (i.e. when the user interacted with a notifications received when the app was killed), leading to the "loss" of interaction listening in these cases.
+I tested both approaches but at the end I chose the second one because **lastNotificationResponse** returns the last notification the user interacted with. This overcomes the fact that addNotificationResponseReceivedListener in useEffect hook is called too late when app is launching (i.e. when the user interacted with a notifications received when the app was killed), leading to the "loss" of interaction listening in these cases.
 
 ### Some points to pay attention
 
@@ -264,8 +269,9 @@ Here are some issues that I noticed and/or had to handle using Expo-notification
   }
 }
 ```
+
 <br/>
 
-And that's all I had to share. If you want to see the implementation of push notification in the app I developed, you can check it [here](https://github.com/marianapatcosta/notify-me-solinca).
+And that's all I had to share. If you want to check the implementation of push notification in the app I developed, you can do it [here](https://github.com/marianapatcosta/notify-me-solinca).
 
-Hope to "see" you in my next post <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="16px" alt="hello">. 
+Hope to "see" you in my next post <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="16px" alt="hello">.
