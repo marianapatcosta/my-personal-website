@@ -54,11 +54,8 @@ export const StyledIntro = styled(StyledSection)`
   box-shadow: inset 0 -1rem 0.7rem -1rem
     ${({ theme }) => theme.colors.highlightDark};
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: 100%;
-  }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     height: calc(100vh - 15rem);
   }
 
