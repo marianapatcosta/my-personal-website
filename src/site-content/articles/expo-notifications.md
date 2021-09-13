@@ -1,5 +1,5 @@
 ---
-title: 'Basics and pitfalls of Expo-notifications'
+title: 'Basics and caveats of Expo-notifications'
 date: '2021-09-08'
 slug: '/expo-notifications'
 featuredImage: ../../images/a1-expo-notifications-featured-image.png
@@ -11,9 +11,9 @@ tags:
   - React Native
 ---
 
-Push notifications are currently an widely used functionality in mobile applications. They provide an easy way to establish communication with the users. I've recently started a journey to learn mobile development with React Native and developed an application that needed push notifications. In this post, I'll overview the basic implementation of push notifications using _Expo-notification package_, as well as some caveats that I had to overcome during the development.
+Push notifications are currently a widely used functionality in mobile applications. They provide an easy way to establish communication with the users. I've recently started a journey to learn mobile development with React Native and developed an application with push notifications using _Expo-notification package_. In this post, I'll overview the basic implementation of push notifications using this package, as well as some caveats that I had to overcome during the development.
 
-Expo is a software development kit (SDK) that wraps a React Native application, simplifies the development environment setup and provides several utilities. One of this utilities is the Expo-notification package, which makes easier the implementation of push notifications. This package provides push notification tokens, and the ability to display, schedule, receive, interact and respond to notifications. Expo-notification package allows the implementation of 2 types of notification:
+Expo is a software development kit (SDK) that wraps a React Native application, simplifies the development environment setup and provides several utilities. One of this utilities is the Expo-notifications, which makes easier the implementation of push notifications. This package provides push notification tokens, and the ability to display, schedule, receive, interact and respond to notifications. Expo-notifications allows the implementation of 2 types of notification:
 
 - **local notifications**: notifications triggered by the app installed in a device and exclusively displayed in that device, they are never sent to other devices. This notification type is useful for remind notifications, for example.
 
