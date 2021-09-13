@@ -50,13 +50,13 @@ const waving = keyframes`
 export const StyledIntro = styled(StyledSection)`
   position: relative;
   min-height: -webkit-fill-available;
-  height: calc(100% - 7rem);
+  height: calc(100vh - 7rem);
   background-color: ${({ theme }) => theme.colors.highlight};
   box-shadow: inset 0 -1rem 0.7rem -1rem
     ${({ theme }) => theme.colors.highlightDark};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: calc(100% - 9rem);
+    height: calc(100vh - 9rem);
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
