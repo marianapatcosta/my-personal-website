@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const useTypeWriter = (stringToType, delayToStart) => {
   const [{ name, nameIndex }, setName] = useState({ name: '', nameIndex: 0 })
-  const time = delayToStart && nameIndex === 0 ? delayToStart : 150
+  const time = delayToStart && nameIndex === 0 ? delayToStart : 100
   useEffect(() => {
     if (nameIndex > stringToType.length) return
     const delay = setTimeout(() => {
