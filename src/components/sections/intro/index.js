@@ -37,7 +37,7 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
   const theme = useTheme()
 
   const name = useTypeWriter(`I'm ${authorName}`)
-  const role = useTypeWriter(authorRole, 3500)
+  const role = useTypeWriter(authorRole, 4000)
 
   useEffect(() => {
     let timer
