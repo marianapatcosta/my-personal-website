@@ -20,7 +20,7 @@ const Writing = ({ writingInfo, pageImages }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const isBigScreen = window.matchMedia('(min-width: 1600px)').matches
+      const isBigScreen = window.matchMedia('(min-width: 1325px)').matches
       setItemsToDisplay(
         writingInfo.slice(
           0,

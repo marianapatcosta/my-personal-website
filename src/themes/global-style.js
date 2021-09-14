@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
          @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-          font-size: 1.0rem;;
+          font-size: 1.0rem;
         }
     }
 
