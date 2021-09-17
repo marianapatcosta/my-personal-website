@@ -14,7 +14,7 @@ export const StyledContactsContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: row;
     justify-content: center;
     column-gap: 3rem;
@@ -82,12 +82,11 @@ export const StyledContactLinks = styled.div`
   margin: 1.5rem 0;
   justify-content: space-between;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    justify-content: revert;
-    margin: 2rem auto 0;
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    justify-content: space-evenly;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     display: none;
     margin-top: 3rem;
   }
@@ -96,7 +95,7 @@ export const StyledContactLinks = styled.div`
 export const StyledContactLinksDesktop = styled.div`
   display: none;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -113,9 +112,6 @@ export const StyledContactLink = styled(Link)`
     margin-right: 0;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    margin-right: 2rem;
-  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     margin-bottom: 2rem;
