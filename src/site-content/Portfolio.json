@@ -48,9 +48,9 @@
         "url": "https://github.com/marianapatcosta/veggie-foodie"
       },
       {
-        "label": "visit",
+        "label": "download",
         "icon": "Link",
-        "url": ""
+        "url": "https://play.google.com/store/apps/details?id=io.costa.mariana.veggie.foodie"
       }
     ]
   },
@@ -483,7 +483,7 @@
         "url": "https://github.com/marianapatcosta/veggie-foodie-info-page"
       },
       {
-        "label": "this",
+        "label": "visit",
         "icon": "Link",
         "url": "https://veggie-foodie.netlify.app"
       }

@@ -9,6 +9,11 @@
     "icon": "Linkedin",
     "url": "https://www.linkedin.com/in/marianapatcosta/"
   },
+    {
+    "label": "Dev",
+    "icon": "Dev",
+    "url": "https://dev.to/marianapatcosta"
+  },
   {
     "label": "Email",
     "icon": "Email",
