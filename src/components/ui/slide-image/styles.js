@@ -29,11 +29,6 @@ export const StyledImage = styled(GatsbyImage)`
   position: absolute;
   right: 120%;
   box-shadow: 0 0.025rem 0.3rem -0.15rem ${({ theme }) => theme.colors.shadow};
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.8s ease-in-out;

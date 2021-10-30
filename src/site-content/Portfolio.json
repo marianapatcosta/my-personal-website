@@ -490,6 +490,159 @@
     ]
   },
   {
+    "title": "Places App",
+    "description": "FullStack Web app to create, retrieve, update and delete information about places in Openstreetmap using Vue-leaflet. Includes JWT authentication and image upload with multer.",
+    "images": ["placesA.png", "placesB.png", "placesC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "JWT Authentication",
+        "icon": "Authentication"
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest"
+      },
+      {
+        "label": "TypeORM",
+        "icon": "TypeOrm"
+      },
+      {
+        "label": "SQLite",
+        "icon": "Sqlite"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/places-app"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "title": "New York Times News App",
+    "description": "Simple News Web App fetching news data from the New York Times API to list paginated news, and also allows to search and filter by section. Includes unit and end-to-end tests.",
+    "images": ["nynewsA.png", "nynewsB.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "Vuex",
+        "icon": "Vue"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Jest",
+        "icon": "Jest"
+      },
+      {
+        "label": "Cypress",
+        "icon": "Cypress"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/ny-times-news-app"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://ny-times-news.web.app"
+      }
+    ]
+  },
+  {
+    "title": "Let's Play",
+    "description": "Web app to play Tic Tac Toe (with board extension, 6x6 and 9x9) and Connect 4 games with display of game statistics.",
+    "images": ["lets-playA.png", "lets-playB.png", "lets-playC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Adaptative/responsive design",
+        "icon": "Responsive"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/lets-play"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/lets-play"
+      }
+    ]
+  },
+  {
     "title": "TodOrganizer",
     "description": "Simple ToDo portal / desktop app developed to create, retrieve, update and delete ToDos, upload .csv and export data and manage todos' state in a draggable ToDo board.",
     "images": ["todoA.png", "todoB.png", "todoC.png", "todoD.png"],

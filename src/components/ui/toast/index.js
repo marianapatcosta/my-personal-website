@@ -45,10 +45,7 @@ const Toast = ({ id, message, type, className, autoClearTime, onClear }) => {
         <img src={CloseWhite} alt='close icon' />
       </StyledToastClose>
       <StyledToastMessageWrapper>
-        <StyledToastIcon
-          src={toastIcons[type]}
-          alt={`${toastIcons[type]} icon`}
-        />
+        <StyledToastIcon src={toastIcons[type]} alt={`${type} icon`} />
         <StyledToastMessage type={type}>{message}</StyledToastMessage>
       </StyledToastMessageWrapper>
     </StyledToast>

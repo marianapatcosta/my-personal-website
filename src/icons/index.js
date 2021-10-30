@@ -16,6 +16,7 @@ import Contacts from './contacts.svg'
 import Crafts from './crafts.svg'
 import Css from './css3.svg'
 import Cv from './cv.svg'
+import Cypress from './cypress.svg'
 import CyberSecurity from './cyber-security.svg'
 import DarkTheme from './dark-theme.svg'
 import Desktop from './desktop.svg'
@@ -96,6 +97,7 @@ import Tick from './tick.svg'
 import Tv from './tv.svg'
 import Twitter from './twitter.svg'
 import TypeScript from './typescript.svg'
+import TypeOrm from './typeorm.svg'
 import User from './user.svg'
 import UxUi from './ux-ui.svg'
 import Vegetarianism from './vegetarianism.svg'
@@ -125,6 +127,7 @@ export {
   Css,
   Cv,
   CyberSecurity,
+  Cypress,
   DarkTheme,
   Desktop,
   Dev,
@@ -204,6 +207,7 @@ export {
   Tv,
   Twitter,
   TypeScript,
+  TypeOrm,
   User,
   UxUi,
   Vegetarianism,
