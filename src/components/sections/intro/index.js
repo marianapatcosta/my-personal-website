@@ -52,6 +52,16 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
     return () => clearTimeout(timer)
   }, [selectedPhotoIndex, photos])
 
+  // work around to overcome the incorrect set of 100vh by mobile browsers when address bar is visible 
+  useEffect(() => {
+    if (window.matchMedia('(max-width: 480px)').matches) {
+      const MOBILE_HEADER_HEIGHT = 112; // in px
+      document.getElementById('intro').style.height = `${
+        window.innerHeight - MOBILE_HEADER_HEIGHT
+      }px`
+    }
+  }, [])
+
   const handleShareClick = async () => {
     if (typeof navigator !== 'undefined' && !navigator.share) return
     const shareData = {
