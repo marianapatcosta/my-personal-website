@@ -49,7 +49,6 @@ const waving = keyframes`
 
 export const StyledIntro = styled(StyledSection)`
   position: relative;
-  height: calc(100vh - 7rem);
   background-color: ${({ theme }) => theme.colors.highlight};
   box-shadow: inset 0 -1rem 0.7rem -1rem
     ${({ theme }) => theme.colors.highlightDark};
@@ -203,7 +202,10 @@ export const StyledPhoto = styled(GatsbyImage)`
   height: 100%;
 `
 
-export const StyledLinks = styled.div``
+export const StyledLinks = styled.div`
+  position: absolute;
+  bottom: 2rem;
+`
 
 export const StyledLink = styled.a`
   margin: 0 0.5rem;
