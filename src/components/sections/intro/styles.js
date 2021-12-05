@@ -212,7 +212,7 @@ export const StyledLink = styled.a`
   margin: 0 0.5rem;
   img {
     filter: ${({ theme }) => theme.colors.icon};
-    width: 1rem;
+    width: 1.1rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
