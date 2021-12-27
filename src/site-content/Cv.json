@@ -2,7 +2,7 @@
   {
     "name": "Mariana Costa",
     "role": "Software Developer",
-    "intro": "Mariana Costa works as Software Developer since 2019. Particularly enthusiastic about Frontend Developement and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
+    "intro": "Mariana Costa works as Software Developer for more than 3 years. Particularly enthusiastic about Frontend Developement and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
     "profileImage": "my-photo.png",
     "gitAvatarUrl": "https://github.com/marianapatcosta.png",
     "contacts": [
@@ -39,36 +39,44 @@
         "icon": "GitHub",
         "contact": "github.com/marianapatcosta",
         "url": "https://github.com/marianapatcosta"
+      },
+      {
+        "label": "Dev",
+        "icon": "Dev",
+        "contact": "dev.to/marianapatcosta",
+        "url": "https://dev.to/marianapatcosta"
       }
     ],
     "experience": [
       {
+        "role": "Frontend Developer",
+        "company": "SWORD Health",
+        "timePeriod": "Dec 2021 - Present",
+        "description": "Development of applications to help the management of SWORD Health's operations.",
+        "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Participation on task planning;",
+        "technologies": "Vue; Vuex; JavaScript; SCSS."
+      },
+      {
         "role": "Software Developer",
         "company": "Amyris – Catholic University of Portugal",
-        "timePeriod": "Jul 2020 - Present",
+        "timePeriod": "Jul 2020 - Dec 2021",
         "description": "Development of applications to automate and improve routine tasks of Amyris's Scientists.",
-        "responsabilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Development of mockups; Participation on task planning;",
-        "technologies": "React; Redux; Figma; Integration of REST APIs; Enzyme; Jest; Python."
+        "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Development of mockups; Participation on task planning;",
+        "technologies": "React; Redux; JavaScript; SCSS; Figma; Enzyme; Jest; Python."
       },
       {
         "role": "Junior FullStack Developer",
         "company": "Celfocus",
         "timePeriod": "Jan 2019 – Jun 2020",
-        "description": "Development of Self-Care Portal for Vodafone Germany and a portal to handle DNS and IP blockage requests for Vodafone Portugal.",
-        "responsabilities": "Frontend and Backend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation and mockups; Collaboration with QA and UX/UI teams; Participation on task planning;",
-        "technologies": "Vue; Angular; TypeScript; Node.js; Express.js; Java 8; Jasmine; Karma; Jest;"
+        "description": "Development of Self-Care Portal for Vodafone Germany and portal to handle DNS and IP blockage requests for Vodafone Portugal.",
+        "responsibilities": "Frontend and Backend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation and mockups; Collaboration with QA and UX/UI teams; Participation on task planning;",
+        "technologies": "Vue; Angular; JavaScript; TypeScript; SCSS; Node.js; Express.js; Java 8; Jasmine; Karma; Jest;"
       },
       {
         "role": "Medical Writer",
         "company": "Blueclinical",
         "timePeriod": "Jul 2015 – Sep 2018",
         "description": "Writing of clinical trials-related documentation. Compliance with legal and regulatory requirements, internal SOPs and ICH-GCPs."
-      },
-      {
-        "role": "PhD Research Fellow",
-        "company": "Faculty of Pharmacy University of Porto ",
-        "timePeriod": "Jan 2011 - Dec 2014",
-        "description": "Planning of lab experiments and time management; Data interpretation and analysis; Publications in international peer reviewed journals."
       }
     ],
     "education": [
@@ -121,9 +129,14 @@
         "level": 4.5
       },
       {
-        "label": "Vue",
+        "label": "Vue / Vuex",
         "icon": "Vue",
         "level": 4
+      },
+      {
+        "label": "Angular",
+        "icon": "Angular",
+        "level": 3
       },
       {
         "label": "HTML5",
@@ -184,11 +197,6 @@
         "label": "Express.js",
         "icon": "Express",
         "level": 4
-      },
-      {
-        "label": "Angular",
-        "icon": "Angular",
-        "level": 3
       },
       {
         "label": "Electron",

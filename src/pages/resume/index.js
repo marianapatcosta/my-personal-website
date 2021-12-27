@@ -15,6 +15,8 @@ import {
   StyledImage,
   StyledImagePrint,
   StyledSection,
+  StyledSectionDesktop,
+  StyledSectionMobile,
   StyledItem,
   StyledBorder,
   StyledBorder2,
@@ -65,7 +67,7 @@ const Cv = () => {
               company
               timePeriod
               description
-              responsabilities
+              responsibilities
               technologies
             }
             education {
@@ -133,14 +135,14 @@ const Cv = () => {
           <StyledDownloadIcon
             aria-label='download my CV resume in pdf'
             download
-            href={"/exports/resume.pdf"}
+            href={'/exports/resume.pdf'}
           >
             <img src={Icons.Download} alt='download icon' /> Download
           </StyledDownloadIcon>
           <StyledThinColumn>
             <StyledProfile>
               {/* Fallback image using github avatar for printing purposes; this solution is a workaround
-             to overcome the fact that puppeteer (used by gatsby-plugin-pdf) do not load local images for security reasons */}
+             to overcome the fact that puppeteer (used by gatsby-plugin-pdf) does not load local images for security reasons */}
               <StyledImagePrint src={gitAvatarUrl} />
               <StyledImage
                 imgStyle={{ borderRadius: '50%', height: '101%' }}
@@ -164,7 +166,7 @@ const Cv = () => {
               <StyledTitle>Profile</StyledTitle>
               <StyledProfileText>{intro}</StyledProfileText>
             </StyledSection>
-            <StyledSection>
+            <StyledSectionDesktop>
               <StyledBorder src={Icons.Border} alt='border' />
               <StyledTitle>Education</StyledTitle>
               {education.map(item => (
@@ -173,7 +175,7 @@ const Cv = () => {
                   educationInfo={item}
                 />
               ))}
-            </StyledSection>
+            </StyledSectionDesktop>
           </StyledThinColumn>
           <StyledThickColumn>
             <StyledSection>
@@ -186,6 +188,16 @@ const Cv = () => {
                 />
               ))}
             </StyledSection>
+            <StyledSectionMobile>
+              <StyledBorder src={Icons.Border} alt='border' />
+              <StyledTitle>Education</StyledTitle>
+              {education.map(item => (
+                <EducationItem
+                  key={`skill-${item.degree}`}
+                  educationInfo={item}
+                />
+              ))}
+            </StyledSectionMobile>
             <StyledSection style={{ marginBottom: '0.5rem' }}>
               <StyledTitle>Main Technical Skills</StyledTitle>
               <StyledGrid>
@@ -244,8 +256,8 @@ const ExperienceItem = ({
       {role}
     </StyledBoldText>
     <StyledItalicText>{`${company} | ${timePeriod}`}</StyledItalicText>
-    {description && <StyledText>{description}</StyledText>}
-    {technologies && (
+    {!!description && <StyledText>{description}</StyledText>}
+    {!!technologies && (
       <StyledText>
         <i>Main technologies: </i>
         {technologies}

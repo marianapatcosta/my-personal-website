@@ -77,6 +77,7 @@ export const StyledCv = styled.div`
     }
     background-size: 21cm 29.7cm;
     flex-direction: row;
+    line-height: 1.35rem;
     margin: auto;
     width: 209.55mm;
     height: 295.15mm;
@@ -121,7 +122,6 @@ export const StyledImage = styled(GatsbyImage)`
   display: block;
   margin: 0 auto;
   width: 7rem;
-  border-radius: 0.625rem;
   box-shadow: 0 0.1rem 0.4rem 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 
@@ -136,7 +136,6 @@ export const StyledImage = styled(GatsbyImage)`
 
 export const StyledImagePrint = styled.img`
   margin: 0 auto;
-  border-radius: 0.625rem;
   box-shadow: 0 0.1rem 0.4rem 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 8.5rem;
@@ -158,11 +157,33 @@ export const StyledSection = styled.section`
   padding: 1rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
-    padding: 1rem 0.5rem 0.5rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
   }
 
   @media print {
     padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+`
+
+export const StyledSectionMobile = styled(StyledSection)`
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    display: none;
+  }
+
+  @media print {
+    display: none;
+  }
+`
+
+export const StyledSectionDesktop = styled(StyledSection)`
+  display: none;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    display: block;
+  }
+
+  @media print {
+    display: block;
   }
 `
 
@@ -185,10 +206,10 @@ export const StyledItem = styled.div`
 
 export const StyledBorder = styled.img`
   position: absolute;
-  top: 4rem;
+  top: 3.5rem;
   left: 0.8rem;
   width: 1rem;
-  height: 63%;
+  height: 65%;
   user-select: none;
 
   // in safari , svg height is not responsive
@@ -200,11 +221,14 @@ export const StyledBorder = styled.img`
 `
 
 export const StyledBorder2 = styled(StyledBorder)`
-  height: 70%;
+  height: 75%;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    height: 73%;
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    height: 68%;
-    top: 3.8rem;
+    height: 70%;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
@@ -212,7 +236,7 @@ export const StyledBorder2 = styled(StyledBorder)`
   }
 
   @media print {
-    height: 73%;
+    height: 75%;
   }
 `
 
