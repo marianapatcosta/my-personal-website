@@ -21,12 +21,14 @@ const PortfolioItem = ({ itemInfo, itemImages }) => {
       <StyledItemDescription>{description}</StyledItemDescription>
       <Carousel items={itemImages} imageAltLabel={title} />
       <StyledStack>
-        {stack.map(({ label, icon }) => (
-          <span key={`stack-${label}`}>
-            <img src={Icons[icon]} alt={`${label} icon`} />
-            <StyledTooltip label={label} />
-          </span>
-        ))}
+        {stack.map(({ label, icon }) =>
+          icon ? (
+            <span key={`stack-${label}`}>
+              <img src={Icons[icon]} alt={`${label} icon`} />
+              <StyledTooltip label={label} />
+            </span>
+          ) : null
+        )}
       </StyledStack>
       <StyledLinks>
         {links.map(({ label, icon, url }) => (
