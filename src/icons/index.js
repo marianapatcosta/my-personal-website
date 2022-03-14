@@ -67,6 +67,7 @@ import Node from './nodejs.svg'
 import OAuth2 from './oauth2.svg'
 import Outsystems from './outsystems.svg'
 import Performance from './performance.svg'
+import Pinia from './pinia.svg'
 import Portfolio from './portfolio.svg'
 import PortfolioSmall from './portfolio-small.svg'
 import PushNotifications from './push-notifications.svg'
@@ -101,6 +102,7 @@ import TypeOrm from './typeorm.svg'
 import User from './user.svg'
 import UxUi from './ux-ui.svg'
 import Vegetarianism from './vegetarianism.svg'
+import Vite from './vite.svg'
 import Vue from './vue.svg'
 import Walking from './walking.svg'
 import Warning from './warning.svg'
@@ -177,6 +179,7 @@ export {
   OAuth2,
   Outsystems,
   Performance,
+  Pinia,
   Plus,
   Portfolio,
   PortfolioSmall,
@@ -211,6 +214,7 @@ export {
   User,
   UxUi,
   Vegetarianism,
+  Vite,
   Vue,
   Walking,
   Warning,

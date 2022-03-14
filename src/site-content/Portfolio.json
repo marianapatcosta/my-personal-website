@@ -1,5 +1,127 @@
 [
   {
+    "title": "CharMix",
+    "description": "Progressive web app word game based on Wordle. CharMix has offline capability and offers the possibility to customize game language, number of guesses and number of letters per word.",
+    "images": ["charmixA.png", "charmixB.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "Vite",
+        "icon": "Vite"
+      },
+      {
+        "label": "Vue",
+        "icon": "Vue"
+      },
+      {
+        "label": "Pinia",
+        "icon": "Pinia"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Game",
+        "icon": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/charmix"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://charmix.surge.sh"
+      }
+    ]
+  },
+  {
+    "title": "Hexagonal 2048",
+    "description": "Web app game that is an hexagonal version of the popular 2048 game with different levels, due to the possibility to custom the number of hexagons to display.",
+    "images": ["hex-gameA.png", "hex-gameB.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "SCSS-modules",
+        "icon": "Scss"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "React Testing Library",
+        "icon": "ReactTestingLibrary"
+      },
+      {
+        "label": "Jest",
+        "icon": "Jest"
+      },
+      {
+        "label": "Game",
+        "icon": ""
+      },
+      {
+        "label": "Tests",
+        "icon": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/my-hex-2048-game"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/my-hex-2048-game/"
+      }
+    ]
+  },
+  {
     "title": "Veggie Foodie",
     "description": "Cross-platform mobile app to register photos and information about user's favourite veggie meals, recipes and products/ingredients in device storage. Uses devices's geolocation and camera and infinite scroll.",
     "images": [
@@ -72,7 +194,7 @@
         "icon": "React"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
@@ -237,6 +359,10 @@
       {
         "label": "Jest",
         "icon": "Jest"
+      },
+      {
+        "label": "Tests",
+        "icon": ""
       }
     ],
     "links": [
@@ -283,12 +409,16 @@
         "icon": "Figma"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
         "label": "Internationalization",
         "icon": "I18n"
+      },
+      {
+        "label": "Game",
+        "icon": ""
       }
     ],
     "links": [
@@ -330,7 +460,7 @@
         "icon": "I18n"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
@@ -456,7 +586,7 @@
         "icon": "EmailJS"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
@@ -535,7 +665,7 @@
         "icon": "Sqlite"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       }
     ],
@@ -586,8 +716,12 @@
         "icon": "Cypress"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
+      },
+      {
+        "label": "Tests",
+        "icon": ""
       }
     ],
     "links": [
@@ -625,8 +759,12 @@
         "icon": "Scss"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
+      },
+      {
+        "label": "Game",
+        "icon": ""
       }
     ],
     "links": [
@@ -668,7 +806,7 @@
         "icon": "StyledComponents"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
@@ -736,7 +874,7 @@
         "icon": "React"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
@@ -795,7 +933,7 @@
         "icon": "Scss"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {
@@ -949,7 +1087,7 @@
         "icon": "EmailJS"
       },
       {
-        "label": "Adaptative/responsive design",
+        "label": "Adaptive/responsive design",
         "icon": "Responsive"
       },
       {

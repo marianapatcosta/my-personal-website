@@ -27,6 +27,8 @@ const mainTechnologies = [
   'Gatsby',
   'Ionic',
   'Django',
+  'Game',
+  'Tests'
 ]
 
 const DEFAULT_TAG = 'All'
@@ -83,7 +85,7 @@ const Portfolio = () => {
     }
 
     if (selectedTags.includes(clickedTag)) {
-      // if user clicks to unselect the only selected tag, 'All' is setted as selectedTag
+      // if user clicks to unselect the only selected tag, 'All' is set as selectedTag
       if (selectedTags.length === 1) {
         return setSelectedTags([DEFAULT_TAG])
       }
