@@ -708,6 +708,10 @@
         "icon": "Scss"
       },
       {
+        "label": "Vue Test Utils",
+        "icon": "Vue"
+      },
+      {
         "label": "Jest",
         "icon": "Jest"
       },
