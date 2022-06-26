@@ -1,9 +1,92 @@
 [
   {
+    "title": "JS Slots",
+    "description": "Progressive web app slot machine that uses the logos of main JS-related tools as symbols. JS Slots has 5 reels, 3 rows, 9 Pay lines, autospinning and special symbols (wildcard, scatter, explosive) for higher winnings.",
+    "images": ["jsSlotsA.png", "jsSlotsB.png"],
+    "stack": [
+      {
+        "label": "Progressive Web App",
+        "icon": "Pwa"
+      },
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Redux",
+        "icon": "Redux"
+      },
+      {
+        "label": "SCSS",
+        "icon": "Scss"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Canvas API",
+        "icon": "Canvas"
+      },
+      {
+        "label": "React Testing Library",
+        "icon": "ReactTestingLibrary"
+      },
+      {
+        "label": "Jest",
+        "icon": "Jest"
+      },
+      {
+        "label": "Game",
+        "icon": ""
+      },
+      {
+        "label": "Tests",
+        "icon": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/js-slots-cra"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://marianapatcosta.github.io/js-slots-cra"
+      }
+    ]
+  },
+  {
     "title": "CharMix",
     "description": "Progressive web app word game based on Wordle. CharMix has offline capability and offers the possibility to customize game language, number of guesses and number of letters per word.",
     "images": ["charmixA.png", "charmixB.png"],
     "stack": [
+      {
+        "label": "Progressive Web App",
+        "icon": "Pwa"
+      },
       {
         "label": "Web",
         "icon": "Web"
@@ -56,9 +139,56 @@
         "url": "https://github.com/marianapatcosta/charmix"
       },
       {
+        "label": "download",
+        "icon": "Link",
+        "url": "https://play.google.com/store/apps/details?id=io.costa.mariana.charmix"
+      }
+    ]
+  },
+  {
+    "title": "Memo Cards",
+    "description": "Mobile app to create, edit, delete and visualize memo flashcards with different categories. Sends a daily notification to remind the user to revisit the cards.",
+    "images": ["memo-CardsA.png", "memo-CardsB.png", "memo-CardsC.png"],
+    "stack": [
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React Native",
+        "icon": "React"
+      },
+      {
+        "label": "Expo",
+        "icon": "Expo"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Push Notifications",
+        "icon": "PushNotifications"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/memo-cards"
+      },
+      {
         "label": "visit",
         "icon": "Link",
-        "url": "https://charmix.surge.sh"
+        "url": "https://expo.dev/@marianapatc/memo-cards"
       }
     ]
   },
@@ -177,77 +307,6 @@
     ]
   },
   {
-    "title": "Solinca Notification App",
-    "description": "Web app developed to allow the members of Solinca's health clubs to configure her/his favourite classes and get an email or WhatsApp notification when a spot is available and can be booked.",
-    "images": ["solincaA.png", "solincaB.png", "solincaC.png"],
-    "stack": [
-      {
-        "label": "Web",
-        "icon": "Web"
-      },
-      {
-        "label": "JavaScript",
-        "icon": "JavaScript"
-      },
-      {
-        "label": "React",
-        "icon": "React"
-      },
-      {
-        "label": "Adaptive/responsive design",
-        "icon": "Responsive"
-      },
-      {
-        "label": "A11y accessibility",
-        "icon": "Accessibility"
-      },
-      {
-        "label": "Dark Theme",
-        "icon": "DarkTheme"
-      },
-      {
-        "label": "Internationalization",
-        "icon": "I18n"
-      },
-      {
-        "label": "Node.js",
-        "icon": "Node"
-      },
-      {
-        "label": "Express.js",
-        "icon": "Express"
-      },
-      {
-        "label": "JWT Authentication",
-        "icon": "Authentication"
-      },
-      {
-        "label": "MongoDB",
-        "icon": "MongoDb"
-      },
-      {
-        "label": "REST API",
-        "icon": "Rest"
-      },
-      {
-        "label": "OpenAPI Specification",
-        "icon": "Swagger"
-      }
-    ],
-    "links": [
-      {
-        "label": "code",
-        "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/solinca-notification-portal-fe"
-      },
-      {
-        "label": "visit",
-        "icon": "Link",
-        "url": "https://solinca-notification-portal.web.app"
-      }
-    ]
-  },
-  {
     "title": "Notify me - Solinca",
     "description": "Mobile version of Solinca Notification Portal to allow the members of Solinca's health clubs to configure her/his favourite classes and get a push notification when a spot is available and can be booked.",
     "images": [
@@ -324,6 +383,78 @@
     ]
   },
   {
+    "title": "Solinca Notification App",
+    "description": "Web app developed to allow the members of Solinca's health clubs to configure her/his favourite classes and get an email or WhatsApp notification when a spot is available and can be booked.",
+    "images": ["solincaA.png", "solincaB.png", "solincaC.png"],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Node.js",
+        "icon": "Node"
+      },
+      {
+        "label": "Express.js",
+        "icon": "Express"
+      },
+      {
+        "label": "JWT Authentication",
+        "icon": "Authentication"
+      },
+      {
+        "label": "MongoDB",
+        "icon": "MongoDb"
+      },
+      {
+        "label": "REST API",
+        "icon": "Rest"
+      },
+      {
+        "label": "OpenAPI Specification",
+        "icon": "Swagger"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/solinca-notification-portal-fe"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://solinca-notification-portal.web.app"
+      }
+    ]
+  },
+
+  {
     "title": "My First Design System",
     "description": "Simple Design System composed of several widely-used, customized atomic components, such as Button, Carousel, Checkbox, Dropdown MultiselectionInput, Stepper, Tabs or Toast.",
     "images": ["componentsA.png", "componentsB.png", "componentsC.png"],
@@ -380,7 +511,7 @@
   },
   {
     "title": "Grammar Police Games",
-    "description": "Web app that integrates versions of the 3 well-known games Flappy Bird, Space Invaders and Memory game, emphasizing common grammar mistakes.",
+    "description": "Progressive Web App that integrates versions of the 3 well-known games Flappy Bird, Space Invaders and Memory game, emphasizing common grammar mistakes.",
     "images": [
       "grammar-policeA.png",
       "grammar-policeB.png",
@@ -388,6 +519,10 @@
       "grammar-policeD.png"
     ],
     "stack": [
+      {
+        "label": "Progressive Web App",
+        "icon": "Pwa"
+      },
       {
         "label": "Web",
         "icon": "Web"

@@ -74,12 +74,16 @@
       },
       {
         "role": "Medical Writer",
-        "company": "Blueclinical",
+        "company": "BlueClinical",
         "timePeriod": "Jul 2015 – Sep 2018",
         "description": "Writing of clinical trials-related documentation. Compliance with legal and regulatory requirements, internal SOPs and ICH-GCPs."
       }
     ],
     "education": [
+      {
+        "institution": "TypeScript Bootcamp - Evolution",
+        "timePeriod": "2022"
+      },
       {
         "degree": "Associate Reactive Developer",
         "institution": "OutSystems Developer School",

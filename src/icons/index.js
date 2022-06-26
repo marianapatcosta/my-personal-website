@@ -72,6 +72,7 @@ import Portfolio from './portfolio.svg'
 import PortfolioSmall from './portfolio-small.svg'
 import PushNotifications from './push-notifications.svg'
 import Plus from './plus.svg'
+import Pwa from './pwa.svg'
 import Python from './python.svg'
 import Radar from './radar.svg'
 import React from './react.svg'
@@ -184,6 +185,7 @@ export {
   Portfolio,
   PortfolioSmall,
   PushNotifications,
+  Pwa,
   Python,
   Radar,
   React,

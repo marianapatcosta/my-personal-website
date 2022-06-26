@@ -196,11 +196,11 @@ export const StyledItem = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 0.35rem 0 0.35rem 1rem;
   }
 
   @media print {
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 0.25rem 0 0.25rem 1rem;
   }
 `
 
@@ -209,8 +209,12 @@ export const StyledBorder = styled.img`
   top: 3.5rem;
   left: 0.8rem;
   width: 1rem;
-  height: 65%;
+  height: 68%;
   user-select: none;
+
+  @media print {
+    height: 66%;
+  }
 
   // in safari , svg height is not responsive
   @media not all and (min-resolution: 0.001dpcm) {
