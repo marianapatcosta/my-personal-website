@@ -38,6 +38,8 @@ export const StyledImage = styled(GatsbyImage)`
     `
     transform: translate(0, 0);
     right: 0;
+    left: 0;
+    margin: 0 auto;
     opacity: 1;
     visibility: visible;
     ;`};
