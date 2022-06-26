@@ -5,7 +5,7 @@ name: Deploy to Firebase Hosting on merge
 'on':
   push:
     branches:
-      - master
+      - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -18,3 +18,7 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MARIANA_COSTA }}'
           channelId: live
           projectId: mariana-costa
+        env:
+          GATSBY_SERVICE_ID: '${{ secrets.GATSBY_SERVICE_ID }}'
+          GATSBY_TEMPLATE_ID: '${{ secrets.GATSBY_TEMPLATE_ID }}'
+          GATSBY_USER_ID: '${{ secrets.GATSBY_USER_ID }}'
