@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies and Build
-      - uses: actions/checkout@v2
-      - run: mkdir -p public/exports && yarn install --frozen-lockfile && yarn build
+        uses: actions/checkout@v2
+        run: mkdir -p public/exports && yarn install --frozen-lockfile && yarn build
         env:
           GATSBY_SERVICE_ID: '${{ secrets.GATSBY_SERVICE_ID }}'
           GATSBY_TEMPLATE_ID: '${{ secrets.GATSBY_TEMPLATE_ID }}'
           GATSBY_USER_ID: '${{ secrets.GATSBY_USER_ID }}'
       - name: Deploy
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MARIANA_COSTA }}'
