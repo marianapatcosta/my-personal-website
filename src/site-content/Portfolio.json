@@ -373,12 +373,12 @@
       {
         "label": "code",
         "icon": "GitHub",
-        "url": "https://github.com/marianapatcosta/gameplay"
+        "url": "https://github.com/marianapatcosta/notify-me-solinca"
       },
       {
         "label": "visit",
         "icon": "Link",
-        "url": "expo.io/@marianapatc/gameplay-nlw"
+        "url": "https://expo.dev/@marianapatc/notify-me-solinca"
       }
     ]
   },
@@ -675,7 +675,7 @@
       {
         "label": "visit",
         "icon": "Link",
-        "url": "https://expo.io/@marianapatc/weatherison"
+        "url": "https://expo.dev/@marianapatc/weatherison"
       }
     ]
   },
@@ -1179,7 +1179,7 @@
       {
         "label": "visit",
         "icon": "Link",
-        "url": "expo.io/@marianapatc/gameplay-nlw"
+        "url": "https://expo.dev/@marianapatc/gameplay-nlw"
       }
     ]
   },
