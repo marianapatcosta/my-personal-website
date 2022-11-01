@@ -25,6 +25,7 @@ const mainTechnologies = [
   'Electron',
   'NodeJS',
   'Gatsby',
+  'Next',
   'Ionic',
   'Django',
   'Game',

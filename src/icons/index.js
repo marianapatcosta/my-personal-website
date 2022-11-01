@@ -62,7 +62,7 @@ import MachineLearning from './machine-learning.svg'
 import Mobile from './mobile.svg'
 import MongoDb from './mongodb.svg'
 import Mustache from './mustache.svg'
-import NextJs from './nextjs.svg'
+import Next from './nextjs.svg'
 import Node from './nodejs.svg'
 import OAuth2 from './oauth2.svg'
 import Outsystems from './outsystems.svg'
@@ -175,7 +175,7 @@ export {
   Logo,
   Mobile,
   Mustache,
-  NextJs,
+  Next,
   Node,
   OAuth2,
   Outsystems,

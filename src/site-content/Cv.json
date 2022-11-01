@@ -2,7 +2,7 @@
   {
     "name": "Mariana Costa",
     "role": "Software Developer",
-    "intro": "Mariana Costa works as Software Developer for more than 3 years. Particularly enthusiastic about Frontend Developement and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
+    "intro": "Mariana Costa works as Software Developer for about 4 years. Particularly enthusiastic about Frontend Development and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
     "profileImage": "my-photo.png",
     "gitAvatarUrl": "https://github.com/marianapatcosta.png",
     "contacts": [
@@ -50,25 +50,33 @@
     "experience": [
       {
         "role": "Frontend Developer",
+        "company": "Evolution",
+        "timePeriod": "Oct 2022 - Present",
+        "description": "Development of games for online casinos.",
+        "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Participation on task planning;",
+        "technologies": "React; Redux; TypeScript; Post-CSS; Storybook; React Testing Library; Jest."
+      },
+      {
+        "role": "Frontend Developer",
         "company": "SWORD Health",
-        "timePeriod": "Dec 2021 - Present",
-        "description": "Development of applications to help the management of SWORD Health's operations.",
+        "timePeriod": "Dec 2021 - Oct 2022",
+        "description": "Development of applications to handle SWORD Health's operations.",
         "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Participation on task planning;",
         "technologies": "Vue; Vuex; JavaScript; SCSS."
       },
       {
         "role": "Software Developer",
-        "company": "Amyris – Catholic University of Portugal",
+        "company": "Amyris",
         "timePeriod": "Jul 2020 - Dec 2021",
-        "description": "Development of applications to automate and improve routine tasks of Amyris's Scientists.",
+        "description": "Development of applications to automate Amyris's routine tasks.",
         "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Development of mockups; Participation on task planning;",
-        "technologies": "React; Redux; JavaScript; SCSS; Figma; Enzyme; Jest; Python."
+        "technologies": "React; Redux; JavaScript; Figma; Enzyme; Jest."
       },
       {
         "role": "Junior FullStack Developer",
         "company": "Celfocus",
         "timePeriod": "Jan 2019 – Jun 2020",
-        "description": "Development of Self-Care Portal for Vodafone Germany and portal to handle DNS and IP blockage requests for Vodafone Portugal.",
+        "description": "Development of portals for Vodafone",
         "responsibilities": "Frontend and Backend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation and mockups; Collaboration with QA and UX/UI teams; Participation on task planning;",
         "technologies": "Vue; Angular; JavaScript; TypeScript; SCSS; Node.js; Express.js; Java 8; Jasmine; Karma; Jest;"
       },
@@ -143,12 +151,12 @@
         "level": 3
       },
       {
-        "label": "HTML5",
+        "label": "HTML",
         "icon": "Html",
         "level": 4.5
       },
       {
-        "label": "CSS3",
+        "label": "SCSS/Styled Comp",
         "icon": "Css",
         "level": 4.5
       },
@@ -168,9 +176,9 @@
         "level": 4
       },
       {
-        "label": "Styled Components",
-        "icon": "StyledComponents",
-        "level": 4.5
+        "label": "Storybook",
+        "icon": "Storybook",
+        "level": 3.5
       },
       {
         "label": "React Native",
@@ -183,8 +191,8 @@
         "level": 3.5
       },
       {
-        "label": "Next.js",
-        "icon": "NextJs",
+        "label": "Next",
+        "icon": "Next",
         "level": 3.5
       },
       {
@@ -193,7 +201,7 @@
         "level": 3.5
       },
       {
-        "label": "Node.js",
+        "label": "Node",
         "icon": "Node",
         "level": 4
       },

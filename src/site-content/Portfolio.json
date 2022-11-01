@@ -1,5 +1,68 @@
 [
   {
+    "title": "Bom Português",
+    "description": "Progressive web app Question & Answer game to practice tricky portuguese words and expressions.",
+    "images": ["bom-portuguesA.png", "bom-portuguesB.png, bom-portuguesC.png"],
+    "stack": [
+      {
+        "label": "Progressive Web App",
+        "icon": "Pwa"
+      },
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "Next",
+        "icon": "Next"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Styled Components",
+        "icon": "StyledComponents"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "Game",
+        "icon": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/bom-portugues"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://bom-portugues.vercel.app/"
+      }
+    ]
+  },
+  {
     "title": "JS Slots",
     "description": "Progressive web app slot machine that uses the logos of main JS-related tools as symbols. JS Slots has 5 reels, 3 rows, 9 Pay lines, autospinning and special symbols (wildcard, scatter, explosive) for higher winnings.",
     "images": ["jsSlotsA.png", "jsSlotsB.png"],

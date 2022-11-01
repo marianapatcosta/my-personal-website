@@ -228,15 +228,15 @@ export const StyledBorder2 = styled(StyledBorder)`
   height: 75%;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    height: 73%;
+    height: 76%;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    height: 70%;
+    height: 73%;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
-    height: 73%;
+    height: 76%;
   }
 
   @media print {
