@@ -1,6 +1,6 @@
 import { GatsbyImage } from 'gatsby-plugin-image'
 import styled, { keyframes } from 'styled-components'
-import Particles from 'react-particles-js'
+import Particles from 'react-tsparticles'
 import { StyledSection } from '../../../themes/global-style'
 
 const BLINKING_ANIMATION_DURATION = 0.3

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { getImage } from 'gatsby-plugin-image'
 import { useTheme } from 'styled-components'
+import { loadFull } from 'tsparticles'
 import useTypeWriter from '../../../hooks/useTypewriter'
 import { Toast } from '../..'
 import * as Icons from '../../../icons'
@@ -39,6 +40,10 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
   const name = useTypeWriter(`I'm ${authorName}`)
   const role = useTypeWriter(authorRole, 4000)
 
+  const particlesInit = useCallback(async engine => {
+    await loadFull(engine)
+  }, [])
+
   useEffect(() => {
     let timer
     if (selectedPhotoIndex >= photos.length - 1) {
@@ -52,10 +57,10 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
     return () => clearTimeout(timer)
   }, [selectedPhotoIndex, photos])
 
-  // workaround to overcome the incorrect set of 100vh by mobile browsers when address bar is visible 
+  // workaround to overcome the incorrect set of 100vh by mobile browsers when address bar is visible
   useEffect(() => {
     if (window.matchMedia('(max-width: 480px)').matches) {
-      const MOBILE_HEADER_HEIGHT = 112; // in px
+      const MOBILE_HEADER_HEIGHT = 112 // in px
       document.getElementById('intro').style.height = `${
         window.innerHeight - MOBILE_HEADER_HEIGHT
       }px`
@@ -83,7 +88,10 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
 
   return (
     <StyledIntro id='intro'>
-      <StyledParticles params={PARTICLES_PRESETS.bubbles(theme)} />
+      <StyledParticles
+        init={particlesInit}
+        options={PARTICLES_PRESETS.bubbles(theme)}
+      />
       <StyledIntroContentWrapper>
         <StyledIntroContent>
           <StyledText>

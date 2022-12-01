@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StyledTooltip } from './StyledTooltip'
+import { StyledTooltip } from './styles'
 
 const Tooltip = ({ label, ...props }) => (
   <StyledTooltip {...props}> {label}</StyledTooltip>

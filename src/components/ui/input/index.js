@@ -7,7 +7,7 @@ import {
   StyledLabel,
   StyledInputIcon,
   StyledInputError,
-} from './StyledInput'
+} from './styles'
 
 const Input = forwardRef(
   ({ id, label, errorText, icon, iconText, ...props }, ref) => (

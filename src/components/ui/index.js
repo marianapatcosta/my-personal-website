@@ -14,6 +14,7 @@ import SEO from './seo'
 import SlideImage from './slide-image'
 import Textarea from './textarea'
 import Tag from './tag'
+import TalkToMe from './talk-to-me'
 import Toast from './toast'
 import ToggleThemeButton from './toggle-theme-button'
 import Tooltip from './tooltip'
@@ -34,6 +35,7 @@ export {
   SEO,
   SlideImage,
   Tag,
+  TalkToMe,
   Textarea,
   Toast,
   ToggleThemeButton,

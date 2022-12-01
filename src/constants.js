@@ -47,6 +47,7 @@ const bubbles = theme => ({
       out_mode: 'out',
     },
   },
+  fullScreen: { enable: false },
   interactivity: {
     events: {
       onhover: {

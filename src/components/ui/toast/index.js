@@ -7,7 +7,7 @@ import {
   StyledToastMessageWrapper,
   StyledToastIcon,
   StyledToastClose,
-} from './StyledToast'
+} from './styles'
 import { TOAST_TYPES } from '../../../constants'
 
 const toastIcons = {

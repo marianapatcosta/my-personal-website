@@ -5,7 +5,7 @@ import {
   StyledTextarea,
   StyledLabel,
   StyledTextareaError,
-} from './StyledTextarea'
+} from './styles'
 
 const Textarea = forwardRef(({ id, label, errorText, ...props }, ref) => (
   <StyledTextareaWrapper>
