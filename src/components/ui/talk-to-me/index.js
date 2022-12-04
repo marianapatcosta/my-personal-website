@@ -19,14 +19,16 @@ const TalkToMe = ({ className }) => {
   const [interactiveSpeech, setInteractiveSpeech] = useState(false)
   const timerId = useRef(null)
   const supportSpeechRecognition =
-    (typeof window !== 'undefined' && 'SpeechRecognition' in window) ||
-    'webkitSpeechRecognition' in window
+    typeof window !== 'undefined'
+      ? 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window
+      : false
 
   const { addToast } = useToast()
 
   useEffect(() => {
     const browserName = getBrowserName() || 'This browser'
-    const isChromeOrSafari = (browserName === 'Chrome') | (browserName === 'Safari')
+    const isChromeOrSafari =
+      (browserName === 'Chrome') | (browserName === 'Safari')
 
     if (!supportSpeechRecognition && interactive) {
       addToast({
