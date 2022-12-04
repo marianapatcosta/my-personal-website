@@ -20,7 +20,7 @@ const TalkToMe = ({ className }) => {
   const timerId = useRef(null)
   const supportSpeechRecognition =
     typeof window !== 'undefined'
-      ? 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window
+      ? !!window.SpeechRecognition || window.webkitSpeechRecognition
       : false
 
   const { addToast } = useToast()
