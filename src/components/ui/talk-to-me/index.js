@@ -26,7 +26,7 @@ const TalkToMe = ({ className }) => {
 
   useEffect(() => {
     const browserName = getBrowserName() || 'This browser'
-    const isChrome = browserName === 'Chrome'
+    const isChromeOrSafari = (browserName === 'Chrome') | (browserName === 'Safari')
 
     if (!supportSpeechRecognition && interactive) {
       addToast({
@@ -36,7 +36,7 @@ const TalkToMe = ({ className }) => {
       return
     }
 
-    if (!isChrome && interactive) {
+    if (!isChromeOrSafari && interactive) {
       addToast({
         message: `${browserName} has poor support for oral communication. Use Google Chrome for better support or just text.`,
         type: TOAST_TYPES.WARNING,
