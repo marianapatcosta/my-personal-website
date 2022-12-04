@@ -2,10 +2,7 @@ import styled from 'styled-components'
 
 export const StyledToggleButtonWrapper = styled.button`
   position: relative;
-  background: none;
-  border: none;
   align-self: flex-start;
-  cursor: pointer;
 
   &:hover {
     opacity: 0.75;

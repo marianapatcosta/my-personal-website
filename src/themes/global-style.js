@@ -49,6 +49,13 @@ export const GlobalStyle = createGlobalStyle`
       color: ${({ theme }) => theme.colors.primary};
     }
 
+    button {
+      border: none;
+      background: none;
+      font: inherit;
+      cursor: pointer;
+    }
+
     .deckgo-highlight-code-carbon {
       margin: 1rem 0 0.3rem;
       font-size: 90%;

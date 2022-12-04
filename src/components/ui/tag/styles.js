@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const StyledTag = styled.button`
-  border: none;
   font: inherit;
   min-width: 5rem;
   height: 1.8rem;

@@ -4,7 +4,7 @@ import { getImage } from 'gatsby-plugin-image'
 import { useTheme } from 'styled-components'
 import { loadFull } from 'tsparticles'
 import useTypeWriter from '../../../hooks/useTypewriter'
-import { Toast } from '../..'
+import { useToast } from '../../../hooks/toast'
 import * as Icons from '../../../icons'
 import { PARTICLES_PRESETS, TOAST_TYPES } from '../../../constants'
 import {
@@ -30,12 +30,9 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
     photoA.node.base < photoB.node.base ? -1 : 1
   )
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0)
-  const [toastInfo, setToastInfo] = useState({
-    message: '',
-    type: '',
-  })
 
   const theme = useTheme()
+  const { addToast } = useToast(9)
 
   const name = useTypeWriter(`I'm ${authorName}`)
   const role = useTypeWriter(authorRole, 4000)
@@ -68,7 +65,7 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
   }, [])
 
   const handleShareClick = async () => {
-    if (typeof navigator !== 'undefined' && !navigator.share) return
+    if (typeof navigator === 'undefined' || !navigator.share) return
     const shareData = {
       title: "Check it out Mariana Costa's Personal Website!",
       text: "This is Mariana Costa's Personal Website",
@@ -78,7 +75,7 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
     try {
       await navigator.share(shareData)
     } catch (error) {
-      setToastInfo({
+      addToast({
         message:
           'There was a error while trying to share this site. Please try again.',
         type: TOAST_TYPES.ALERT,
@@ -143,7 +140,6 @@ const Intro = ({ authorName, authorRole, contactsInfo, introImages }) => {
           </StyledShare>
         )}
       </StyledLinks>
-      {toastInfo?.message && <Toast {...toastInfo} onClear={setToastInfo} />}
     </StyledIntro>
   )
 }

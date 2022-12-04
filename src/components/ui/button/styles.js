@@ -37,7 +37,6 @@ const ripple = keyframes`
 }`
 
 export const StyledButton = styled.button`
-  font: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +53,6 @@ export const StyledButton = styled.button`
   overflow: hidden;
   user-select: none;
   transition: opacity 0.3s ease-in-out;
-  cursor: pointer;
   box-shadow: 0 0.0625rem 0.2rem 0 ${({ theme }) => theme.colors.shadow};
 
   ${({ disabled }) =>

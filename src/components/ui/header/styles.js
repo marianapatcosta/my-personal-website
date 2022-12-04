@@ -179,8 +179,6 @@ export const StyledToggleThemeButton = styled(ToggleThemeButton)`
 `
 
 export const StyledMenuIcon = styled.button`
-  border: none;
-  background: none;
   width: 1.5rem;
   height: 1.1rem;
   display: flex;
@@ -189,7 +187,6 @@ export const StyledMenuIcon = styled.button`
   position: relative;
   margin-left: 2.5rem;
   margin-top: 0.125rem;
-  cursor: pointer;
 
   span {
     background-color: ${({ theme }) => theme.colors.font};

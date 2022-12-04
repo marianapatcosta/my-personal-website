@@ -110,14 +110,11 @@ export const StyledIndicatorBarItem = styled.span`
 `
 
 export const StyledButton = styled.button`
-  border: none;
-  background: none;
   position: absolute;
   width: 3rem;
   height: 3rem;
   right: 0.5rem;
   z-index: 1;
-  cursor: pointer;
 
   div {
     box-sizing: content-box;

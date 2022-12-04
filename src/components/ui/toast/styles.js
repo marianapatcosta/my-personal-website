@@ -66,19 +66,16 @@ export const StyledToast = styled.div`
 `
 
 export const StyledToastClose = styled.button`
-  border: none;
-  background: none;
   position: absolute;
-  top: 0.5rem;
+  top: 0;
   right: 0.5rem;
-  border: none;
-  img {
-    width: 0.7rem;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: rotate(90deg);
-    }
+  width: 0.7rem;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: rotate(90deg);
+  }
+  span {
+    color: ${({ theme }) => theme.colors.white};
   }
 `
 
@@ -90,13 +87,12 @@ export const StyledToastIcon = styled.img`
 export const StyledToastMessage = styled.p`
   font-size: 95%;
   color: ${({ theme }) => theme.colors.white};
-  line-height: 1.5rem;
+  line-height: 1.15rem;
   padding: 0 1rem;
 `
 
 export const StyledToastMessageWrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 0.5rem;
 `

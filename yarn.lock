@@ -65,7 +65,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.14.6", "@babel/core@^7.15.5":
+"@babel/core@^7.15.5", "@babel/core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.20.5.tgz#45e2114dc6cd4ab167f81daf7820e8fa1250d113"
   integrity sha512-UdOWmk4pNWTm/4DlPUl/Pt4Gz4rcEMb7CY0Y3eJl5Yz1vI8ZJGmHWaVE55LoxRjdpx0z259GE9U5STA9atUinQ==
@@ -1761,10 +1761,10 @@
   dependencies:
     unist-util-visit "^1.4.1"
 
-"@marianapatcosta/talk-to-me@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@marianapatcosta/talk-to-me/-/talk-to-me-1.0.1.tgz#44d041123d57a85a4f064fa712a8730ccc376414"
-  integrity sha512-D8I7E0zfNodBo4q2aoE7i7Man1nX8bXTiXnPnzbHlyHDbgTyrEiUQ4MeOYxeEDgwiC8DONxu85CUa8zGIEuHzg==
+"@marianapatcosta/talk-to-me@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@marianapatcosta/talk-to-me/-/talk-to-me-1.0.5.tgz#1c79ab3b4022bc17f92efb8b6040985cdc18d5b9"
+  integrity sha512-bnGUYR5zG3naVRgd1JJ0CrA/WzkVeOQFSYHKM4kWnHYQpkOdjt3Ud5nvFppl4Xw+0OmfMLXvNH3G7MBM89SlSg==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
@@ -5666,11 +5666,6 @@ extsprintf@^1.2.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.1.tgz#8d172c064867f235c0c84a596806d279bf4bcc07"
   integrity sha512-Wrk35e8ydCKDj/ArClo1VrPVmN8zph5V4AtHwIuHhvMXsKf73UT3BOD+azBIW+3wOJ4FhEH7zyaJCFvChjYvMA==
-
-"false@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/false/-/false-0.0.4.tgz#8f55de5af5c03f50bf68aed57ed80e3d2176a517"
-  integrity sha512-CPAG3ud9Cz8NvLKlsTLr/F1aoJL6tPyhNTzaDFzS5CX6id21hVuS5sBK8wlTLuvFklpvH1idvPbW8Lbri3G7qA==
 
 fast-copy@^2.1.0:
   version "2.1.7"
@@ -11133,12 +11128,7 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==
 
-prettier@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
-  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
-
-prettier@^2.3.2:
+prettier@^2.3.2, prettier@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.0.tgz#c7df58393c9ba77d6fba3921ae01faf994fb9dc9"
   integrity sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==

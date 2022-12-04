@@ -64,6 +64,7 @@ import MongoDb from './mongodb.svg'
 import Mustache from './mustache.svg'
 import Next from './nextjs.svg'
 import Node from './nodejs.svg'
+import Npm from './npm.svg'
 import OAuth2 from './oauth2.svg'
 import Outsystems from './outsystems.svg'
 import Performance from './performance.svg'
@@ -177,6 +178,7 @@ export {
   Mustache,
   Next,
   Node,
+  Npm,
   OAuth2,
   Outsystems,
   Performance,

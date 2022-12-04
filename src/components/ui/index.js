@@ -16,6 +16,7 @@ import Textarea from './textarea'
 import Tag from './tag'
 import TalkToMe from './talk-to-me'
 import Toast from './toast'
+import ToastList from './toast-list'
 import ToggleThemeButton from './toggle-theme-button'
 import Tooltip from './tooltip'
 
@@ -38,6 +39,7 @@ export {
   TalkToMe,
   Textarea,
   Toast,
+  ToastList,
   ToggleThemeButton,
   Tooltip,
 }

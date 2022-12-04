@@ -131,3 +131,5 @@ export const PARTICLES_PRESETS = {
 export const NUMBER_OF_ITEMS_SMALL_SCREEN = 4
 
 export const NUMBER_OF_ITEMS_BIG_SCREEN = 6
+
+export const TOAST_OFFSET = 4

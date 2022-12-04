@@ -370,6 +370,61 @@
     ]
   },
   {
+    "title": "Talk to Me",
+    "description": "NPM package that allows the user to talk/text to a customizable avatar. Uses SpeechRecognition API. Demo available in this portfolio",
+    "images": ["talk-to-meA.png"],
+    "stack": [
+      {
+        "label": "NPM package",
+        "icon": "Npm"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "SCSS-modules",
+        "icon": "Scss"
+      },
+      {
+        "label": "Vite",
+        "icon": "Vite"
+      },
+      {
+        "label": "Storybook",
+        "icon": "Storybook"
+      },
+      {
+        "label": "React Testing Library",
+        "icon": "ReactTestingLibrary"
+      },
+      {
+        "label": "Jest",
+        "icon": "Jest"
+      },
+      {
+        "label": "Tests",
+        "icon": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/talk-to-me"
+      },
+      {
+        "label": "install",
+        "icon": "Link",
+        "url": "https://www.npmjs.com/package/@marianapatcosta/talk-to-me"
+      }
+    ]
+  },
+  {
     "title": "Notify me - Solinca",
     "description": "Mobile version of Solinca Notification Portal to allow the members of Solinca's health clubs to configure her/his favourite classes and get a push notification when a spot is available and can be booked.",
     "images": [

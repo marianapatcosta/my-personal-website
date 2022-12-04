@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import PropTypes from 'prop-types'
 import { StyledSectionTitle } from '../../../themes/global-style'
-import { Input, Textarea, Toast } from '../..'
+import { useToast } from '../../../hooks/toast'
+import { Input, Textarea } from '../..'
 import * as Icons from '../../../icons'
 import { TOAST_TYPES } from '../../../constants'
 import {
@@ -18,32 +19,25 @@ import {
   StyledContactLink,
 } from './styles'
 
-const Contacts = ({ contactsInfo }) => {
-  const [toastInfo, setToastInfo] = useState({
-    message: '',
-    type: '',
-  })
+const Contacts = ({ contactsInfo }) => (
+  <StyledContacts id='contacts'>
+    <StyledSectionTitle>Contacts</StyledSectionTitle>
+    <StyledContactsContent>
+      <ContactForm />
+      <StyledContactLinksDesktop>
+        <StyledTitle>&nbsp;</StyledTitle>
+        <ContactLinks contactsInfo={contactsInfo} />
+      </StyledContactLinksDesktop>
+      <StyledContactLinks>
+        <ContactLinks contactsInfo={contactsInfo} />
+      </StyledContactLinks>
+    </StyledContactsContent>
+  </StyledContacts>
+)
 
-  return (
-    <StyledContacts id='contacts'>
-      <StyledSectionTitle>Contacts</StyledSectionTitle>
-      <StyledContactsContent>
-        <ContactForm setToastInfo={setToastInfo} />
-        <StyledContactLinksDesktop>
-          <StyledTitle>&nbsp;</StyledTitle>
-          <ContactLinks contactsInfo={contactsInfo} />
-        </StyledContactLinksDesktop>
-        <StyledContactLinks>
-          <ContactLinks contactsInfo={contactsInfo} />
-        </StyledContactLinks>
-      </StyledContactsContent>
-      {toastInfo?.message && <Toast {...toastInfo} onClear={setToastInfo} />}
-    </StyledContacts>
-  )
-}
-
-const ContactForm = ({ setToastInfo }) => {
+const ContactForm = () => {
   const { register, errors, handleSubmit, reset, setValue } = useForm()
+  const { addToast } = useToast(9)
 
   const onSubmit = async data => {
     try {
@@ -60,14 +54,14 @@ const ContactForm = ({ setToastInfo }) => {
         templateParams,
         process.env.GATSBY_USER_ID
       )
-      setToastInfo({
+      addToast({
         message:
           'Thank you for your message! I will get back to you as soon as possible.',
         type: TOAST_TYPES.SUCCESS,
       })
       reset()
     } catch (error) {
-      setToastInfo({
+      addToast({
         message: 'Your message could not be sent. Please try again.',
         type: TOAST_TYPES.ALERT,
       })
@@ -102,7 +96,8 @@ const ContactForm = ({ setToastInfo }) => {
             ref={register({
               required: { value: true, message: 'Please enter your email.' },
               pattern: {
-                value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                value:
+                  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 message: 'Please enter a valid email.',
               },
             })}

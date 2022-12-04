@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import { Alert, CloseWhite, Info2, Success, Warning } from '../../../icons'
+import { Alert, Info2, Success, Warning } from '../../../icons'
+import { TOAST_TYPES } from '../../../constants'
 import {
   StyledToast,
   StyledToastMessage,
@@ -8,7 +9,6 @@ import {
   StyledToastIcon,
   StyledToastClose,
 } from './styles'
-import { TOAST_TYPES } from '../../../constants'
 
 const toastIcons = {
   alert: Alert,
@@ -17,7 +17,7 @@ const toastIcons = {
   warning: Warning,
 }
 
-const Toast = ({ id, message, type, className, autoClearTime, onClear }) => {
+const Toast = ({ id, message, type, className, style, autoClearTime, onClear }) => {
   const [willBeDeleted, setWillBeDeleted] = useState(false)
 
   useEffect(() => {
@@ -40,9 +40,10 @@ const Toast = ({ id, message, type, className, autoClearTime, onClear }) => {
       className={className}
       type={type}
       willBeDeleted={willBeDeleted}
+      style={style}
     >
-      <StyledToastClose aria-label='Close' onClick={onClear}>
-        <img src={CloseWhite} alt='close icon' />
+      <StyledToastClose aria-label='Close toast' onClick={onClear}>
+        <span>✖</span>
       </StyledToastClose>
       <StyledToastMessageWrapper>
         <StyledToastIcon src={toastIcons[type]} alt={`${type} icon`} />
@@ -56,6 +57,7 @@ Toast.propTypes = {
   id: PropTypes.string,
   message: PropTypes.string,
   className: PropTypes.string,
+  style: PropTypes.object,
   type: PropTypes.oneOf(Object.values(TOAST_TYPES)),
   onClean: PropTypes.func,
 }
@@ -65,7 +67,7 @@ Toast.defaultProps = {
   message: '',
   className: '',
   type: TOAST_TYPES.INFO,
-  autoClearTime: 2500,
+  autoClearTime: 5000,
   onClean: () => null,
 }
 

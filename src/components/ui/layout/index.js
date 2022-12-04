@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import { CookieBar, Header, Footer } from '..'
+import { CookieBar, Header, Footer, ToastList } from '..'
 import { GlobalStyle } from '../../../themes/global-style'
-import { StyledMain } from './styles.js'
 import { ThemeContextProvider } from '../../../hooks/theme'
+import { ToastContextProvider } from '../../../hooks/toast'
+import { StyledMain, StyledTalkToMe } from './styles.js'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,11 +21,17 @@ const Layout = ({ children }) => {
   return (
     <>
       <ThemeContextProvider>
-        <GlobalStyle />
-        <Header />
-        <StyledMain>{children}</StyledMain>
-        <Footer authorName={data.site.siteMetadata?.authorName} />
-        <CookieBar />
+        <ToastContextProvider>
+          <GlobalStyle />
+          <Header />
+          <StyledMain>
+            {children}
+            <StyledTalkToMe />
+          </StyledMain>
+          <Footer authorName={data.site.siteMetadata?.authorName} />
+          <CookieBar />
+          <ToastList />
+        </ToastContextProvider>
       </ThemeContextProvider>
     </>
   )

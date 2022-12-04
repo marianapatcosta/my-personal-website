@@ -223,16 +223,10 @@ export const StyledLink = styled.a`
 `
 
 export const StyledShare = styled.button`
-  border: none;
-  background: none;
   margin: 0 0.5rem;
   img {
     filter: ${({ theme }) => theme.colors.icon};
     width: 1rem;
-  }
-
-  :hover {
-    cursor: pointer;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
