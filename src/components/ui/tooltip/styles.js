@@ -7,7 +7,7 @@ export const StyledTooltip = styled.span`
   background-color: ${({ theme }) => theme.colors.primary};
   padding: 0.3rem 0.5rem;
   box-shadow: 0.0625rem 0.0625rem 0.225rem ${({ theme }) => theme.colors.shadow};
-  bottom: -2rem;
+  bottom: -2.5rem;
   left: 50%;
   z-index: 1;
   border-radius: 0.3rem;

@@ -1761,10 +1761,10 @@
   dependencies:
     unist-util-visit "^1.4.1"
 
-"@marianapatcosta/talk-to-me@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@marianapatcosta/talk-to-me/-/talk-to-me-1.0.6.tgz#05ad7c6a84debbb35a45ee71513d4899e7470858"
-  integrity sha512-jHSpEeixRLt55ARyTjXGo6fJEViIKhB2JCdotqJa5ReDRDpkoCMZUSwI6JPQyPbQBhKgrrXukVBDDt91p/CaKQ==
+"@marianapatcosta/talk-to-me@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@marianapatcosta/talk-to-me/-/talk-to-me-1.0.7.tgz#b62e1089e0e23dce59e6a43b025775f1e928ae00"
+  integrity sha512-doypjJHRoD2eNNSBHxnCaRt6QrR9NaMf9cosfg1pDclT9iOHgGpkRwA3m6EhgMkGmRgwnFbvoiY14ciAR0oFzA==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"

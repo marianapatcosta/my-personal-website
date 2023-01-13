@@ -8,11 +8,12 @@ import React, {
 import PropTypes from 'prop-types'
 import { TalkToMe as TalkToMeComponent } from '@marianapatcosta/talk-to-me'
 import { MyAvatar } from './my-avatar'
-import { conversation } from './conversation'
+import { conversation, conversationTips } from './conversation'
 import { TOAST_TYPES } from '../../../constants'
 import { useToast } from '../../../hooks/toast'
 import { getBrowserName } from '../../../utils'
-import { StyledTalkToMe } from './styles'
+import { Info } from '../../../icons'
+import { StyledTalkToMe, StyledTooltip } from './styles'
 
 const TalkToMe = ({ className }) => {
   const [interactive, setInteractive] = useState(false)
@@ -134,9 +135,13 @@ const TalkToMe = ({ className }) => {
         onKeyDown={interactive ? e => e.stopPropagation() : () => null}
       >
         <header>
-          <p>{`${
-            supportSpeechRecognition ? 'Click and talk!' : ''
-          } Let's chat about my career!`}</p>
+          <p>
+            {`${supportSpeechRecognition ? 'Click and talk!' : ''} Let's chat!`}{' '}
+            <span>
+              <img src={Info} alt='info tip to learn about what to chat' />
+              <StyledTooltip label={conversationTips} />
+            </span>
+          </p>
           <button
             onClick={toggleInteractive}
             aria-label={interactive ? 'click to close the modal.' : ''}

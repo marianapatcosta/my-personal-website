@@ -1,6 +1,16 @@
 import styled from 'styled-components'
+import Tooltip from '../tooltip'
 
 const zoomInDuration = 0.3
+
+export const StyledTooltip = styled(Tooltip)`
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  white-space: pre-line;
+  width: 15rem;
+  top: 2rem;
+`
 
 export const StyledTalkToMe = styled.div`
   position: fixed;
@@ -63,6 +73,24 @@ export const StyledTalkToMe = styled.div`
     p {
       color: ${({ theme }) => theme.colors.font};
       font-size: 1.05rem;
+
+      img {
+        height: 1rem;
+        filter: ${({ theme }) => theme.colors.icon};
+        user-select: none;
+      }
+
+      & > span {
+        position: relative;
+        margin-left: 0.25rem;
+        cursor: pointer;
+
+        &:hover ${StyledTooltip} {
+          visibility: visible;
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+      }
     }
 
     button {

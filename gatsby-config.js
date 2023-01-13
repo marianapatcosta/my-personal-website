@@ -85,7 +85,7 @@ module.exports = {
         outputPath: '/public/exports',
         styleTagOptions: {
           content:
-            'header { display:none !important; } footer { display:none !important; }',
+            'header { display:none !important; } footer { display:none !important; } .talk-to-me { display:none !important; }',
           format: 'A4',
           printBackground: true,
           preferCSSPageSize: true,

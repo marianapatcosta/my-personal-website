@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
           <Header />
           <StyledMain>
             {children}
-            <StyledTalkToMe />
+            <StyledTalkToMe className="talk-to-me" />
           </StyledMain>
           <Footer authorName={data.site.siteMetadata?.authorName} />
           <CookieBar />

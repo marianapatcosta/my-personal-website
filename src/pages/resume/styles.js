@@ -13,14 +13,18 @@ export const StyledResume = styled.div`
 `
 
 export const StyledResumeTitle = styled(StyledSectionTitle)`
-  display: none;
+  &:first-child {
+    display: none;
+  }
 
   @media print {
     display: none;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
-    display: block;
+    &:first-child {
+      display: none;
+    }
   }
 `
 
@@ -31,8 +35,6 @@ export const StyledDownloadIcon = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.highlight};
   user-select: none;
-  visibility: hidden;
-  opacity: 0;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 
@@ -43,7 +45,13 @@ export const StyledDownloadIcon = styled.a`
     user-select: none;
   }
 
+  @media print {
+    display: none;
+  }
+
   @media (min-width: ${({ theme }) => theme.breakpoints.a4}) {
+    visibility: hidden;
+    opacity: 0;
     top: revert;
     right: 2rem;
   }
@@ -54,7 +62,7 @@ export const StyledCv = styled.div`
   flex-direction: column;
   line-height: 1.4rem;
   font-size: 0.9rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 5rem;
   position: relative;
 
   &:hover > ${StyledDownloadIcon} {
@@ -82,6 +90,19 @@ export const StyledCv = styled.div`
     width: 209.55mm;
     height: 295.15mm;
     box-shadow: none;
+  }
+`
+
+export const StyledGitHubMetrics = styled.a`
+  width: 100%;
+
+  @media print {
+    display: none;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
   }
 `
 

@@ -9,6 +9,7 @@ import {
   StyledResumeTitle,
   StyledDownloadIcon,
   StyledCv,
+  StyledGitHubMetrics,
   StyledThinColumn,
   StyledThickColumn,
   StyledProfile,
@@ -219,6 +220,16 @@ const Cv = () => {
             </StyledSection>
           </StyledThickColumn>
         </StyledCv>
+        <StyledResumeTitle>My GitHub Metrics</StyledResumeTitle>
+        <StyledGitHubMetrics
+          href='https://mc-github-stats.onrender.com/api/v1/dashboard-download?username=marianapatcosta&height=300&width=350&lang_metrics_type=absolute&chart_type=donut&topics_title=Top%20JavaScript%20Frameworks/Libs&include_topics=react,angular,vue,nextjs,gatsby,react-native,ionic,nodejs&topics_count=8
+        '
+        >
+          <img
+            src='https://mc-github-stats.vercel.app/api/v1/dashboard?username=marianapatcosta&height=300&width=350&lang_metrics_type=absolute&chart_type=donut&topics_title=Top%20JavaScript%20Frameworks/Libs&include_topics=react,angular,vue,nextjs,gatsby,nodejs&legend_type=outer'
+            alt='My GitHub Metrics'
+          />
+        </StyledGitHubMetrics>
       </StyledResume>
     </Layout>
   )
