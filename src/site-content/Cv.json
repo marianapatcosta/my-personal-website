@@ -20,7 +20,8 @@
       {
         "label": "Skype",
         "icon": "Skype",
-        "contact": "marianapatc"
+        "contact": "marianapatc",
+        "url": "skype:marianapatc?chat"
       },
       {
         "label": "Linkedin",
@@ -106,12 +107,14 @@
       {
         "degree": "PhD in Pharmaceutical Sciences",
         "institution": "Faculty of Pharmacy University of Porto ",
-        "timePeriod": "2011 - 2014"
+        "timePeriod": "2011 - 2014",
+        "hideDates": true
       },
       {
         "degree": "PharmD, MSc, Pharmaceutical Sciences",
         "institution": "Faculty of Pharmacy University of Porto ",
-        "timePeriod": "2004 - 2009"
+        "timePeriod": "2004 - 2009",
+        "hideDates": true
       }
     ],
     "skills": [

@@ -38,6 +38,7 @@ import {
 } from './styles'
 
 const MAX_SKILL_LEVEL = 5
+const HIDE_SOME_ACADEMIC_DATES = true
 
 const Cv = () => {
   const cvData = useStaticQuery(graphql`
@@ -76,6 +77,7 @@ const Cv = () => {
               timePeriod
               degree
               description
+              hideDates
             }
             skills {
               label
@@ -174,6 +176,7 @@ const Cv = () => {
                 <EducationItem
                   key={`skill-${item.degree}`}
                   educationInfo={item}
+                  hideDates={HIDE_SOME_ACADEMIC_DATES && item.hideDates}
                 />
               ))}
             </StyledSectionDesktop>
@@ -196,6 +199,7 @@ const Cv = () => {
                 <EducationItem
                   key={`skill-${item.degree}`}
                   educationInfo={item}
+                  hideDates={HIDE_SOME_ACADEMIC_DATES && item.hideDates}
                 />
               ))}
             </StyledSectionMobile>
@@ -279,6 +283,7 @@ const ExperienceItem = ({
 
 const EducationItem = ({
   educationInfo: { institution, timePeriod, degree, description },
+  hideDates = false,
 }) => (
   <StyledItem key={`education-${timePeriod}`}>
     <StyledBoldText>
@@ -291,7 +296,15 @@ const EducationItem = ({
       />
       {degree}
     </StyledBoldText>
-    <StyledItalicText>{`${institution} | ${timePeriod}`}</StyledItalicText>
+    <StyledItalicText>
+      {`${institution} ${hideDates ? '' : `| ${timePeriod}`}`}
+      {hideDates && (
+        <>
+          <br />
+          <br />
+        </>
+      )}
+    </StyledItalicText>
     {description && <StyledText>{description}</StyledText>}
   </StyledItem>
 )
