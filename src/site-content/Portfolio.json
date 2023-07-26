@@ -1,5 +1,83 @@
 [
   {
+    "title": "Can I Shop Now? (WIP)",
+    "description": "FullStack Web app to track the prices of products of some fashion stores and notify the user by email when the size they need becomes available or the price decreases.",
+    "images": [
+      "can-i-shop-nowA.png",
+      "can-i-shop-nowB.png, can-i-shop-nowC.png"
+    ],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "label": "Next",
+        "icon": "Next"
+      },
+      {
+        "label": "React",
+        "icon": "React"
+      },
+      {
+        "label": "Tailwind CSS",
+        "icon": "TailwindCSS"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      },
+      {
+        "label": "OAuth2",
+        "icon": "OAuth2"
+      },
+      {
+        "label": "Zustand",
+        "icon": "NoIcon"
+      },
+      {
+        "label": "React Query",
+        "icon": "ReactQuery"
+      },
+      {
+        "label": "Prisma",
+        "icon": "Prisma"
+      },
+      {
+        "label": "PostgreSQL",
+        "icon": "PostgreSQL"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/can-i-shop-now"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://can-i-shop-now.vercel.app/"
+      }
+    ]
+  },
+  {
     "title": "LinksKeeper",
     "description": "Progressive web app and npm package  to group, manage and display all your network links, e-mail and phone numbers in the same place.",
     "images": ["links-keeperA.png", "links-keeperB.png"],

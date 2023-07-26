@@ -291,6 +291,12 @@
           "name": "French",
           "level": "elementary"
         }
+      ],
+      "volunteer": [
+        {
+          "title": "Mentor",
+          "institution": "Geek Girls Portugal"
+        }
       ]
     }
   }

@@ -63,6 +63,7 @@ import Mobile from './mobile.svg'
 import MongoDb from './mongodb.svg'
 import Mustache from './mustache.svg'
 import Next from './nextjs.svg'
+import NoIcon from './no-icon.svg'
 import Node from './nodejs.svg'
 import Npm from './npm.svg'
 import OAuth2 from './oauth2.svg'
@@ -70,7 +71,9 @@ import Outsystems from './outsystems.svg'
 import Performance from './performance.svg'
 import Pinia from './pinia.svg'
 import Portfolio from './portfolio.svg'
+import PostgreSQL from './postgresql.svg'
 import PortfolioSmall from './portfolio-small.svg'
+import Prisma from './prisma.svg'
 import PushNotifications from './push-notifications.svg'
 import Plus from './plus.svg'
 import Pwa from './pwa.svg'
@@ -78,6 +81,7 @@ import Python from './python.svg'
 import Radar from './radar.svg'
 import React from './react.svg'
 import ReactHookForm from './react-hook-form.svg'
+import ReactQuery from './react-query.svg'
 import ReactTestingLibrary from './react-testing-library.svg'
 import Redux from './redux.svg'
 import Responsive from './responsive-design.svg'
@@ -95,6 +99,7 @@ import StyledComponents from './styled-components.svg'
 import Success from './success.svg'
 import Svg from './svg.svg'
 import Swagger from './swagger.svg'
+import TailwindCSS from './tailwind-css.svg'
 import Target from './target.svg'
 import Tick from './tick.svg'
 import Tv from './tv.svg'
@@ -178,6 +183,7 @@ export {
   Mustache,
   Next,
   Node,
+  NoIcon,
   Npm,
   OAuth2,
   Outsystems,
@@ -186,12 +192,15 @@ export {
   Plus,
   Portfolio,
   PortfolioSmall,
+  PostgreSQL,
+  Prisma,
   PushNotifications,
   Pwa,
   Python,
   Radar,
   React,
   ReactHookForm,
+  ReactQuery,
   ReactTestingLibrary,
   Redux,
   Responsive,
@@ -209,6 +218,7 @@ export {
   Success,
   Svg,
   Swagger,
+  TailwindCSS,
   Target,
   Tick,
   Tv,
