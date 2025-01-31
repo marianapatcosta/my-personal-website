@@ -2,7 +2,7 @@
   {
     "name": "Mariana Costa",
     "role": "Software Developer",
-    "intro": "Mariana Costa works as Software Developer for more than 4 years. Particularly enthusiastic about Frontend Development and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
+    "intro": "Mariana Costa works as Software Developer for more than 6 years. Particularly enthusiastic about Frontend Development and motivated to improve the knowledge about Web development, JavaScript and related frameworks/libraries (React, Vue, Angular). Also has some experience with Node.js, Java and Python. Graduated in Pharmaceutical Sciences and worked as Scientific Researcher and as Medical Writer.",
     "profileImage": "my-photo.png",
     "gitAvatarUrl": "https://github.com/marianapatcosta.png",
     "contacts": [
@@ -50,12 +50,20 @@
     ],
     "experience": [
       {
+        "role": "Senior Frontend Developer",
+        "company": "OLX Group",
+        "timePeriod": "Jan 2024 - Present",
+        "description": "Work in Jobs section of OLX portal.",
+        "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Participation on task planning;",
+        "technologies": "React; TypeScript; React Testing Library; Jest."
+      },
+      {
         "role": "Frontend Developer",
         "company": "Evolution",
-        "timePeriod": "Oct 2022 - Present",
+        "timePeriod": "Oct 2022 - Dec 2023",
         "description": "Development of games for online casinos.",
         "responsibilities": "Frontend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation; Participation on task planning;",
-        "technologies": "React; Redux; TypeScript; Post-CSS; Storybook; React Testing Library; Jest."
+        "technologies": "React; Redux; TypeScript; Storybook; RTL; Jest."
       },
       {
         "role": "Frontend Developer",
@@ -79,13 +87,13 @@
         "timePeriod": "Jan 2019 – Jun 2020",
         "description": "Development of portals for Vodafone",
         "responsibilities": "Frontend and Backend development according to the specified acceptance criteria and Agile methodology; Preparation of documentation and mockups; Collaboration with QA and UX/UI teams; Participation on task planning;",
-        "technologies": "Vue; Angular; JavaScript; TypeScript; SCSS; Node.js; Express.js; Java 8; Jasmine; Karma; Jest;"
+        "technologies": "Vue; Angular; JavaScript; TypeScript;"
       },
       {
         "role": "Medical Writer",
         "company": "BlueClinical",
         "timePeriod": "Jul 2015 – Sep 2018",
-        "description": "Writing of clinical trials-related documentation. Compliance with legal and regulatory requirements, internal SOPs and ICH-GCPs."
+        "description": "Writing of clinical trials-related documentation."
       }
     ],
     "education": [
@@ -171,7 +179,7 @@
       {
         "label": "Git",
         "icon": "Git",
-        "level": 4
+        "level": 4.5
       },
       {
         "label": "Agile Methodology",
@@ -184,23 +192,18 @@
         "level": 3.5
       },
       {
+        "label": "Flutter",
+        "icon": "Flutter",
+        "level": 3.5
+      },
+      {
         "label": "React Native",
         "icon": "React",
         "level": 3.5
       },
       {
-        "label": "Gatsby",
-        "icon": "Gatsby",
-        "level": 3.5
-      },
-      {
         "label": "Next",
         "icon": "Next",
-        "level": 3.5
-      },
-      {
-        "label": "Ionic",
-        "icon": "Ionic",
         "level": 3.5
       },
       {
@@ -212,11 +215,6 @@
         "label": "Express.js",
         "icon": "Express",
         "level": 4
-      },
-      {
-        "label": "Electron",
-        "icon": "Electron",
-        "level": 2.5
       },
       {
         "label": "Jest",
@@ -262,11 +260,6 @@
         "label": "Docker",
         "icon": "Docker",
         "level": 1.5
-      },
-      {
-        "label": "OutSystems",
-        "icon": "Outsystems",
-        "level": 1.5
       }
     ],
     "otherInfo": {
@@ -301,3 +294,4 @@
     }
   }
 ]
+
