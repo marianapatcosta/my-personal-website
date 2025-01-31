@@ -18,6 +18,7 @@ import Css from './css3.svg'
 import Cv from './cv.svg'
 import Cypress from './cypress.svg'
 import CyberSecurity from './cyber-security.svg'
+import Dart from './dart.svg'
 import DarkTheme from './dark-theme.svg'
 import Desktop from './desktop.svg'
 import Dev from './dev.svg'
@@ -137,6 +138,7 @@ export {
   Cv,
   CyberSecurity,
   Cypress,
+  Dart,
   DarkTheme,
   Desktop,
   Dev,
@@ -235,3 +237,4 @@ export {
   Web,
   Writing,
 }
+

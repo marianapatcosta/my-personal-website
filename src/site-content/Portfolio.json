@@ -1,10 +1,70 @@
 [
   {
+    "title": "The Investigator's Clues",
+    "description": "Web, Android and iOS application to help Blood on the Clocktower's players and storytellers to track the game status and register the clues they collected, and to help the storyteller to setup the game and track its status.",
+    "images": [
+      "investigators-cluesA.png",
+      "investigators-cluesB.png",
+      "investigators-cluesC.png"
+    ],
+    "stack": [
+      {
+        "label": "Web",
+        "icon": "Web"
+      },
+      {
+        "label": "Mobile",
+        "icon": "Mobile"
+      },
+      {
+        "label": "Progressive Web App",
+        "icon": "Pwa"
+      },
+      {
+        "label": "Flutter",
+        "icon": "Flutter"
+      },
+      {
+        "label": "Dart",
+        "icon": "Dart"
+      },
+      {
+        "label": "Adaptive/responsive design",
+        "icon": "Responsive"
+      },
+      {
+        "label": "A11y accessibility",
+        "icon": "Accessibility"
+      },
+      {
+        "label": "Dark Theme",
+        "icon": "DarkTheme"
+      },
+      {
+        "label": "Internationalization",
+        "icon": "I18n"
+      }
+    ],
+    "links": [
+      {
+        "label": "code",
+        "icon": "GitHub",
+        "url": "https://github.com/marianapatcosta/the-investigators-clues"
+      },
+      {
+        "label": "visit",
+        "icon": "Link",
+        "url": "https://the-investigators-clues.web.app/"
+      }
+    ]
+  },
+  {
     "title": "Can I Shop Now? (WIP)",
     "description": "FullStack Web app to track the prices of products of some fashion stores and notify the user by email when the size they need becomes available or the price decreases.",
     "images": [
       "can-i-shop-nowA.png",
-      "can-i-shop-nowB.png, can-i-shop-nowC.png"
+      "can-i-shop-nowB.png",
+      "can-i-shop-nowC.png"
     ],
     "stack": [
       {
@@ -135,7 +195,11 @@
   {
     "title": "Bom Português",
     "description": "Progressive web app Question & Answer game to practice tricky portuguese words and expressions.",
-    "images": ["bom-portuguesA.png", "bom-portuguesB.png, bom-portuguesC.png"],
+    "images": [
+      "bom-portuguesA.png",
+      "bom-portuguesB.png",
+      "bom-portuguesC.png"
+    ],
     "stack": [
       {
         "label": "Progressive Web App",
@@ -1507,3 +1571,4 @@
     ]
   }
 ]
+

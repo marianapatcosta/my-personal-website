@@ -2,7 +2,8 @@
 
 My Personal Website compiles some personal projects developed to learn new technologies and improve programming skills. Includes a CV resume that can be downloaded as pdf file. It was developed using Gatsby and Styled Components.
 
-The following environnement variable must be configured:
+The following environnement variable must be configured in _.env.development_ file:
+
 - GATSBY_SERVICE_ID
 - GATSBY_TEMPLATE_ID
 - GATSBY_USER_ID
@@ -11,7 +12,7 @@ The following environnement variable must be configured:
 
 In the project directory, you can run:
 
-### `yarn develop` or `yarn start`
+### `yarn dev` or `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
@@ -35,3 +36,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
